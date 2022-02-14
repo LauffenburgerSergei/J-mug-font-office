@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J-Mug</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <header>
-      <img src="./assets/images/j-mug.webP" alt="logo J-mug" />
+      <img src="./assets/images/j-mug.webP" alt="" />
       <form action="search.php">
         <input type="text" name="search" id="input__search" />
         <input type="submit" value="Rechercher" />
       </form>
-      <a href="panier.html">
+      <a href="cart.html">
         <img src="#" alt="aller voir mon panier" />
         Panier
       </a>
@@ -21,7 +24,7 @@
         <a href="index.html" class="nav__link">Accueil</a>
         <a href="categories.html" class="nav__link">Catégorie</a>
         <a href="about.html" class="nav__link">A propos</a>
-        <a href="product.html" class="nav__link">Contact</a>
+        <a href="about.html#contact" class="nav__link">Contact</a>
       </nav>
     </header>
     <main>
@@ -88,6 +91,31 @@
               <label for="card2"> Visa / Master Card ***-5678 </label>
             </div>
           </fieldset>
+
+          <h5>Plus d'options de paiement</h5>
+          <p>ajouter votre compte bancaire</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            pariatur enim dolores eveniet neque obcaecati recusandae! Ducimus
+            iure incidunt distinctio, eligendi aliquid natus culpa, sunt rem
+            amet omnis architecto pariatur.
+          </p>
+          <button>Ajouter un compte courant</button>
+          <hr />
+          <h5>Plus d'options de paiement</h5>
+          <p>ajouter votre compte bancaire</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            pariatur enim dolores eveniet neque obcaecati recusandae! Ducimus
+            iure incidunt distinctio, eligendi aliquid natus culpa, sunt rem
+            amet omnis architecto pariatur.
+          </p>
+          <button>Ajouter une carte de crédit ou de débit</button>
+          <hr />
+          <h6>Chèques-cadeaux, Pass Cadeaux</h6>
+          <p><a href="#">Entrer un chèque-cadeaux ou un Pass Cadeaux</a></p>
+
+          <input type="submit" value="Payer" />
         </form>
       </article>
     </main>
