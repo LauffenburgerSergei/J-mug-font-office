@@ -1,4 +1,3 @@
-
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #9ac8eb3f;
@@ -9,7 +8,6 @@ h2,
 h3 {
   font-family: Rowdies;
 }
-
 
 main {
   display: flex;
@@ -58,7 +56,6 @@ section > p {
 p {
   padding: 10px 30px 10px 30px;
 }
-
 
 .Contactez-nous {
   width: 700px;
@@ -162,4 +159,3 @@ form button {
   display: flex;
   justify-content: center;
 }
-
