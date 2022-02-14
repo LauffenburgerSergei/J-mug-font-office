@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J-Mug</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/images/j-mug.webP" alt="logo J-mug" />
+      <form action="search.php">
+        <input type="text" name="search" id="input__search" />
+        <input type="submit" value="Rechercher" />
+      </form>
+      <a href="panier.html">
+        <img src="#" alt="aller voir mon panier" />
+        Panier
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Accueil</a>
+        <a href="categories.html" class="nav__link">Catégorie</a>
+        <a href="about.html" class="nav__link">A propos</a>
+        <a href="product.html" class="nav__link">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section>
+          <h4>Sélectionner une adresse de livraison</h4>
+          <select name="adress" id="adressChoice">
+            <option value="adress1">Domicile</option>
+            <option value="adress2">Travail</option>
+            <option value="adress3">Chez Maman</option>
+          </select>
 
+          <p>
+            55 rue du faubourg Saint-Honoré <br />
+            75008 Paris, France
+          </p>
+          <form action="shippingAdress">
+            <input type="submit" value="Livrer à cette adresse" />
+            <input type="button" value="Modifier" />
+            <input type="button" value="supprimer" />
+          </form>
+        </section>
+        <section>
+          <h4>Ajouter une nouvelle adresse</h4>
+          <form action="#" class="form">
+            <div class="form__item">
+              <label for="adressName">Nommer cette adresse</label>
+              <input type="text" id="adressName" />
+            </div>
+            <div class="form__item">
+              <label for="adressNumber">N°</label>
+              <input type="text" id="adressNumber" />
+            </div>
+            <div class="form__item">
+              <label for="adressStreet">Nom de la rue</label>
+              <input type="text" id="adressStreet" />
+            </div>
+            <div class="form__item">
+              <label for="adressCP">Code Postal</label>
+              <input type="text" id="adressCp" />
+            </div>
+            <div class="form__item">
+              <label for="adressTown">Ville</label>
+              <input type="text" id="adressTown" />
+            </div>
+            <div class="form__item">
+              <label for="adressSup">Informations supplémentaires</label>
+              <input type="text" id="adressSup" />
+            </div>
+          </form>
+        </section>
+      </article>
+      <article>
+        <h3>Selectionner un moyen de paiement</h3>
+        <form action="#">
+          <fieldset>
+            <legend>Vos cartes de paiement</legend>
+            <div>
+              <input type="radio" name="paymentCard" id="card1" />
+              <label for="card1">Visa / Master Card ***-1324</label>
+            </div>
+            <div>
+              <input type="radio" name="paymentCard" id="card2" />
+              <label for="card2"> Visa / Master Card ***-5678 </label>
+            </div>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11146372.5532309!2d0.00891076872544069!3d44.85988718675148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e7466e7e579b815!2sLes%20Loups%20du%20G%C3%A9vaudan!5e0!3m2!1sfr!2sfr!4v1644842918883!5m2!1sfr!2sfr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <footer>
+      <div class="footer_info">
+        <div>
+          <h3>A propos</h3>
+          <ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et Confidentialité</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nos Produit</h3>
+          <ul>
+            <li>Charte qualité</li>
+            <li>Soumettre vos designs</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Assistance</h3>
+          <ul>
+            <li>Centre D'aide</li>
+            <li>Nous Contacter</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
