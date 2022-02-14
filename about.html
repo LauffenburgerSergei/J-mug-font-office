@@ -12,7 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <header>
@@ -34,27 +36,43 @@
     </header>
     <main>
       <section class="a_propos">
-        <h1>A propos</h1>
+        <img src="./assets/images/j-mug.webP" alt="mug-test" />
+        <h1>À propos</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores delectus vitae unde nam veritatis dolorum, tempora earum corrupti. Esse aut, sed officiis neque sunt quo eligendi veritatis dolores pariatur optio cumque ducimus rem ad mollitia soluta nemo voluptas assumenda id repellendus dolore molestias. Eum numquam quidem, ex voluptas dicta alias!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
+          delectus vitae unde nam veritatis dolorum, tempora earum corrupti.
+          Esse aut, sed officiis neque sunt quo eligendi veritatis dolores
+          pariatur optio cumque ducimus rem ad mollitia soluta nemo voluptas
+          assumenda id repellendus dolore molestias. Eum numquam quidem, ex
+          voluptas dicta alias!
         </p>
       </section>
 
       <section class="nos_produit">
         <h2>Nos produits</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti unde, quos vero pariatur officiis dicta, dolorum doloribus atque aspernatur ratione error. Quidem assumenda obcaecati, quod eligendi tenetur sapiente dolor recusandae delectus ex totam maiores adipisci facilis labore commodi quia fugit iusto voluptatum dolores non suscipit eos et vitae porro.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          corrupti unde, quos vero pariatur officiis dicta, dolorum doloribus
+          atque aspernatur ratione error. Quidem assumenda obcaecati, quod
+          eligendi tenetur sapiente dolor recusandae delectus ex totam maiores
+          adipisci facilis labore commodi quia fugit iusto voluptatum dolores
+          non suscipit eos et vitae porro.
         </p>
         <figure>
-          <img src="mug.png" alt="" />
-          <img src="mug2.png" alt="" />
-          <img src="mug3.png" alt="" />
+          <img
+            src="./assets/images/mug-test.png"
+            alt="mug1"
+            width="250px"
+            height="250px"
+          />
+          <img src="./assets/images/mug2.png" alt="" />
+          <img src="./assets/images/mug3.png" alt="" />
         </figure>
       </section>
 
       <section class="ou_sommes_nous">
         <img src="" alt="" />
-        <h2>ou somme-nous</h2>
+        <h2>Ou somme-nous</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor
           voluptatum aut ducimus nesciunt, odit dolores modi itaque blanditiis
@@ -63,57 +81,87 @@
       </section>
       <section class="contact">
         <div class="Contactez-nous">
-        <h1>Nous contactez</h1>
-        <p>
-          Si vous avez une question à propos des produits ou d'un autre type
-          hésiter pas à prendre contact !
-        </p>
-        <form action="/page-traitement-donnees" method="post">
-          <div>
-            <label for="nom">Votre prénom</label>
-            <input type="text" id="nom" name="nom" placeholder="Nom" required />
-          </div>
-          <div>
-            <label for="email">Votre Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="monadresse@mail.com"
-              required
-            />
-          </div>
-          <div>
-            <label for="sujet">Quel est le sujet de votre message ?</label>
-            <select name="sujet" id="sujet" required>
-              <option value="" disabled selected hidden>
-                Choisissez le sujet de votre message
-              </option>
-              <option value="question-produit">
-                Question à propos d’un produit
-              </option>
-              <option value="devis">devis</option>
-              <option value="autre">Autre...</option>
-            </select>
-          </div>
-          <div>
-            <label for="message">Votre Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Bonjour, je vous contacte car...."
-              required
-            ></textarea>
-          </div>
-          <div>
-            <button type="submit">Envoyer</button>
-          </div>
-        </form>
-      </div>
+          <h1>Nous contactez</h1>
+          <p>
+            Si vous avez une question à propos des produits ou d'un autre type
+            hésiter pas à prendre contact !
+          </p>
+          <form action="/page-traitement-donnees" method="post">
+            <div>
+              <label for="nom">Votre prénom</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Nom"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Votre Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="monadresse@mail.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="sujet">Quel est le sujet de votre message ?</label>
+              <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>
+                  Choisissez le sujet de votre message
+                </option>
+                <option value="question-produit">
+                  Question à propos d’un produit
+                </option>
+                <option value="devis">devis</option>
+                <option value="autre">Autre...</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Votre Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Bonjour, je vous contacte car...."
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit">Envoyer</button>
+            </div>
+          </form>
+        </div>
       </section>
-      
-
     </main>
+
+    <footer>
+      <div class="footer_info">
+        <div>
+          <h3>A propos</h3>
+          <ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et Confidentialité</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nos Produit</h3>
+          <ul>
+            <li>Charte qualité</li>
+            <li>Soumettre vos designs</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Assistance</h3>
+          <ul>
+            <li>Centre D'aide</li>
+            <li>Nous Contacter</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-
