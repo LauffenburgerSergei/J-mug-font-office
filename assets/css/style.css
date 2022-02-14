@@ -1,15 +1,16 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #9ac8eb3f;
-
 }
 
 h1,
 h2,
 h3 {
-
-  font-family: Rowdies;
+  font-family: "Rowdies", sans-serif;
 }
+
+/*################################################################*/
+/*############################ Main ##############################*/
+/*################################################################*/
 
 main {
   display: flex;
@@ -161,9 +162,11 @@ form button {
 .contact {
   display: flex;
   justify-content: center;
-
-  font-family: "Rowdies", sans-serif;
 }
+
+/*################################################################*/
+/*########################### Footer #############################*/
+/*################################################################*/
 
 footer {
   padding: 20px 15px;
@@ -187,6 +190,5 @@ footer {
 
 footer li {
   padding: 10px 0;
-
+  font-family: Rowdies;
 }
-
