@@ -1,1 +1,161 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #9ac8eb3f;
+}
 
+h1,
+h2,
+h3 {
+  font-family: Rowdies;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.a_propos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: #9ac8eb;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.nos_produit {
+  width: 900px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #9ac8eb;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.ou_sommes_nous {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #9ac8eb;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+section > p {
+  text-align: center;
+}
+
+p {
+  padding: 10px 30px 10px 30px;
+}
+
+.Contactez-nous {
+  width: 700px;
+  height: 850px;
+  border: none;
+  border-radius: 8px;
+  padding: 0 50px 0 50px;
+  background: #9ac8eb;
+}
+
+.Contactez-nous > h1 {
+  padding-top: 20px;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 83px;
+  margin-top: 25px;
+}
+
+form div > label {
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+form div > input,
+form div > select,
+form div > textarea {
+  color: #ffffff;
+  background: #5784ba;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+form div > input,
+form div > select {
+  height: 50px;
+  padding-left: 10px;
+}
+
+form div > select {
+  appearance: none;
+  background-size: 15px;
+
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+}
+
+form div > textarea {
+  font-family: "Montserrat";
+  height: 195px;
+  padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder,
+form div > textarea::placeholder {
+  opacity: 60%;
+  color: white;
+}
+
+form div > select:invalid {
+  color: white;
+}
+
+form div > select option {
+  background: #0b1013;
+  color: #ffffff;
+}
+
+form div:last-child {
+  align-items: center;
+  margin-top: 20px;
+}
+
+form button {
+  width: 450px;
+  max-width: 500px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 24px;
+  background: #5784ba;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+.formulaire_contact {
+  display: flex;
+  justify-content: center;
+  background-color: #0b1013;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+}
