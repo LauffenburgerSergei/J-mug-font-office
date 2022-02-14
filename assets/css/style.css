@@ -9,6 +9,10 @@ h3 {
   font-family: Rowdies;
 }
 
+h2 {
+  font-family: 3rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
