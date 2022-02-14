@@ -1,11 +1,13 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #9ac8eb3f;
+
 }
 
 h1,
 h2,
 h3 {
+
   font-family: Rowdies;
 }
 
@@ -155,9 +157,12 @@ form button {
   justify-content: center;
   background-color: #0b1013;
 }
+
 .contact {
   display: flex;
   justify-content: center;
+
+  font-family: "Rowdies", sans-serif;
 }
 
 footer {
@@ -170,7 +175,6 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   text-align: start;
-
   width: auto;
   height: auto;
 }
