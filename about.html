@@ -38,7 +38,7 @@
     </header>
     <main class="main_about">
       <section class="a_propos">
-        <img class="jmuglogo" src="./assets/images/j-mug.webP" alt="ici" />
+        <img class="jmug__logo" src="./assets/images/j-mug.webP" alt="ici" />
         <div class="title_text">
           <h1>À propos</h1>
           <p>
@@ -52,7 +52,7 @@
         </div>
       </section>
 
-      <section class="nos_produit">
+      <article class="nos_produit">
         <h2>Nos produits</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -62,16 +62,30 @@
           adipisci facilis labore commodi quia fugit iusto voluptatum dolores
           non suscipit eos et vitae porro.
         </p>
-        <figure class="">
-          <img src="./assets/images/mug-test.png" alt="mug1" />
-        </figure>
-        <figure>
-          <img src="./assets/images/mug2.png" alt="" />
-        </figure>
-        <figure>
-          <img src="./assets/images/mug3.png" alt="" />
-        </figure>
-      </section>
+        <section class="section__img">
+          <figure>
+            <img
+              class="figure__img"
+              src="./assets/images/mug-test.png"
+              alt="mug1"
+            />
+          </figure>
+          <figure>
+            <img
+              class="figure__img"
+              src="./assets/images/mug-test.png"
+              alt="mug2"
+            />
+          </figure>
+          <figure>
+            <img
+              class="figure__img"
+              src="./assets/images/mug-test.png"
+              alt="mug3"
+            />
+          </figure>
+        </section>
+      </article>
 
       <section class="ou_sommes_nous">
         <div>
@@ -92,60 +106,53 @@
         </p>
       </section>
       <section class="contact">
-        <div class="contactez-nous">
-          <h2>Nous contacter</h2>
-          <p>
-            Si vous avez une question à propos des produits ou d'un autre type
-            hésiter pas à prendre contact !
-          </p>
-          <form action="/page-traitement-donnees" method="post">
-            <div>
-              <label for="nom">Votre prénom</label>
-              <input
-                type="text"
-                id="nom"
-                name="nom"
-                placeholder="Nom"
-                required
-              />
-            </div>
-            <div>
-              <label for="email">Votre Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="monadresse@mail.com"
-                required
-              />
-            </div>
-            <div>
-              <label for="sujet">Quel est le sujet de votre message ?</label>
-              <select name="sujet" id="sujet" required>
-                <option value="" disabled selected hidden>
-                  Choisissez le sujet de votre message
-                </option>
-                <option value="question-produit">
-                  Question à propos d’un produit
-                </option>
-                <option value="devis">devis</option>
-                <option value="autre">Autre...</option>
-              </select>
-            </div>
-            <div>
-              <label for="message">Votre Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Bonjour, je vous contacte car...."
-                required
-              ></textarea>
-            </div>
-            <div>
-              <button type="submit">Envoyer</button>
-            </div>
-          </form>
-        </div>
+        <h2>Nous contacter</h2>
+        <p>
+          Si vous avez une question à propos des produits ou d'un autre type
+          hésiter pas à prendre contact !
+        </p>
+        <form class="form" action="#" method="post">
+          <div>
+            <label for="nom">Votre prénom</label>
+            <input type="text" id="nom" name="nom" placeholder="Nom" required />
+          </div>
+          <div>
+            <label for="email">Votre Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="monadresse@mail.com"
+              required
+            />
+          </div>
+          <div>
+            <label for="sujet">Quel est le sujet de votre message ?</label>
+            <select name="sujet" id="sujet" required>
+              <option value="" disabled selected hidden>
+                Choisissez le sujet de votre message
+              </option>
+              <option value="question-produit">
+                Question à propos d’un produit
+              </option>
+              <option value="devis">devis</option>
+              <option value="autre">Autre...</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Votre Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Bonjour, je vous contacte car...."
+              required
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit">Envoyer</button>
+          </div>
+        </form>
+        <!-- </div> -->
       </section>
 
       <section class="reassurance">
