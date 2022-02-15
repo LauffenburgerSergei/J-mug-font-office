@@ -7,6 +7,9 @@
     <title>J-Mug</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/reassurance.css" />
+    <link rel="stylesheet" href="./assets/css/buttons.css" />
     <link rel="stylesheet" href="./assets/css/commande.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
@@ -21,7 +24,8 @@
         <figure class="">
           <img
             src="./assets/images/chariot-de-chariot.png"
-            alt="Aller voir mon panier"/>
+            alt="Aller voir mon panier"
+          />
           <figcaption>Mon panier</figcaption>
         </figure>
       </a>
@@ -43,7 +47,42 @@
               <img
                 src="./assets/images/mug-test.png"
                 alt="image du produit"
-                class="cart__img"
+                class="item__img"
+              />
+              <h3 class="item_title">Blue Dragoon</h3>
+              <p>Référence produit : 123465789</p>
+            </section>
+            <section>
+              <h3>Disponibilité</h3>
+              <p>En stock</p>
+              <p>Plus que X exemplaire</p>
+            </section>
+            <section>
+              <h3>Prix unitaire</h3>
+              <p>14.99 €</p>
+              <input
+                type="hidden"
+                name="priceItem123465789"
+                id="priceItem123465789"
+                value="14.99"
+              />
+            </section>
+            <section>
+              <h3>Quantité</h3>
+              <input type="number" id="quantityItem123465789" value="2" />
+              <button>Supprimer</button>
+            </section>
+            <section>
+              <h3>Total</h3>
+              <output for="quantityItem123465789 priceItem123465789"></output>
+            </section>
+          </section>
+          <section class="cart__item">
+            <section>
+              <img
+                src="./assets/images/mug-test.png"
+                alt="image du produit"
+                class="item__img"
               />
               <h3>Blue Dragoon</h3>
               <p>Référence produit : 123465789</p>
@@ -78,7 +117,7 @@
               <img
                 src="./assets/images/mug-test.png"
                 alt="image du produit"
-                class="cart__img"
+                class="item__img"
               />
               <h3>Blue Dragoon</h3>
               <p>Référence produit : 123465789</p>
@@ -113,42 +152,7 @@
               <img
                 src="./assets/images/mug-test.png"
                 alt="image du produit"
-                class="cart__img"
-              />
-              <h3>Blue Dragoon</h3>
-              <p>Référence produit : 123465789</p>
-            </section>
-            <section>
-              <h3>Disponibilité</h3>
-              <p>En stock</p>
-              <p>Plus que X exemplaire</p>
-            </section>
-            <section>
-              <h3>Prix unitaire</h3>
-              <p>14.99 €</p>
-              <input
-                type="hidden"
-                name="priceItem123465789"
-                id="priceItem123465789"
-                value="14.99"
-              />
-            </section>
-            <section>
-              <h3>Quantité</h3>
-              <input type="number" id="quantityItem123465789" value="2" />
-              <button>Supprimer</button>
-            </section>
-            <section>
-              <h3>Total</h3>
-              <output for="quantityItem123465789 priceItem123465789"></output>
-            </section>
-          </section>
-          <section class="cart__item">
-            <section>
-              <img
-                src="./assets/images/mug-test.png"
-                alt="image du produit"
-                class="cart__img"
+                class="item__img"
               />
               <h3>Blue Dragoon</h3>
               <p>Référence produit : 123465789</p>
@@ -180,32 +184,27 @@
           </section>
           <a href="#">Supprimer tous les articles</a>
         </article>
-        <section>
+        <section class="promo">
           <label for="codePromo">Entrer mon code promo</label>
           <input type="text" name="codePromo" />
         </section>
-        <section>
-          <div>
+        <section class="montants">
+          <div class="montant__label">
             <h4>Montant total des achats</h4>
             <h4>Montant total des réductions</h4>
             <h4>Montant total des frais de livraisons</h4>
             <h3>Montant total de la commande</h3>
-            <form action="commande.html">
-              <input
-                type="button"
-                name=""
-                id=""
-                value="Enregistrer ma commande"
-              />
-              <input type="submit" value="Valider ma commande" />
-            </form>
           </div>
-          <div>
+          <div class="montant__price">
             <p>14.99</p>
             <p>0</p>
             <p>6.89</p>
             <p>21.88</p>
           </div>
+          <form action="commande.html" class="montant__form">
+            <input type="button" value="Enregistrer ma commande" />
+            <input type="submit" value="Valider ma commande" />
+          </form>
         </section>
         <section class="reassurance">
           <figure class="reassurance__item">

@@ -1,0 +1,26 @@
+/* Element de confiance */
+.reassurance {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  align-items: flex-start;
+}
+.reassurance__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.reassurance__img {
+  border: black 2px solid;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.reassurance__text {
+  text-transform: uppercase;
+  text-align: center;
+  font: 0.5rem;
+}

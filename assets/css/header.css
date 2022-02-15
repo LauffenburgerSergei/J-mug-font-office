@@ -1,0 +1,81 @@
+/*###################################################*/
+/*####################   HEADER   ###################*/
+/*###################################################*/
+
+header {
+  margin: 0;
+  height: auto;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.header__img {
+  width: 20%;
+}
+.search {
+  text-align: center;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.search__input,
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #5784ba;
+  border-radius: 10px 0 0 10px;
+  width: 40%;
+}
+
+.search__input:hover {
+  border: 1px solid #5784ba;
+  color: black;
+}
+
+input[type="submit"].search__btn,
+.newsletter__button {
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  text-transform: uppercase;
+}
+header > a {
+  color: #5784ba;
+  text-decoration: none;
+}
+header > a:hover {
+  color: #5784ba;
+  text-decoration: none;
+}
+input[type="submit"].search__btn:hover {
+  color: white;
+  border: 1px solid #5784ba;
+}
+header figure {
+  margin-right: 2rem;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 5%;
+}
+.nav a {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 25%;
+}
+
+.nav a:hover {
+  background-color: #f4cfdf;
+  color: #5784ba;
+}
