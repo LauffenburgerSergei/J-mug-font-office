@@ -7,21 +7,23 @@
     <title>J-Mug</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/commande.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <header>
-      <img src="./assets/images/j-mug.webP" alt="" />
-      <form action="search.php">
-        <input type="text" name="search" id="input__search" />
-        <input type="submit" value="Rechercher" />
+      <img src="./assets/images/j-mug.webP" alt="J-Mug" class="header__img" />
+      <form action="search.php" class="search">
+        <input type="text" name="search" class="search__input" />
+        <input type="submit" value="Rechercher" class="search__btn" />
       </form>
       <a href="cart.html">
-        <img
-          src="./assets/images/chariot-de-chariot.png"
-          alt="aller voir mon panier"
-        />
-        Panier
+        <figure class="">
+          <img
+            src="./assets/images/chariot-de-chariot.png"
+            alt="Aller voir mon panier"/>
+          <figcaption>Mon panier</figcaption>
+        </figure>
       </a>
       <nav class="nav">
         <a href="index.html" class="nav__link">Accueil</a>
@@ -30,43 +32,154 @@
         <a href="about.html#contact" class="nav__link">Contact</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <article>
         <a href="index.html">Continuer mes achats</a>
         <h1>Mon panier</h1>
         <h6>Livraison offert à partir de 50€ d'achats</h6>
-        <div>
-          <section>
-            <img src="#" alt="image du produit" />
-            <h3>Nom du produit</h3>
-            <p>Référence produit : 123465789</p>
+        <article class="cart">
+          <section class="cart__item">
+            <section>
+              <img
+                src="./assets/images/mug-test.png"
+                alt="image du produit"
+                class="cart__img"
+              />
+              <h3>Blue Dragoon</h3>
+              <p>Référence produit : 123465789</p>
+            </section>
+            <section>
+              <h3>Disponibilité</h3>
+              <p>En stock</p>
+              <p>Plus que X exemplaire</p>
+            </section>
+            <section>
+              <h3>Prix unitaire</h3>
+              <p>14.99 €</p>
+              <input
+                type="hidden"
+                name="priceItem123465789"
+                id="priceItem123465789"
+                value="14.99"
+              />
+            </section>
+            <section>
+              <h3>Quantité</h3>
+              <input type="number" id="quantityItem123465789" value="2" />
+              <button>Supprimer</button>
+            </section>
+            <section>
+              <h3>Total</h3>
+              <output for="quantityItem123465789 priceItem123465789"></output>
+            </section>
           </section>
-          <section>
-            <h3>Disponibilité</h3>
-            <p>En stock</p>
-            <p>Plus que X exemplaire</p>
+          <section class="cart__item">
+            <section>
+              <img
+                src="./assets/images/mug-test.png"
+                alt="image du produit"
+                class="cart__img"
+              />
+              <h3>Blue Dragoon</h3>
+              <p>Référence produit : 123465789</p>
+            </section>
+            <section>
+              <h3>Disponibilité</h3>
+              <p>En stock</p>
+              <p>Plus que X exemplaire</p>
+            </section>
+            <section>
+              <h3>Prix unitaire</h3>
+              <p>14.99 €</p>
+              <input
+                type="hidden"
+                name="priceItem123465789"
+                id="priceItem123465789"
+                value="14.99"
+              />
+            </section>
+            <section>
+              <h3>Quantité</h3>
+              <input type="number" id="quantityItem123465789" value="2" />
+              <button>Supprimer</button>
+            </section>
+            <section>
+              <h3>Total</h3>
+              <output for="quantityItem123465789 priceItem123465789"></output>
+            </section>
           </section>
-          <section>
-            <h3>Prix unitaire</h3>
-            <p>14.99 €</p>
-            <input
-              type="hidden"
-              name="priceItem123465789"
-              id="priceItem123465789"
-              value="14.99"
-            />
+          <section class="cart__item">
+            <section>
+              <img
+                src="./assets/images/mug-test.png"
+                alt="image du produit"
+                class="cart__img"
+              />
+              <h3>Blue Dragoon</h3>
+              <p>Référence produit : 123465789</p>
+            </section>
+            <section>
+              <h3>Disponibilité</h3>
+              <p>En stock</p>
+              <p>Plus que X exemplaire</p>
+            </section>
+            <section>
+              <h3>Prix unitaire</h3>
+              <p>14.99 €</p>
+              <input
+                type="hidden"
+                name="priceItem123465789"
+                id="priceItem123465789"
+                value="14.99"
+              />
+            </section>
+            <section>
+              <h3>Quantité</h3>
+              <input type="number" id="quantityItem123465789" value="2" />
+              <button>Supprimer</button>
+            </section>
+            <section>
+              <h3>Total</h3>
+              <output for="quantityItem123465789 priceItem123465789"></output>
+            </section>
           </section>
-          <section>
-            <h3>Quantité</h3>
-            <input type="number" id="quantityItem123465789" value="6" />
-            <button>Supprimer</button>
-          </section>
-          <section>
-            <h3>Total</h3>
-            <output for="quantityItem123465789 priceItem123465789"></output>
+          <section class="cart__item">
+            <section>
+              <img
+                src="./assets/images/mug-test.png"
+                alt="image du produit"
+                class="cart__img"
+              />
+              <h3>Blue Dragoon</h3>
+              <p>Référence produit : 123465789</p>
+            </section>
+            <section>
+              <h3>Disponibilité</h3>
+              <p>En stock</p>
+              <p>Plus que X exemplaire</p>
+            </section>
+            <section>
+              <h3>Prix unitaire</h3>
+              <p>14.99 €</p>
+              <input
+                type="hidden"
+                name="priceItem123465789"
+                id="priceItem123465789"
+                value="14.99"
+              />
+            </section>
+            <section>
+              <h3>Quantité</h3>
+              <input type="number" id="quantityItem123465789" value="2" />
+              <button>Supprimer</button>
+            </section>
+            <section>
+              <h3>Total</h3>
+              <output for="quantityItem123465789 priceItem123465789"></output>
+            </section>
           </section>
           <a href="#">Supprimer tous les articles</a>
-        </div>
+        </article>
         <section>
           <label for="codePromo">Entrer mon code promo</label>
           <input type="text" name="codePromo" />
@@ -96,37 +209,42 @@
         </section>
         <section class="reassurance">
           <figure class="reassurance__item">
-            <img
-              src="./assets/images/004-padlock.png"
-              alt="Paiement Securisé"
-              class="reassurance__img"
-            />
-            <figcaption class="reassurance__text">Paiement Securisé</figcaption>
+            <div class="reassurance__img">
+              <img
+                src="./assets/images/004-padlock.png"
+                alt="Paiement Securisé"
+              />
+            </div>
+
+            <figcaption class="reassurance__text">Paiement Sécurisé</figcaption>
           </figure>
           <figure class="reassurance__item">
-            <img
-              src="./assets/images/001-parcel.png"
-              alt="Livraison offerte à partir de 75€"
-              class="reassurance__img"
-            />
+            <div class="reassurance__img">
+              <img
+                src="./assets/images/001-parcel.png"
+                alt="Livraison offerte à partir de 75€"
+              />
+            </div>
+
             <figcaption class="reassurance__text">
               Livraison offerte à partir de 75€
             </figcaption>
           </figure>
           <figure class="reassurance__item">
-            <img
-              src="./assets/images/002-badge.png"
-              alt="Qualité Garantie"
-              class="reassurance__img"
-            />
+            <div class="reassurance__img">
+              <img src="./assets/images/002-badge.png" alt="Qualité Garantie" />
+            </div>
+
             <figcaption class="reassurance__text">Qualité Garantie</figcaption>
           </figure>
           <figure class="reassurance__item">
-            <img
-              src="./assets/images/003-support.png"
-              alt="Notre équipe à votre écoute"
-              class="reassurance__img"
-            />
+            <div class="reassurance__img">
+              <img
+                src="./assets/images/003-support.png"
+                alt="Notre équipe à votre écoute"
+              />
+            </div>
+
             <figcaption class="reassurance__text">
               Notre équipe à votre écoute
             </figcaption>
@@ -137,7 +255,7 @@
     <footer>
       <div class="footer_info">
         <div>
-          <h3>A propos</h3>
+          <h3 class="footer_info_title">A propos</h3>
           <ul>
             <li>Fonctionnement du site</li>
             <li>Conditions générales de vente</li>
@@ -145,14 +263,14 @@
           </ul>
         </div>
         <div>
-          <h3>Nos Produit</h3>
+          <h3 class="footer_info_title">Nos Produit</h3>
           <ul>
             <li>Charte qualité</li>
             <li>Soumettre vos designs</li>
           </ul>
         </div>
         <div>
-          <h3>Assistance</h3>
+          <h3 class="footer_info_title">Assistance</h3>
           <ul>
             <li>Centre D'aide</li>
             <li>Nous Contacter</li>
