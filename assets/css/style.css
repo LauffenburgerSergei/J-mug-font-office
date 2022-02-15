@@ -4,6 +4,12 @@ body {
 
 h1,
 h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Rowdies;
+}
 h3 {
   font-family: "Rowdies", sans-serif;
 }
@@ -52,13 +58,13 @@ main {
   margin-bottom: 40px;
 }
 
-section > p {
+/* section > p {
   text-align: center;
-}
+} */
 
-p {
+/* p {
   padding: 10px 30px 10px 30px;
-}
+} */
 
 .Contactez-nous {
   width: 700px;
