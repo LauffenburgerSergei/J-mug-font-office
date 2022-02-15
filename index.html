@@ -1,1 +1,241 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>J MUG</title>
+  </head>
+  <body>
+    <!--<header>
+         <div class="logo">
+          <img src="./assets/images/j-mug.webp"/>
+          <h1 class="titre">J Mug</h1>
+        </div>
+        <form class="header__form" action="search.php">
+          <input
+            class="recherche"
+            type="text"
+            name="search"
+            id="input__search"
+          />
+          <input class="search" type="submit" value="Rechercher" />
+        </form>
+        <a class="monpanier" href="panier.html" class="panier">
+          <i class="fas fa-cart-plus"></i>
+          Mon panier
+        </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Accueil</a>
+        <a href="categories.html" class="nav__link">Catégorie</a>
+        <a href="about.html" class="nav__link">A propos</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+    </header>-->
+        <header>
+      <img src="./assets/images/j-mug.webP" alt="J-Mug" class="header__img" />
+      <form action="search.php" class="search">
+        <input type="text" name="search" class="search__input" />
+        <input type="submit" value="Rechercher" class="search__btn" />
+      </form>
+      <a href="cart.html">
+        <figure class="">
+          <img
+            src="./assets/images/chariot-de-chariot.png"
+            alt="Aller voir mon panier"/>
+          <figcaption>Mon panier</figcaption>
+        </figure>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Accueil</a>
+        <a href="categories.html" class="nav__link">Catégorie</a>
+        <a href="about.html" class="nav__link">A propos</a>
+        <a href="about.html#contact" class="nav__link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="diapo">
+        <h1>Nos mugs du moment</h1>
+        <div id="diaporama">
+          <div class="images">
+            <img src="./assets/images/images.jpeg" alt="#" />
+            <img src="./assets/images/1300511_w472h265c1cx714cy420.webp#" alt="" />
+            <img src="./assets/images/DIY-saint-valentin-mug-love.jpeg" alt="#" />
+          </div>
+        </div>
+      </section>
+      <section class="title">
+        <h2>Exemple de nos produits</h2>
+      </section>
+      <section class="produit__un">
+        <figure class="produit__un__figure">
+          <a href=""
+            ><img
+              class="produit"
+              src="https://m.media-amazon.com/images/I/513hyWziZ9S._AC_UL320_.jpg"
+              alt=""
+              height="200px"
+              width="200px"
+            />
+            <figcaption>Lorem, ipsum.</figcaption>
+          </a>
+        </figure>
+        <figure class="figure">
+          <a href="#"
+            ><img
+              class="produit"
+              src="./assets/images/1300511_w472h265c1cx714cy420.webp"
+              alt=""
+              height="200px"
+              width="200px"
+            />
+            <figcaption>Lorem, ipsum.</figcaption>
+          </a>
+        </figure>
+      </section>
+      <section class="produit__deux">
+        <figure class="figure">
+          <a href=""
+            ><img
+              class="produit"
+              src="./assets/images/DIY-saint-valentin-mug-love.jpeg"
+              alt=""
+              height="200px"
+              width="200px"
+            />
+            <figcaption>Lorem, ipsum.</figcaption>
+          </a>
+        </figure>
+        <figure class="figure">
+          <a href=""
+            ><img
+              class="produit"
+              src="./assets/images/images.jpeg"
+              alt=""
+              height="200px"
+              width="200px"
+            />
+            <figcaption>Lorem, ipsum.</figcaption>
+          </a>
+        </figure>
+      </section>
+
+      <section class="news">
+        <h2>Nouveautés</h2>
+        <div id="news__new">
+          <div class="new__image">
+            <img src="./assets/images/1300511_w472h265c1cx714cy420.webp" alt="#" />
+            <img src="./assets/images/DIY-saint-valentin-mug-love.jpeg" alt="#" />
+            <img src="./assets/images/images.jpeg" alt="#" />
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <h3 class="newsletter__title">Inscrivez-vous à la newsletter !</h3>
+        <p class="newsletter__p">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente qui
+          magni eius veniam commodi accusamus in! Neque quae corporis laudantium
+          reiciendis recusandae? Distinctio tempora est necessitatibus minus
+          fugit error aut!
+        </p>
+
+        <input type="email" name="email" id="mail" />
+        <input class="newsletter__button" type="submit" value="Envoyez" />
+      </section>
+
+      <!--<section class="confiance">
+        <i class="fas fa-euro-sign"></i>
+        <i class="fab fa-paypal"></i>
+        <i class="fab fa-cc-visa"></i>
+        <i class="fas fa-truck"></i>
+      </section>-->
+             <section class="reassurance">
+          <figure class="reassurance__item">
+            <div class="reassurance__img">
+              <img
+                src="./assets/images/004-padlock.png"
+                alt="Paiement Securisé"
+              />
+            </div>
+
+            <figcaption class="reassurance__text">Paiement Sécurisé</figcaption>
+          </figure>
+          <figure class="reassurance__item">
+            <div class="reassurance__img">
+              <img
+                src="./assets/images/001-parcel.png"
+                alt="Livraison offerte à partir de 75€"
+              />
+            </div>
+
+            <figcaption class="reassurance__text">
+              Livraison offerte à partir de 75€
+            </figcaption>
+          </figure>
+          <figure class="reassurance__item">
+            <div class="reassurance__img">
+              <img src="./assets/images/002-badge.png" alt="Qualité Garantie" />
+            </div>
+
+            <figcaption class="reassurance__text">Qualité Garantie</figcaption>
+          </figure>
+          <figure class="reassurance__item">
+            <div class="reassurance__img">
+              <img
+                src="./assets/images/003-support.png"
+                alt="Notre équipe à votre écoute"
+              />
+            </div>
+
+            <figcaption class="reassurance__text">
+              Notre équipe à votre écoute
+            </figcaption>
+          </figure>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer_info">
+        <div>
+          <h3 class="footer_info_title">A propos</h3>
+          <ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et Confidentialité</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer_info_title">Nos Produit</h3>
+          <ul>
+            <li>Charte qualité</li>
+            <li>Soumettre vos designs</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer_info_title">Assistance</h3>
+          <ul>
+            <li>Centre D'aide</li>
+            <li>Nous Contacter</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
