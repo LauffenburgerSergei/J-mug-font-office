@@ -1,12 +1,11 @@
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #9ac8eb3f;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Rowdies', sans-serif;
+  font-family: "Rowdies", sans-serif;
 }
 
 h1 {
@@ -20,8 +19,10 @@ h2 {
 h3 {
   font-size: 1rem;
 }
-
-main {
+/* /##################################################/ */
+/* /###################     MAIN    ##################/ */
+/* /##################################################/ */
+.main_about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,13 +30,10 @@ main {
 
 .a_propos {
   display: flex;
-  flex-direction: column;
   align-items: center;
   align-content: center;
-  background-color: #9ac8eb;
   padding: 10px 10px 10px 10px;
-  border-radius: 10px;
-  width: 500px;
+  width: 800px;
 }
 
 .nos_produit {
@@ -66,20 +64,21 @@ section > p {
 }
 
 p {
-  padding: 10px 30px 10px 30px;
+  padding-top: 15px;
 }
 
-.Contactez-nous {
+.contactez-nous {
   width: 700px;
-  height: 850px;
+  height: 800px;
   border: none;
   border-radius: 8px;
-  padding: 0 50px 0 50px;
+  padding: 20px 50px 10px 50px;
   background: #9ac8eb;
+  margin-bottom: 30px;
 }
 
-.Contactez-nous > h1 {
-  padding-top: 20px;
+.contactez-nous > h1 {
+  padding-top: 30px;
 }
 
 form div {
@@ -172,6 +171,36 @@ form button {
   justify-content: center;
 }
 
+/* Element de confiance */
+.reassurance {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  align-items: flex-start;
+}
+.reassurance__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.reassurance__img {
+  border: black 2px solid;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.reassurance__text {
+  text-transform: uppercase;
+  text-align: center;
+  font: 0.5rem;
+}
+
+/* /##################################################/ */
+/* /###################    FOOTER    ##################/ */
+/* /##################################################/ */
+
 footer {
   padding: 20px 15px;
   background-color: #9ac8eb;
@@ -196,3 +225,16 @@ footer {
 footer li {
   padding: 10px 0;
 }
+
+.jmuglogo {
+  height: 80px;
+  margin-right: 80px;
+}
+.title_text {
+  padding: 30px 30px 30px 30px;
+  background-color: #9ac8eb;
+  border-radius: 15px;
+  border: none;
+}
+
+
