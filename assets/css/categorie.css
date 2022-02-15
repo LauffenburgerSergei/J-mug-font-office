@@ -71,59 +71,52 @@ form div > select option {
   color: #000000;
 }
 
-
-
 main {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-.checkbox{
-    border: 2px solid;
-    margin-top: 30px;
+.checkbox {
+  border: 2px solid;
+  margin-top: 30px;
 }
 
 .ajoutez {
-    width: 150px;
-    max-width: 200px;
-    height: 30px;
-    font-weight: 700;
-    font-size: 15px;
-   text-align: center;
-    background: #5784ba;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-  }
+  width: 150px;
+  max-width: 200px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  background: #5784ba;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
 
-     .checkbox{
-       
-         text-align: left; 
-         padding-left: 20px ;
-     }
-     
-     form div:last-child {
-        align-items: inherit;
-        margin-top: 20px;
-    }
-    .photo{
+.checkbox {
+  text-align: left;
+  padding-left: 20px;
+}
 
-width: 300px;
-height: 250px;
+form div:last-child {
+  align-items: inherit;
+  margin-top: 20px;
+}
+.photo {
+  width: 300px;
+  height: 250px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-
-    }
-    main{
-        display: flex;
-        flex-wrap: wrap;
-    }
-   
-    form div >  {
-      opacity: 60%;
-      color: white;
-    }
-    form div > input,
-
+form div > {
+  opacity: 60%;
+  color: white;
+}
+form div > input,
 .form div > select {
   height: auto;
   padding-left: 10px;
@@ -139,32 +132,19 @@ form div > textarea {
   font-weight: 300;
 }
 form div > select option {
-    background: #ffffff;
-    color: #000000;
-  }
+  background: #ffffff;
+  color: #000000;
+}
 
-  .container{
-    font-size: large;
-     font-style:bold ;
-     text-align: center; 
-     padding: 50px;
-    display: flex;
-    flex-grow: 1;
-    gap: 10px 30px;
-     }
-     .container_1{
-      display: flex;
-      flex-wrap: wrap;
-      flex-basis: 30%;
-  }
-  .container_2{
-      display: flex;
-      flex-wrap: wrap;
-      flex-basis: 30%;}
-      .container {
-        font-size: large;
-        font-style: bold;
-        text-align: center;
-        padding: 50px;
-        justify-content: space-around;
-      }
+.container {
+  font-size: large;
+  font-style: bold;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-grow: 1;
+  gap: 10px 30px;
+}
+.product__card {
+  width: 30%;
+}
