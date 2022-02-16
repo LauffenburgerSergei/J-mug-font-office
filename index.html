@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -21,42 +15,17 @@
     <title>J MUG</title>
   </head>
   <body>
-    <!--<header>
-         <div class="logo">
-          <img src="./assets/images/j-mug.webp"/>
-          <h1 class="titre">J Mug</h1>
-        </div>
-        <form class="header__form" action="search.php">
-          <input
-            class="recherche"
-            type="text"
-            name="search"
-            id="input__search"
-          />
-          <input class="search" type="submit" value="Rechercher" />
-        </form>
-        <a class="monpanier" href="panier.html" class="panier">
-          <i class="fas fa-cart-plus"></i>
-          Mon panier
+    <header>
+      <a href="index.html" class="header__img">
+        <img src="./assets/images/j-mug.webP" alt="J-Mug"/>
         </a>
-      <nav class="nav">
-        <a href="index.html" class="nav__link">Accueil</a>
-        <a href="categories.html" class="nav__link">Catégorie</a>
-        <a href="about.html" class="nav__link">A propos</a>
-        <a href="contact.html" class="nav__link">Contact</a>
-      </nav>
-    </header>-->
-        <header>
-      <img src="./assets/images/j-mug.webP" alt="J-Mug" class="header__img" />
       <form action="search.php" class="search">
         <input type="text" name="search" class="search__input" />
         <input type="submit" value="Rechercher" class="search__btn" />
       </form>
       <a href="cart.html">
-        <figure class="">
-          <img
-            src="./assets/images/chariot-de-chariot.png"
-            alt="Aller voir mon panier"/>
+        <figure class="panier__button">
+          <i class="fa-solid fa-basket-shopping fa-2xl"></i>
           <figcaption>Mon panier</figcaption>
         </figure>
       </a>
@@ -73,74 +42,171 @@
         <h1>Nos mugs du moment</h1>
         <div id="diaporama">
           <div class="images">
-            <img src="./assets/images/images.jpeg" alt="#" />
-            <img src="./assets/images/1300511_w472h265c1cx714cy420.webp#" alt="" />
-            <img src="./assets/images/DIY-saint-valentin-mug-love.jpeg" alt="#" />
+            <img class="diapo__img" src="./assets/images/mokcupone (1).png" alt="#" />
+
+            <img class="diapo__img"
+              src="./assets/images/mokcupone (1).png"
+              alt=""
+            />
+            <img class="diapo__img"
+              src="./assets/images/mokcupone (1).png"
+              alt="#"
+            />
           </div>
         </div>
+      </section>
+      <section>
+        <p class="paragraphe__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, voluptatum deserunt? Laborum laboriosam ab inventore dicta, obcaecati est reprehenderit voluptatem itaque quo, expedita sapiente enim cumque! Accusamus deleniti non sunt.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, autem! Eos molestias dolorem esse ex delectus nulla deserunt velit, perferendis placeat illo fugit eaque sed recusandae voluptate at atque optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos saepe corporis rerum voluptatem consectetur. Et, possimus voluptatem hic vel debitis a nihil laborum dolore quasi unde itaque. Fugiat, fugit ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. A, iusto numquam. Corrupti nobis laboriosam odit, blanditiis placeat hic odio quam minima, error perferendis assumenda architecto optio dolorum veniam? Nesciunt, ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla labore aut fugit saepe dolore explicabo nam necessitatibus est laboriosam, vero nesciunt quam, ea praesentium, distinctio atque iusto in ratione esse?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio ipsam voluptate incidunt, aliquid error repellat a veritatis impedit sequi. Magni voluptate corrupti repellat, totam illum beatae deserunt sint similique?
+        </p>
       </section>
       <section class="title">
         <h2>Exemple de nos produits</h2>
       </section>
-      <section class="product_card">
-        <figure class="figure">
-          <a href=""
-            ><img
-              class="produit"
+
+      <section class="product">
+        <a href="#" class="product__card">
+        <figure>
+          <img
+              class="product_card__img"
+
               src="https://m.media-amazon.com/images/I/513hyWziZ9S._AC_UL320_.jpg"
-              alt=""
-              height="200px"
-              width="200px"
+              alt="Tasse une"
+              height="200"
+              width="200"
             />
-            <figcaption>Lorem, ipsum.</figcaption>
-          </a>
+            <figcaption>
+              <h5 class="product_card__title">Lorem, ipsum.</h5>
+            </figcaption>
+          
         </figure>
-        <figure class="figure">
-          <a href="#"
-            ><img
-              class="produit"
+        </a>
+        <a href="#"  class="product__card">
+        <figure> 
+          <img
+              class="product_card__img"
               src="./assets/images/1300511_w472h265c1cx714cy420.webp"
-              alt=""
-              height="200px"
-              width="200px"
+              alt="Tasse deux"
+
+              height="200"
+              width="200"
             />
-            <figcaption>Lorem, ipsum.</figcaption>
-          </a>
+            <figcaption>
+              <h5 class="product_card__title">Lorem, ipsum.</h5>
+            </figcaption>
         </figure>
-      </section>
-      <section class="product_card">
-        <figure class="figure">
-          <a href=""
-            ><img
-              class="produit"
+
+        </a> 
+        <a href="#" class="product__card">
+        <figure >
+          <img
+              class="product_card__img"
+
               src="./assets/images/DIY-saint-valentin-mug-love.jpeg"
-              alt=""
-              height="200px"
-              width="200px"
+              alt="Tasse trois"
+
+              height="200"
+              width="200"
             />
-            <figcaption>Lorem, ipsum.</figcaption>
-          </a>
+            <figcaption>
+              <h5 class="product_card__title">Lorem, ipsum.</h5>
+            </figcaption>
+          
         </figure>
-        <figure class="figure">
-          <a href=""
-            ><img
-              class="produit"
+        </a>
+         <a href="#" class="product__card">
+        <figure >
+            <img
+              class="product_card__img"
               src="./assets/images/images.jpeg"
-              alt=""
-              height="200px"
-              width="200px"
+              alt="Tasse quatre"
+              height="200"
+              width="200"
             />
-            <figcaption>Lorem, ipsum.</figcaption>
-          </a>
+            <figcaption>
+              <h5 class="product_card__title">Lorem, ipsum.</h5>
+            </figcaption>
         </figure>
+        </a>
+        <a href="#" class="product__card">
+        <figure >
+            <img
+              class="product_card__img"
+              src="./assets/images/images.jpeg"
+              alt="Tasse cinq"
+
+              height="200"
+              width="200"
+            />
+            <figcaption>
+              <h5 class="product_card__title">Lorem, ipsum.</h5>
+            </figcaption>
+        </figure>
+        </a>
+        <a href="#" class="product__card">
+        <figure>
+          <img
+              class="product_card__img"
+              src="https://m.media-amazon.com/images/I/513hyWziZ9S._AC_UL320_.jpg"
+
+              alt="Tasse six"
+
+              height="200"
+              width="200"
+            />
+            <figcaption>
+              <h5 class="product_card__title">Lorem, ipsum.</h5>
+            </figcaption>
+          
+        </figure>
+        </a>
+        <a href="#"  class="product__card">
+        <figure> 
+          <img
+              class="product_card__img"
+              src="./assets/images/1300511_w472h265c1cx714cy420.webp"
+
+              alt="Tasse sept"
+
+              height="200"
+              width="200"
+            />
+            <figcaption>
+              <h5 class="product_card__title">Lorem, ipsum.</h5>
+            </figcaption>
+        </figure>
+        </a> 
+        <a href="#" class="product__card">
+        <figure >
+          <img
+              class="product_card__img"
+              src="./assets/images/DIY-saint-valentin-mug-love.jpeg"
+
+              alt="Tasse huit"
+
+              height="200"
+              width="200"
+            />
+            <figcaption>
+              <h5 class="product_card__title">Lorem, ipsum.</h5>
+            </figcaption>
+          
+        </figure>
+        </a>
       </section>
 
       <section class="news">
         <h2>Nouveautés</h2>
         <div id="news__new">
           <div class="new__image">
-            <img src="./assets/images/1300511_w472h265c1cx714cy420.webp" alt="#" />
-            <img src="./assets/images/DIY-saint-valentin-mug-love.jpeg" alt="#" />
+            <img
+              src="./assets/images/1300511_w472h265c1cx714cy420.webp"
+              alt="#"
+            />
+            <img
+              src="./assets/images/DIY-saint-valentin-mug-love.jpeg"
+              alt="#"
+            />
             <img src="./assets/images/images.jpeg" alt="#" />
           </div>
         </div>
@@ -155,7 +221,7 @@
           fugit error aut!
         </p>
 
-        <input type="email" name="email" id="mail" />
+        <input class="newsletter__search" type="email" name="email" id="mail" />
         <input class="newsletter__button" type="submit" value="Envoyez" />
       </section>
 
@@ -165,49 +231,49 @@
         <i class="fab fa-cc-visa"></i>
         <i class="fas fa-truck"></i>
       </section>-->
-             <section class="reassurance">
-          <figure class="reassurance__item">
-            <div class="reassurance__img">
-              <img
-                src="./assets/images/004-padlock.png"
-                alt="Paiement Securisé"
-              />
-            </div>
+      <section class="reassurance">
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img
+              src="./assets/images/004-padlock.png"
+              alt="Paiement Securisé"
+            />
+          </div>
 
-            <figcaption class="reassurance__text">Paiement Sécurisé</figcaption>
-          </figure>
-          <figure class="reassurance__item">
-            <div class="reassurance__img">
-              <img
-                src="./assets/images/001-parcel.png"
-                alt="Livraison offerte à partir de 75€"
-              />
-            </div>
+          <figcaption class="reassurance__text">Paiement Sécurisé</figcaption>
+        </figure>
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img
+              src="./assets/images/001-parcel.png"
+              alt="Livraison offerte à partir de 75€"
+            />
+          </div>
 
-            <figcaption class="reassurance__text">
-              Livraison offerte à partir de 75€
-            </figcaption>
-          </figure>
-          <figure class="reassurance__item">
-            <div class="reassurance__img">
-              <img src="./assets/images/002-badge.png" alt="Qualité Garantie" />
-            </div>
+          <figcaption class="reassurance__text">
+            Livraison offerte à partir de 75€
+          </figcaption>
+        </figure>
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img src="./assets/images/002-badge.png" alt="Qualité Garantie" />
+          </div>
 
-            <figcaption class="reassurance__text">Qualité Garantie</figcaption>
-          </figure>
-          <figure class="reassurance__item">
-            <div class="reassurance__img">
-              <img
-                src="./assets/images/003-support.png"
-                alt="Notre équipe à votre écoute"
-              />
-            </div>
+          <figcaption class="reassurance__text">Qualité Garantie</figcaption>
+        </figure>
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img
+              src="./assets/images/003-support.png"
+              alt="Notre équipe à votre écoute"
+            />
+          </div>
 
-            <figcaption class="reassurance__text">
-              Notre équipe à votre écoute
-            </figcaption>
-          </figure>
-        </section>
+          <figcaption class="reassurance__text">
+            Notre équipe à votre écoute
+          </figcaption>
+        </figure>
+      </section>
     </main>
 
     <footer>
