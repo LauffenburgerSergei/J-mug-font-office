@@ -13,26 +13,31 @@
 </head>
 
 <body>
-    <header>
-        <img src="./assets/images/j-mug.webP" alt="" />
-        <form action="search.php">
-          <input type="text" name="search" id="input__search" />
-          <input type="submit" value="Rechercher" />
-        </form>
-        <a href="cart.html">
-          <img
-            src="./assets/images/chariot-de-chariot.png"
-            alt="aller voir mon panier"
-          />
-          Panier
-        </a>
-        <nav class="nav">
-          <a href="index.html" class="nav__link">Accueil</a>
-          <a href="categories.html" class="nav__link">Catégorie</a>
-          <a href="about.html" class="nav__link">A propos</a>
-          <a href="about.html#contact" class="nav__link">Contact</a>
-        </nav>
-      </header>
+  <header>
+    <div class="logo">
+     <img src="Capture d’écran 2022-02-13 à 11.42.19.png" />
+     <h1 class="titre">J Mug</h1>
+   </div>
+   <form class="header__form" action="search.php">
+     <input
+       class="recherche"
+       type="text"
+       name="search"
+       id="input__search"
+     />
+     <input class="search" type="submit" value="Rechercher" />
+   </form>
+   <a class="monpanier" href="panier.html" class="panier">
+     <i class="fas fa-cart-plus"></i>
+     Mon panier
+   </a>
+ <nav class="nav">
+   <a href="index.html" class="nav__link">Accueil</a>
+   <a href="categories.html" class="nav__link">Catégorie</a>
+   <a href="about.html" class="nav__link">A propos</a>
+   <a href="contact.html" class="nav__link">Contact</a>
+ </nav>
+</header>
     <main>
         
         
@@ -49,27 +54,27 @@
                 </select>
               </div>
                 <div class="my_form">
-                    <label for="contenance">Contenance</label>
+                    <label class="my_form" for="contenance">Contenance</label>
                     <input type="radio" id="contenance" >
         </div>
-        <div>
-                    <label for="st_valentin">St valentin</label>
+        <div class="my_form">
+                    <label class="my_form" for="st_valentin">St valentin</label>
                     <input type="radio" id="st_valentin" >
                 </div>
-                <div>
-                    <label for="couple">Couple</label>
+                <div class="my_form">
+                    <label class="my_form" for="couple">Couple</label>
                     <input type="radio" id="couple" >
                 </div>
-                <div>
-                    <label for="coffret">Coffret</label>
+                <div class="my_form">
+                    <label class="my_form" for="coffret">Coffret</label>
                     <input type="radio" id="coffret" >
                 </div>
-                <div> 
-                    <label for="promo">Promo</label>
+                <div class="my_form"> 
+                    <label class="my_form" for="promo">Promo</label>
                     <input type="radio" id="promo" >
                 </div>
-                <div> 
-                    <label for="new">Nouveauté</label>
+                <div class="my_form"> 
+                    <label class="my_form" for="new">Nouveauté</label>
                     <input type="radio" id="new" >
                 </div>
             </form>
