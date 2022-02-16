@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #f4cfdf20;
 }
 
 h1,
@@ -31,12 +32,14 @@ input[type="submit"] {
 }
 
 .header__img {
-  width: 20%;
+  height: 50px;
+  width: 11%;
+  /*width: 20%;*/
 }
 .search {
   text-align: center;
   margin-top: 10px;
-  width: 50%;
+  width: 60%;
 }
 
 .search__input,
@@ -72,13 +75,28 @@ input[type="submit"].search__btn:hover {
 header figure {
   margin-right: 2rem;
 }
+
+.panier_commande {
+  height: 50px;
+  color: #5784ba;
+}
+
+.panier__button {
+  text-align: center;
+  color: #5784ba;
+}
+
+.fa-basket-shopping {
+  padding: 20px;
+}
+
 nav {
   text-align: center;
   display: flex;
   justify-content: space-around;
   overflow: hidden;
   width: 100%;
-  margin-top: 5%;
+  margin-top: 2rem;
 }
 
 a {
@@ -94,13 +112,14 @@ a {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 1rem;
   width: 25%;
 }
 
 .nav a:hover {
   background-color: #f4cfdf;
-  color: #5784ba;
+  color: black;
+  border-radius: 10px;
 }
 /*###################################################*/
 /*####################   MAIN  ######################*/
@@ -165,10 +184,9 @@ h2 {
   display: flex;
   margin-bottom: 30px;
 }
-.product{
-  display:flex;
+.product {
+  display: flex;
   flex-wrap: wrap-reverse;
-  
 }
 
 .figure {
@@ -177,7 +195,7 @@ h2 {
   margin: auto;
   padding: 5px;
   text-align: center;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px 15px;
 }
 
 .produit {
