@@ -237,12 +237,15 @@ form div > select option {
   min-height: 50px;
   margin-top: 15px;
   margin-top: 25px;
-  padding: bottom 1;;
+ 
 }
-.p{
- align-items: center ;
-}
+
 .my_h1 {
   font-size: 30px;
   text-align: center ;
-}
+  margin-bottom: 30px;}
+  
+  body p
+  {
+    font-size:20px;
+  }
