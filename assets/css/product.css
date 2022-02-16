@@ -116,10 +116,22 @@
 /*##################### carte #####################*/
 /*#################################################*/
 
-.Product {
+.product {
   display: flex;
   justify-content: space-around;
   margin: 50px;
+}
+
+.lien_product {
+  color: black;
+  
+}
+
+.figure {
+  border: 3px solid #f4cfdf;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+  border-radius: 15px;
+  background-color: #f4cfdf;
 }
 
 .figcaption_card {
@@ -127,15 +139,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.figure {
-  border: 3px solid #f4cfdf;
-  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+.product_card {
+  margin-bottom: 20px;
 }
 
+.lien_product :hover {
+  background-color: #f4cfdf5e;
+  border-radius: 11px;
+}
 .produit {
-  border: 3px solid #f4cfdf;
+  /*border: 3px solid #f4cfdf;*/
+  border-radius: 15px 15px 0 0;
+  margin: 5px;
 }
 
 .figcaption_card-h3 {
@@ -143,7 +161,8 @@
 }
 
 .figcaption_card-p {
-  padding: 5px;
+  padding-top: 5px 0 10px 0;
+
 }
 
 /*#################################################*/
