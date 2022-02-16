@@ -91,7 +91,6 @@ header figure {
   padding: 20px;
 }
 
-
 nav {
   text-align: center;
   display: flex;
@@ -116,7 +115,6 @@ a {
   justify-content: space-around;
   padding: 1rem;
   width: 25%;
-
 }
 
 .nav a:hover {
@@ -187,40 +185,14 @@ h2 {
   text-align: center;
 }
 
-.product {
-  margin-top: 30px;
+.index_card {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
-
-}
-.product {
-  display: flex;
-  flex-wrap: wrap-reverse;
-
+  justify-content: space-around;
+  margin: 0px 450px 0px 450px;
 }
 
-.product__card {
-  background-color: #f4cfdf67;
-  flex-direction: column;
-  margin: 2rem 0;
-  padding: 5px;
-  text-align: center;
-
-  border-radius: 15px 15px;
-
-}
-
-.product_card__img {
-  border-radius: 15px 15px 0 0;
-}
-
-
-/*.product:hover {
-  background-color: #f4cfdf5e;
-}*/
-
-.paragraphe__description { 
+.paragraphe__description {
   margin: 30px;
 }
 
@@ -285,7 +257,6 @@ h2 {
   font-size: 1.5rem;
   margin: 0;
 }
-
 
 /* Element de confiance */
 .reassurance {
