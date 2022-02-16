@@ -7,42 +7,41 @@
     
     <title>Catégorie</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css">  -->
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/categorie.css">
 </head>
 
 <body>
   <header>
-    <div class="logo">
-     <img src="Capture d’écran 2022-02-13 à 11.42.19.png" />
-     <h1 class="titre">J Mug</h1>
-   </div>
-   <form class="header__form" action="search.php">
-     <input
-       class="recherche"
-       type="text"
-       name="search"
-       id="input__search"
-     />
-     <input class="search" type="submit" value="Rechercher" />
-   </form>
-   <a class="monpanier" href="panier.html" class="panier">
-     <i class="fas fa-cart-plus"></i>
-     Mon panier
-   </a>
- <nav class="nav">
-   <a href="index.html" class="nav__link">Accueil</a>
-   <a href="categories.html" class="nav__link">Catégorie</a>
-   <a href="about.html" class="nav__link">A propos</a>
-   <a href="contact.html" class="nav__link">Contact</a>
- </nav>
-</header>
+    <img src="./assets/images/j-mug.webP" alt="J-Mug" class="header__img" />
+    <form action="search.php" class="search">
+      <input type="text" name="search" class="search__input" />
+      <input type="submit" value="Rechercher" class="search__btn" />
+    </form>
+    <a href="cart.html">
+      <figure class="">
+        <img
+          src="./assets/images/chariot-de-chariot.png"
+          alt="Aller voir mon panier"/>
+        <figcaption>Mon panier</figcaption>
+      </figure>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Accueil</a>
+      <a href="categories.html" class="nav__link">Catégorie</a>
+      <a href="about.html" class="nav__link">A propos</a>
+      <a href="about.html#contact" class="nav__link">Contact</a>
+    </nav>
+  </header>
+  <h1 class="my_h1">Bienvenue dans notre boutique</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi deleniti fugit nostrum, illo quae voluptates iste eveniet quidem distinctio voluptatem mollitia. Consectetur odio totam rem aliquid dicta recusandae quia architecto.</p> 
     <main>
+      
         
         
             <div class="checkbox">
-            <h1 class="my_h1">Catégorie</h1> 
+            <h2 class="my_h2">Catégorie</h2> 
             <form action="">
               <div class="barre_trier">
                 <span class="barre_trier ">Trier par&nbsp;</span>
@@ -84,7 +83,7 @@
           <a href="#" class="product__card">
     <figure class="range1">
         <img class="photo" src="./assets/images/mug-test.png" alt="Mug logo" >
-        <figcaption>Mug logo</figcaption>
+        <figcaption class="fig">Mug logo</figcaption>
         <button type="submit" name="ajoutez" class="ajoutez">Ajoutez au panier</button>
     </figure>  
 </a>
