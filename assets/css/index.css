@@ -192,7 +192,12 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
-  justify-content: space-around;
+
+}
+.product {
+  display: flex;
+  flex-wrap: wrap-reverse;
+
 }
 
 .product__card {
@@ -201,8 +206,9 @@ h2 {
   margin: 2rem 0;
   padding: 5px;
   text-align: center;
-  border-radius: 15px 15px 0 0;
-  width: 20%;
+
+  border-radius: 15px 15px;
+
 }
 
 .product_card__img {

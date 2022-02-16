@@ -1,0 +1,210 @@
+/*###################################################*/
+/*##################### Produit #####################*/
+/*###################################################*/
+
+.container_produit {
+  display: flex;
+  margin: 20px 250px 100px 250px;
+  height: auto;
+}
+
+/*##################### image #####################*/
+
+.container_product-img {
+  border: 3px solid #f4cfdf;
+  border-radius: 15px;
+  margin-right: 50px;
+  height: 500px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.product_img {
+  border-radius: 15px;
+}
+
+.container-product-info {
+  height: auto;
+}
+
+/*################# product_title #################*/
+
+.product_title {
+  font-weight: 600;
+  font-size: 45px;
+  color: black;
+  text-decoration: none;
+  margin: 0px 0 50px 0;
+  display: flex;
+}
+
+.product_detail {
+  text-align: justify;
+}
+
+/*################# product_price ##################*/
+
+.product_price {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.product_price-detail {
+  display: flex;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.ttc {
+  display: flex;
+}
+
+/*################## disponibility ##################*/
+
+.disponibility {
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+
+.disponibility_star {
+  display: flex;
+  align-items: center;
+  margin-right: 150px;
+}
+
+.disponibility_star-title {
+  margin-right: 20px;
+}
+
+.fa-check {
+  color: forestgreen;
+  font-size: 30px;
+}
+
+/*#################################################*/
+/*################## Description ##################*/
+/*#################################################*/
+
+.product_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 250px 100px 250px;
+}
+
+.product_description-h3 {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.product_description-p {
+  margin: 0 250px;
+  text-align: justify;
+  padding: 20px;
+  background-color: #f6f7cf3f;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+  border-radius: 15px;
+  text-indent: 5%;
+}
+
+/*#################################################*/
+/*##################### carte #####################*/
+/*#################################################*/
+
+.Product {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.figcaption_card {
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.figure {
+  border: 3px solid #f4cfdf;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.produit {
+  border: 3px solid #f4cfdf;
+}
+
+.figcaption_card-h3 {
+  padding: 7px;
+}
+
+.figcaption_card-p {
+  padding: 5px;
+}
+
+/*#################################################*/
+/*###################### avis #####################*/
+/*#################################################*/
+
+.avis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 250px 100px 250px;
+}
+
+.avis_h3 {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.avis_box {
+  text-align: justify;
+  padding: 20px;
+  border: 3px solid #f4cfdf;
+  border-radius: 15px;
+  text-indent: 5%;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+/*##################### star #####################*/
+
+.fa-star {
+  color: darkgray;
+}
+* .active {
+  color: rgb(252, 193, 32);
+}
+
+/*##################### avis-text #####################*/
+
+.avis-box_star {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f6f7cf3f;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.avis-box_star:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+
+.avis-star {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.avis-box_p {
+  width: 70%;
+  text-align: justify;
+  text-align: start;
+  text-indent: 0%;
+}
