@@ -124,6 +124,9 @@ a {
   color: black;
   border-radius: 10px;
 }
+
+
+
 /*###################################################*/
 /*####################   MAIN  ######################*/
 /*###################################################*/
@@ -151,8 +154,9 @@ h2 {
   width: 1000px;
   height: 400px;
   overflow: hidden;
-  border: 2px solid #f4cfdf;
+  border: 2px solid rgb(185, 182, 182);
   border-radius: 5px;
+  box-shadow: rgba(131, 131, 131, 0.904) 0px 2px 4px 0px, rgba(204, 206, 207, 0.568) 0px 2px 16px 0px;
 }
 
 .images {
@@ -196,7 +200,7 @@ h2 {
 }
 
 .product__card {
-  background-color: #f4cfdf67;
+  background-color: #f4cfdf;
   flex-direction: column;
   margin: 2rem 0;
   padding: 5px;
@@ -210,12 +214,15 @@ h2 {
 }
 
 
-/*.product:hover {
+.product__card:hover {
   background-color: #f4cfdf5e;
-}*/
+}
 
 .paragraphe__description { 
   margin: 30px;
+  padding: 30px;
+  background-color: #f6f7cf;
+  border-radius: 10px;
 }
 
 .news {
@@ -231,8 +238,9 @@ h2 {
   width: 1000px;
   height: 400px;
   overflow: hidden;
-  border: 2px solid #f4cfdf;
+  border: 2px solid rgb(185, 182, 182);
   border-radius: 5px;
+  box-shadow: rgba(131, 131, 131, 0.904) 0px 2px 4px 0px, rgba(204, 206, 207, 0.568) 0px 2px 16px 0px;
 }
 
 .new__image {
