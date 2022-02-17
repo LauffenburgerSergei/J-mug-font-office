@@ -228,9 +228,8 @@ form div > select option {
   flex-grow: 1;
   gap: 10px 30px;
 }
-.product__card {
-  width: 30%;
-
+.lien_product {
+  
 }
 .my_form {
   width: 100%;
