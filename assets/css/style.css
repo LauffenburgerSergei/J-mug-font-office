@@ -1,5 +1,124 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #f4cfdf20;
+}
+
+
+/* /##################################################/ */
+/* /##################    HEADER    ##################/ */
+/* /##################################################/ */
+
+
+header {
+  margin: 0;
+  height: auto;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid #5784ba;
+  background-color: #5784ba;
+  color: white;
+  padding: 10px;
+}
+
+.header__img {
+  height: 50px;
+  width: 11%;
+  /*width: 20%;*/
+}
+.search {
+  text-align: center;
+  margin-top: 10px;
+  width: 60%;
+}
+
+.search__input,
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #5784ba;
+  border-radius: 10px 0 0 10px;
+  width: 40%;
+}
+
+.search__input:hover {
+  border: 1px solid #5784ba;
+  color: black;
+}
+
+input[type="submit"].search__btn,
+.newsletter__button {
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  text-transform: uppercase;
+}
+
+header > a {
+  color: black;
+}
+header > a:hover {
+  color: black;
+}
+input[type="submit"].search__btn:hover {
+  color: black;
+  border: 1px solid #5784ba;
+}
+header figure {
+  margin-right: 2rem;
+}
+
+.panier_commande {
+  height: 50px;
+  color: #5784ba;
+}
+
+.panier__button {
+  text-align: center;
+  color: #5784ba;
+}
+
+.fa-basket-shopping {
+  padding: 20px;
+}
+
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+a {
+  float: center;
+  text-decoration: none;
+}
+
+.nav a {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 25%;
+
+}
+
+.nav a:hover {
+  background-color: #f4cfdf;
+  color: black;
+  border-radius: 10px;
 }
 
 h1,
@@ -23,7 +142,7 @@ h3 {
 /* /###################     MAIN    ##################/ */
 /* /##################################################/ */
 
-.main_about {
+.section__about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,12 +154,14 @@ h3 {
   align-content: center;
   padding: 10px 10px 10px 10px;
   width: 800px;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
 }
 
 .jmug__logo {
   height: 80px;
   margin-right: 80px;
 }
+
 .title_text {
   padding: 30px 30px 30px 30px;
   background-color: #9ac8eb;
@@ -55,8 +176,9 @@ h3 {
   align-items: center;
   margin-top: 50px;
   background-color: #9ac8eb;
-  /* padding: 20px 10px 20px 10px; */
+  padding: 20px 10px 20px 10px;
   border-radius: 15px;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
 }
 
 figure {
@@ -65,28 +187,32 @@ figure {
 
 .section__img {
   display: flex;
-    width: 950px;
-    display: flex;
-    padding: 15px;
-    justify-content: space-evenly;
+  width: 950px;
+  display: flex;
+  padding: 15px;
+  justify-content: space-evenly;
 }
 
-
- .figure__img {
-   margin-left: 0%; 
+.figure__img {
+  margin-left: 0%;
   height: 250px;
   width: 250px;
 }
 
 .ou_sommes_nous {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 50px;
-  background-color: #9ac8eb;
+  align-content: center;
   padding: 10px 10px 10px 10px;
-  border-radius: 10px;
-  margin-bottom: 40px;
+  width: 800px;
+  margin-top: 50px;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+}
+
+.map {
+  margin-right: 80px;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.048));
 }
 
 section > p {
@@ -108,6 +234,8 @@ p {
   padding: 20px 50px 10px 50px;
   background: #9ac8eb;
   margin-bottom: 30px;
+  margin-top: 50px;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
 }
 
 .contact > h1 {
@@ -144,14 +272,25 @@ form div > textarea {
 form div > input,
 form div > select {
   height: 50px;
-  padding-left: 10px;
+  padding-left: 0.9em;
 }
 
 form div > select {
-  /* appearance: none; */
-  background-size: 15px;
-  background-position: right 10px top 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  padding: 0.5em 2em 0.5em 0.9em;
+  cursor: pointer;
+  color: rgb(70, 81, 88);
+  font-family: inherit;
+  font-size: 1em;
+  border: 1px solid rgb(207, 210, 219);
+  background-color: rgb(250, 250, 250);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHg9IjBweCIgeT0iMHB4Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTIgMThsLTExLjAxOS0xMWgyMi4wMzh6Ii8+PC9zdmc+);
+  background-size: 0.8em;
   background-repeat: no-repeat;
+  background-position: right 1.5rem center;
 }
 
 form div > textarea {
@@ -160,7 +299,7 @@ form div > textarea {
   padding: 15px 0px 0px 10px;
 }
 
-form div > input::placeholder,
+form div > .input::placeholder,
 form div > textarea::placeholder {
   opacity: 60%;
   color: rgb(0, 0, 0);
@@ -176,7 +315,7 @@ form div > select option {
   color: #ffffff;
 }
 
-form div:last-child {
+.about form div:last-child {
   align-items: center;
   margin-top: 20px;
 }

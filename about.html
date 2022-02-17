@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
@@ -15,19 +22,20 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body>
+  <body class="about">
     <header>
-      <img src="./assets/images/j-mug.webP" alt="" />
-      <form action="search.php">
-        <input type="text" name="search" id="input__search" />
-        <input type="submit" value="Rechercher" />
+      <a href="index.html" class="header__img">
+        <img src="./assets/images/j-mug.webP" alt="J-Mug" />
+      </a>
+      <form action="search.php" class="search">
+        <input type="text" name="search" class="search__input" />
+        <input type="submit" value="Rechercher" class="search__btn" />
       </form>
       <a href="cart.html">
-        <img
-          src="./assets/images/chariot-de-chariot.png"
-          alt="aller voir mon panier"
-        />
-        Panier
+        <figure class="panier__button">
+          <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+          <figcaption>Mon panier</figcaption>
+        </figure>
       </a>
       <nav class="nav">
         <a href="index.html" class="nav__link">Accueil</a>
@@ -36,125 +44,139 @@
         <a href="about.html#contact" class="nav__link">Contact</a>
       </nav>
     </header>
-    <main class="main_about">
-      <section class="a_propos">
-        <img class="jmug__logo" src="./assets/images/j-mug.webP" alt="ici" />
-        <div class="title_text">
-          <h1>À propos</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
-            delectus vitae unde nam veritatis dolorum, tempora earum corrupti.
-            Esse aut, sed officiis neque sunt quo eligendi veritatis dolores
-            pariatur optio cumque ducimus rem ad mollitia soluta nemo voluptas
-            assumenda id repellendus dolore molestias. Eum numquam quidem, ex
-            voluptas dicta alias!
-          </p>
-        </div>
-      </section>
-
-      <article class="nos_produit">
-        <h2>Nos produits</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-          corrupti unde, quos vero pariatur officiis dicta, dolorum doloribus
-          atque aspernatur ratione error. Quidem assumenda obcaecati, quod
-          eligendi tenetur sapiente dolor recusandae delectus ex totam maiores
-          adipisci facilis labore commodi quia fugit iusto voluptatum dolores
-          non suscipit eos et vitae porro.
-        </p>
-        <section class="section__img">
-          <figure>
-            <img
-              class="figure__img"
-              src="./assets/images/mug-test.png"
-              alt="mug1"
-            />
-          </figure>
-          <figure>
-            <img
-              class="figure__img"
-              src="./assets/images/mug-test.png"
-              alt="mug2"
-            />
-          </figure>
-          <figure>
-            <img
-              class="figure__img"
-              src="./assets/images/mug-test.png"
-              alt="mug3"
-            />
-          </figure>
+    <main>
+      <div class="section__about">
+        <section class="a_propos">
+          <img class="jmug__logo" src="./assets/images/j-mug.webP" alt="ici" />
+          <div class="title_text">
+            <h1>À propos</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Asperiores delectus vitae unde nam veritatis dolorum, tempora
+              earum corrupti. Esse aut, sed officiis neque sunt quo eligendi
+              veritatis dolores pariatur optio cumque ducimus rem ad mollitia
+              soluta nemo voluptas assumenda id repellendus dolore molestias.
+              Eum numquam quidem, ex voluptas dicta alias!
+            </p>
+          </div>
         </section>
-      </article>
 
-      <section class="ou_sommes_nous">
-        <div>
+        <article class="nos_produit">
+          <h2>Nos produits</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            corrupti unde, quos vero pariatur officiis dicta, dolorum doloribus
+            atque aspernatur ratione error. Quidem assumenda obcaecati, quod
+            eligendi tenetur sapiente dolor recusandae delectus ex totam maiores
+            adipisci facilis labore commodi quia fugit iusto voluptatum dolores
+            non suscipit eos et vitae porro.
+          </p>
+          <section class="section__img">
+            <figure>
+              <img
+                class="figure__img"
+                src="./assets/images/mug-test.png"
+                alt="mug1"
+              />
+            </figure>
+            <figure>
+              <img
+                class="figure__img"
+                src="./assets/images/mug-test.png"
+                alt="mug2"
+              />
+            </figure>
+            <figure>
+              <img
+                class="figure__img"
+                src="./assets/images/mug-test.png"
+                alt="mug3"
+              />
+            </figure>
+          </section>
+        </article>
+
+        <section class="ou_sommes_nous">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11146372.5532309!2d0.00891076872544069!3d44.85988718675148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e7466e7e579b815!2sLes%20Loups%20du%20G%C3%A9vaudan!5e0!3m2!1sfr!2sfr!4v1644842918883!5m2!1sfr!2sfr"
-            width="600"
-            height="450"
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5606727.729930153!2d1.480241393106114!3d46.67297291867589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae11de4b25c581%3A0x406f69c2f3bed20!2s81100%20Castres!5e0!3m2!1sfr!2sfr!4v1645003616415!5m2!1sfr!2sfr"
+            width="1500"
+            height="350"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
           ></iframe>
-        </div>
-        <h2>Ou somme-nous</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor
-          voluptatum aut ducimus nesciunt, odit dolores modi itaque blanditiis
-          vitae!
-        </p>
-      </section>
-      <section class="contact">
-        <h2>Nous contacter</h2>
-        <p>
-          Si vous avez une question à propos des produits ou d'un autre type
-          hésiter pas à prendre contact !
-        </p>
-        <form class="form" action="#" method="post">
-          <div>
-            <label for="nom">Votre prénom</label>
-            <input type="text" id="nom" name="nom" placeholder="Nom" required />
+          <div class="title_text">
+            <h2>Ou somme-nous</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              est deserunt temporibus beatae molestias quo debitis
+              exercitationem vitae dignissimos ratione sunt perferendis
+              blanditiis, non nostrum voluptas excepturi maxime similique
+              obcaecati nobis, nisi earum tempora dolorem eaque! Commodi quae
+              excepturi, similique sunt soluta autem? Sunt corrupti itaque
+              fugiat velit iure nobis!
+            </p>
           </div>
-          <div>
-            <label for="email">Votre Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="monadresse@mail.com"
-              required
-            />
-          </div>
-          <div>
-            <label for="sujet">Quel est le sujet de votre message ?</label>
-            <select name="sujet" id="sujet" required>
-              <option value="" disabled selected hidden>
-                Choisissez le sujet de votre message
-              </option>
-              <option value="question-produit">
-                Question à propos d’un produit
-              </option>
-              <option value="devis">devis</option>
-              <option value="autre">Autre...</option>
-            </select>
-          </div>
-          <div>
-            <label for="message">Votre Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Bonjour, je vous contacte car...."
-              required
-            ></textarea>
-          </div>
-          <div>
-            <button type="submit">Envoyer</button>
-          </div>
-        </form>
-        <!-- </div> -->
-      </section>
+        </section>
 
+        <section class="contact">
+          <h2>Nous contacter</h2>
+          <p>
+            Si vous avez une question à propos des produits ou d'un autre type
+            hésiter pas à prendre contact !
+          </p>
+          <form class="form" action="#" method="post">
+            <div>
+              <label for="nom">Votre prénom</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Nom"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Votre Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="monadresse@mail.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="sujet">Quel est le sujet de votre message ?</label>
+              <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>
+                  Choisissez le sujet de votre message
+                </option>
+                <option value="question-produit">
+                  Question à propos d’un produit
+                </option>
+                <option value="Probleme de livraison">
+                  Problème de livraison
+                </option>
+                <option value="autre">Autre...</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Votre Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Bonjour, je vous contacte car...."
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit">Envoyer</button>
+            </div>
+          </form>
+        </section>
+      </div>
       <section class="reassurance">
         <figure class="reassurance__item">
           <div class="reassurance__img">
