@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,128 +25,253 @@
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/buttons.css" />
+    <link rel="stylesheet" href="./assets/css/commande.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/product.css" />
+    <link rel="stylesheet" href="./assets/css/reassurance.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
     <title>J-Mug</title>
   </head>
   <body>
     <header>
-      logo
-      <form action="search.php">
-        <input type="text" name="search" id="input__search" />
-        <input type="submit" value="Rechercher" />
+      <a href="index.html" class="header__img">
+        <img src="./assets/images/j-mug.webP" alt="J-Mug" />
+      </a>
+      <form action="search.php" class="search">
+        <input type="text" name="search" class="search__input" />
+        <input type="submit" value="Rechercher" class="search__btn" />
       </form>
-      <a href="panier.html">
-        <img src="#" alt="aller voir mon panier" />
-        Panier
+      <a href="cart.html">
+        <figure class="panier__button">
+          <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+          <figcaption>Mon panier</figcaption>
+        </figure>
       </a>
       <nav class="nav">
         <a href="index.html" class="nav__link">Accueil</a>
-        <a href="product.html" class="nav__link">Produit</a>
         <a href="categories.html" class="nav__link">Catégorie</a>
         <a href="about.html" class="nav__link">A propos</a>
+        <a href="about.html#contact" class="nav__link">Contact</a>
       </nav>
     </header>
     <main>
-      <div class="container">
-        <article>
-          <section>
+      <div>
+        <article class="container_produit">
+          <section class="container_product-img">
             <figure>
-              <div>
-                <img
-                  src="./assets/images/tasse-duo-couple-amoureux-350x350.png"
-                  alt="tasse duo amoureux blanc et rouge"
-                />
-              </div>
-              <figcaption>
-                <h3>non produit</h3>
-                <p>tarif</p>
-              </figcaption>
+              <img
+                class="product_img"
+                src="./assets/images/tasse-duo-couple-amoureux-350x350.png"
+                alt="tasse duo amoureux blanc et rouge"
+                height="500"
+              />
             </figure>
           </section>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
-              fugiat voluptatem doloribus magni nulla molestias non cumque eius
-              perspiciatis atque. Hic maiores quis culpa laboriosam.
-            </p>
+          <section class="container-product-info">
+            <div>
+              <h1 class="product_title">Duo Couple</h1>
+              <p class="product_detail">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br />
+                Quisquam velit hic, vitae esse fuga, facere iste minima
+                voluptatem accusantium accusamus ullam quaerat, voluptatibus
+                quis voluptate sequi tempore ad! Corrupti debitis explicabo
+                voluptatibus dicta tenetur id minima libero magnam! Maxime, cum
+                quos molestias dolorem facilis cumque labore.<br />
+                Veniam quod, cum perspiciatis reprehenderit blanditiis illo
+                atque harum fugiat neque culpa repudiandae excepturi
+                necessitatibus mollitia eos quisquam?<br />
+                Quibusdam cumque fugit aspernatur dignissimos necessitatibus
+                commodi veniam unde, consectetur expedita numquam illum et,
+                nihil quas repellat deserunt perferendis obcaecati
+                consequatur.<br />
+                Ullam itaque voluptas iste animi. Porro aliquid perspiciatis
+                blanditiis impedit excepturi quae.<br />
+                Cupiditate fugit, praesentium dolorum laborum consequuntur
+                dolores modi atque voluptates sequi rerum, quo rem beatae at a
+                aut magnam iste ad.<br />
+                Eos, deserunt.
+              </p>
+            </div>
+            <section class="product_price">
+              <div class="product_price-detail">
+                <p class="price">25,00 €</p>
+                <p class="ttc">TTC</p>
+              </div>
+              <div class="disponibility">
+                <div class="disponibility_star">
+                  <p class="disponibility_star-title">disponible</p>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <a href="./cart.html" class="panier" type="button"
+                  >ajouter au panier</a
+                >
+              </div>
+            </section>
+          </section>
+        </article>
+        <article class="product_description">
+          <h3 class="product_description-h3">Description</h3>
+          <p class="product_description-p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consectetur qui soluta, quod doloremque quo similique maxime a.<br />
+            Ullam neque, similique animi quaerat, quibusdam nobis deleniti
+            delectus in culpa, autem voluptate dignissimos doloremque esse
+            consequuntur ipsam architecto vel alias deserunt accusantium
+            voluptas at quia fugit dicta quasi?<br />
+            Inventore magni nostrum totam nobis ullam, obcaecati necessitatibus
+            cumque, eveniet voluptatibus eaque assumenda voluptate?<br />
+            Odit quis fugit cupiditate deleniti est quos itaque placeat
+            dignissimos.<br />
+            Iure, repellat.<br />
+            Quisquam expedita suscipit consequuntur tempore architecto id,
+            magnam pariatur ratione ex nulla velit rerum voluptates quam,
+            possimus ad voluptatum molestias maiores ab esse cupiditate illo!<br />
+            Amet assumenda et, laudantium perferendis alias obcaecati quibusdam
+            consequatur iure cupiditate, commodi quasi quod id culpa sint
+            molestias, ut maxime aliquam!<br />
+            Voluptate, excepturi?
+          </p>
+        </article>
+        <article class="product">
+          <a href="#" class="lien_product">
+            <section class="product_card">
+              <figure class="figure">
+                <div>
+                  <img
+                    class="produit"
+                    src="./assets/images/tasse bleu.png"
+                    alt="coffret tasse st valentin"
+                    height="200"
+                    width="200"
+                  />
+                </div>
+                <figcaption class="figcaption_card">
+                  <h3 class="figcaption_card-h3">Tasse Bleu</h3>
+                  <p class="figcaption_card-p">tarif</p>
+                </figcaption>
+              </figure>
+            </section>
+          </a>
+          <a href="#" class="lien_product">
+            <section class="product_card">
+              <figure class="figure">
+                <div>
+                  <img
+                    class="produit"
+                    src="./assets/images/tasse jaune.png"
+                    alt="tasse his et hers"
+                    height="200"
+                    width="200"
+                  />
+                </div>
+                <figcaption class="figcaption_card">
+                  <h3 class="figcaption_card-h3">Tasse Jaune</h3>
+                  <p class="figcaption_card-p">tarif</p>
+                </figcaption>
+              </figure>
+            </section>
+          </a>
+          <a href="#" class="lien_product">
+            <section class="product_card">
+              <figure class="figure">
+                <div>
+                  <img
+                    class="produit"
+                    src="./assets/images/tasse rose.png"
+                    alt="tasse valentin"
+                    height="200"
+                    width="200"
+                  />
+                </div>
+                <figcaption class="figcaption_card">
+                  <h3 class="figcaption_card-h3">Tasse Rose</h3>
+                  <p class="figcaption_card-p">tarif</p>
+                </figcaption>
+              </figure>
+            </section>
+          </a>
+        </article>
+        <article class="avis">
+          <h3 class="avis_h3">Avis</h3>
+          <div class="avis_box">
+            <section class="avis-box_star">
+              <div class="avis-star">
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="avis-box_p">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+                iure perspiciatis aliquam nihil a, velit libero fuga,
+                praesentium, ipsam delectus cumque iste modi sequi quibusdam!
+              </p>
+            </section>
+            <section class="avis-box_star">
+              <div class="avis-star">
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="avis-box_p">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+                iure perspiciatis aliquam nihil a, velit libero fuga,
+                praesentium, ipsam delectus cumque iste modi sequi quibusdam!
+              </p>
+            </section>
           </div>
-          <section>
-            <p>disponible</p>
-            <i class="fa-solid fa-check"></i>
-          </section>
-          <button class="panier" type="button">ajouter au panier</button>
-        </article>
-        <article>
-          <section>
-            <figure>
-              <div>
-                <img
-                  src="./assets/images/coffret.png"
-                  alt="coffret tasse st valentin"
-                />
-              </div>
-              <figcaption>
-                <h3>non produit</h3>
-                <p>tarif</p>
-              </figcaption>
-            </figure>
-          </section>
-          <section>
-            <figure>
-              <div>
-                <img
-                  src="./assets/images/his-hers.png"
-                  alt="tasse his et hers"
-                />
-              </div>
-              <figcaption>
-                <h3>non produit</h3>
-                <p>tarif</p>
-              </figcaption>
-            </figure>
-          </section>
-          <section>
-            <figure>
-              <div>
-                <img src="./assets/images/valentin.png" alt="tasse valentin" />
-              </div>
-              <figcaption>
-                <h3>non produit</h3>
-                <p>tarif</p>
-              </figcaption>
-            </figure>
-          </section>
-        </article>
-        <article>
-          <section>
-            <div>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-              iure perspiciatis aliquam nihil a, velit libero fuga, praesentium,
-              ipsam delectus cumque iste modi sequi quibusdam!
-            </p>
-          </section>
-          <section>
-            <div>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-              iure perspiciatis aliquam nihil a, velit libero fuga, praesentium,
-              ipsam delectus cumque iste modi sequi quibusdam!
-            </p>
-          </section>
         </article>
       </div>
+      <section class="reassurance">
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img
+              src="./assets/images/004-padlock.png"
+              alt="Paiement Securisé"
+            />
+          </div>
+
+          <figcaption class="reassurance__text">Paiement Sécurisé</figcaption>
+        </figure>
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img
+              src="./assets/images/001-parcel.png"
+              alt="Livraison offerte à partir de 75€"
+            />
+          </div>
+
+          <figcaption class="reassurance__text">
+            Livraison offerte à partir de 75€
+          </figcaption>
+        </figure>
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img src="./assets/images/002-badge.png" alt="Qualité Garantie" />
+          </div>
+
+          <figcaption class="reassurance__text">Qualité Garantie</figcaption>
+        </figure>
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img
+              src="./assets/images/003-support.png"
+              alt="Notre équipe à votre écoute"
+            />
+          </div>
+
+          <figcaption class="reassurance__text">
+            Notre équipe à votre écoute
+          </figcaption>
+        </figure>
+      </section>
     </main>
     <footer>
       <div class="footer_info">
