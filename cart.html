@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/reassurance.css" />
     <link rel="stylesheet" href="./assets/css/buttons.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
     <link rel="stylesheet" href="./assets/css/commande.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
@@ -38,7 +40,7 @@
         </a>
         <nav class="nav">
           <a href="index.html" class="nav__link">Accueil</a>
-          <a href="categories.html" class="nav__link">Catégorie</a>
+          <a href="categorie.html" class="nav__link">Catégorie</a>
           <a href="about.html" class="nav__link">A propos</a>
           <a href="about.html#contact" class="nav__link">Contact</a>
         </nav>
@@ -47,7 +49,7 @@
         <article>
           <a href="index.html">Continuer mes achats</a>
           <h1>Mon panier</h1>
-          <h6>Livraison offert à partir de 50€ d'achats</h6>
+          <h6>Livraison offert à partir de 75€ d'achats</h6>
           <article class="cart">
             <table class="cart__table">
               <tr class="table__header">
@@ -62,13 +64,13 @@
                   <div class="cart__item">
                     <a href="product.html">
                       <img
-                        src="./assets/images/mug-test.png"
+                        src="./assets/images/mug-coeur-rose.png"
                         alt="image du produit"
                         class="item__img"
                       />
                     </a>
                     <div>
-                      <h3 class="item__title">Blue Mogu</h3>
+                      <h3 class="item__title">Mug rose coeur</h3>
                       <p class="item__ref">Réf. produit : 123465789</p>
                     </div>
                   </div>
@@ -77,7 +79,7 @@
                   <p class="dispo__stock">En stock</p>
                   <p class="dispo__number">Plus que 3 exemplaires</p>
                 </td>
-                <td>
+                <td class="price">
                   <p>14.99 €</p>
                   <input
                     type="hidden"
@@ -90,20 +92,20 @@
                   <input type="number" id="quantityItem123465788" value="2" />
                   <button>Supprimer</button>
                 </td>
-                <td>total a payer</td>
+                <td class="price_tot">29.98 €</td>
               </tr>
               <tr class="cart__line">
                 <td>
                   <div class="cart__item">
                     <a href="product.html">
                       <img
-                        src="./assets/images/mug-test.png"
+                        src="./assets/images/mug-coeur-bleu.png"
                         alt="image du produit"
                         class="item__img"
                       />
                     </a>
                     <div>
-                      <h3 class="item__title">Blue Mogu</h3>
+                      <h3 class="item__title">Mug bleu coeur</h3>
                       <p class="item__ref">Réf. produit : 123465789</p>
                     </div>
                   </div>
@@ -112,7 +114,7 @@
                   <p class="dispo__stock">En stock</p>
                   <p class="dispo__number">Plus que 3 exemplaires</p>
                 </td>
-                <td>
+                <td class="price">
                   <p>14.99 €</p>
                   <input
                     type="hidden"
@@ -125,20 +127,20 @@
                   <input type="number" id="quantityItem123465788" value="2" />
                   <button>Supprimer</button>
                 </td>
-                <td>total a payer</td>
+                <td class="price">28.98 €</td>
               </tr>
               <tr class="cart__line">
                 <td>
                   <div class="cart__item">
                     <a href="product.html">
                       <img
-                        src="./assets/images/mug-test.png"
+                        src="./assets/images/mug-coeur-jaune.png"
                         alt="image du produit"
                         class="item__img"
                       />
                     </a>
                     <div>
-                      <h3 class="item__title">Blue Mogu</h3>
+                      <h3 class="item__title">Mug jaune coeur</h3>
                       <p class="item__ref">Réf. produit : 123465789</p>
                     </div>
                   </div>
@@ -147,7 +149,7 @@
                   <p class="dispo__stock">En stock</p>
                   <p class="dispo__number">Plus que 3 exemplaires</p>
                 </td>
-                <td>
+                <td class="price">
                   <p>14.99 €</p>
                   <input
                     type="hidden"
@@ -160,29 +162,29 @@
                   <input type="number" id="quantityItem123465788" value="2" />
                   <button>Supprimer</button>
                 </td>
-                <td>total a payer</td>
+                <td class="price">28.98 €</td>
               </tr>
               <tr class="cart__line">
                 <td>
                   <div class="cart__item">
                     <a href="product.html">
                       <img
-                        src="./assets/images/mug-test.png"
+                        src="./assets/images/mug-coeur-bleu.png"
                         alt="image du produit"
                         class="item__img"
                       />
                     </a>
                     <div>
-                      <h3 class="item__title">Blue Mogu</h3>
+                      <h3 class="item__title">Mug bleu coeur</h3>
                       <p class="item__ref">Réf. produit : 123465789</p>
                     </div>
                   </div>
                 </td>
                 <td class="dispo">
-                  <p class="dispo__stock">En stock</p>
-                  <p class="dispo__number">Plus que 3 exemplaires</p>
+                  <p class="dispo__stock">Indisponible</p>
+                  <p class="dispo__number">Bientôt de nouveau disponible</p>
                 </td>
-                <td>
+                <td class="price">
                   <p>14.99 €</p>
                   <input
                     type="hidden"
@@ -195,29 +197,29 @@
                   <input type="number" id="quantityItem123465788" value="2" />
                   <button>Supprimer</button>
                 </td>
-                <td>total a payer</td>
+                <td class="price">28.98 €</td>
               </tr>
               <tr class="cart__line">
                 <td>
                   <div class="cart__item">
                     <a href="product.html">
                       <img
-                        src="./assets/images/mug-test.png"
+                        src="./assets/images/mug-coeur-rose.png"
                         alt="image du produit"
                         class="item__img"
                       />
                     </a>
                     <div>
-                      <h3 class="item__title">Blue Mogu</h3>
+                      <h3 class="item__title">Mug rose coeur</h3>
                       <p class="item__ref">Réf. produit : 123465789</p>
                     </div>
                   </div>
                 </td>
                 <td class="dispo">
                   <p class="dispo__stock">En stock</p>
-                  <p class="dispo__number">Plus que 3 exemplaires</p>
+                  <p class="dispo__number">Plus de 10 exemplaires</p>
                 </td>
-                <td>
+                <td class="price">
                   <p>14.99 €</p>
                   <input
                     type="hidden"
@@ -230,20 +232,20 @@
                   <input type="number" id="quantityItem123465788" value="2" />
                   <button>Supprimer</button>
                 </td>
-                <td>total a payer</td>
+                <td class="price">28.98 €</td>
               </tr>
               <tr class="cart__line">
                 <td>
                   <div class="cart__item">
                     <a href="product.html">
                       <img
-                        src="./assets/images/mug-test.png"
+                        src="./assets/images/mug-coeur-bleu.png"
                         alt="image du produit"
                         class="item__img"
                       />
                     </a>
                     <div>
-                      <h3 class="item__title">Blue Mogu</h3>
+                      <h3 class="item__title">Mug bleu coeur</h3>
                       <p class="item__ref">Réf. produit : 123465789</p>
                     </div>
                   </div>
@@ -252,7 +254,7 @@
                   <p class="dispo__stock">En stock</p>
                   <p class="dispo__number">Plus que 3 exemplaires</p>
                 </td>
-                <td>
+                <td class="price">
                   <p>14.99 €</p>
                   <input
                     type="hidden"
@@ -265,15 +267,17 @@
                   <input type="number" id="quantityItem123465788" value="2" />
                   <button>Supprimer</button>
                 </td>
-                <td>total a payer</td>
+                <td class="price">28.98 €</td>
               </tr>
             </table>
             <a href="#">Supprimer tous les articles</a>
           </article>
-          <section class="promo">
-            <label for="codePromo">Entrer mon code promo</label>
-            <input type="text" id="codePromo" />
-          </section>
+          <form class="promo">
+            <div>
+              <label for="codePromo">Entrer mon code promo</label>
+              <input type="text" id="codePromo" />
+            </div> 
+          </form>
           <section class="montants">
             <div class="montant__label">
               <h4>Montant total des achats</h4>
@@ -282,7 +286,7 @@
               <h3>Montant total de la commande</h3>
             </div>
             <div class="montant__price">
-              <p>14.99</p>
+              <p>86.94</p>
               <p>0</p>
               <p>6.89</p>
               <p>21.88</p>

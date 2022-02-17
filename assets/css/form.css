@@ -8,17 +8,19 @@ form div {
   margin-top: 25px;
 }
 
-form div > label {
-  margin-bottom: 7px;
+.promo div {
+  margin-top: 0;
+}
+.promo div > label {
+  margin-bottom: 1rem;
   font-weight: 600;
 }
 
-form div > input,
+form div > input [type="email"].form__email,
 form div > select,
-form > select,
 form div > textarea {
-  color: #ffffff;
-  background: #5784ba;
+  color: #000000;
+  background: #ffffff;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -30,7 +32,10 @@ form div > input,
 form div > select,
 form > select {
   height: 50px;
-  padding-left: 10px;
+  padding-left: 0.9em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 25%);
 }
 
 form div > select,
@@ -89,4 +94,7 @@ input[type="submit"].search__btn,
   margin-left: -5px;
   border-radius: 0 10px 10px 0;
   text-transform: uppercase;
+}
+.quantity input {
+  margin: 0.5rem;
 }
