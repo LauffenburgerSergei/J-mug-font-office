@@ -118,6 +118,7 @@ h1 {
 .montant__price {
   width: 20%;
 }
+
 .montant__label h4,
 .montant__label h3,
 .montant__price p {
@@ -142,4 +143,5 @@ h1 {
   .container {
     max-width: 80%;
   }
+
 }
