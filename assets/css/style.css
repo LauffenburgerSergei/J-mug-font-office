@@ -1,13 +1,19 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #f4cfdf20;
 }
 
 h1,
 h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Rowdies;
+}
 h3 {
   font-family: "Rowdies", sans-serif;
 }
-
 
 /*################################################################*/
 /*############################ Main ##############################*/
@@ -53,13 +59,13 @@ main {
   margin-bottom: 40px;
 }
 
-section > p {
+/* section > p {
   text-align: center;
-}
+} */
 
-p {
+/* p {
   padding: 10px 30px 10px 30px;
-}
+} */
 
 .Contactez-nous {
   width: 700px;
@@ -159,11 +165,11 @@ form button {
   justify-content: center;
   background-color: #0b1013;
 }
+
 .contact {
   display: flex;
   justify-content: center;
 }
-
 /*################################################################*/
 /*########################### Footer #############################*/
 /*################################################################*/
@@ -171,6 +177,7 @@ form button {
 footer {
   padding: 20px 15px;
   background-color: #9ac8eb;
+
 }
 
 .footer_info {
