@@ -7,4 +7,17 @@ input[type="submit"] {
   color: white;
   padding: 10px;
   border-radius: 10px;
+  text-transform: uppercase;
+}
+form button {
+  width: 450px;
+  max-width: 500px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 24px;
+  background: #5784ba;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
 }

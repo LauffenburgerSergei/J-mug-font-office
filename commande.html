@@ -5,24 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J-Mug</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/reassurance.css" />
     <link rel="stylesheet" href="./assets/css/buttons.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
     <link rel="stylesheet" href="./assets/css/commande.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <header>
-      <img src="./assets/images/j-mug.webP" alt="" />
-      <form action="search.php">
-        <input type="text" name="search" id="input__search" />
-        <input type="submit" value="Rechercher" />
+      <a href="index.html">
+        <img
+          src="./assets/images/j-mug.webP"
+          alt="J-Mug"
+          class="header__img"
+          width="300"
+          height="100"
+        />
+      </a>
+      <form action="search.php" class="search">
+        <input type="text" name="search" class="search__input" />
+        <input type="submit" value="Rechercher" class="search__btn" />
       </form>
       <a href="cart.html">
-        <img src="#" alt="aller voir mon panier" />
-        Panier
+        <figure class="">
+          <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+          <figcaption>Mon panier</figcaption>
+        </figure>
       </a>
       <nav class="nav">
         <a href="index.html" class="nav__link">Accueil</a>
@@ -31,27 +49,31 @@
         <a href="about.html#contact" class="nav__link">Contact</a>
       </nav>
     </header>
-    <main>
-      <article>
-        <section>
+    <main class="payment">
+      <article class="address">
+        <section class="address__selection">
           <h4>Sélectionner une adresse de livraison</h4>
-          <select name="adress" id="adressChoice">
-            <option value="adress1">Domicile</option>
-            <option value="adress2">Travail</option>
-            <option value="adress3">Chez Maman</option>
-          </select>
+          <form action="">
+            <select name="adress" id="adressChoice">
+              <option value="adress1">Domicile</option>
+              <option value="adress2">Travail</option>
+              <option value="adress3">Chez Maman</option>
+            </select>
 
-          <p>
-            55 rue du faubourg Saint-Honoré <br />
-            75008 Paris, France
-          </p>
-          <form action="shippingAdress">
-            <input type="submit" value="Livrer à cette adresse" />
-            <input type="button" value="Modifier" />
-            <input type="button" value="supprimer" />
+            <p>
+              55 rue du faubourg Saint-Honoré <br />
+              75008 Paris, France
+            </p>
+            <form action="shippingAdress">
+              <input type="submit" value="Livrer à cette adresse" />
+              <div>
+                <input type="button" value="Modifier" />
+                <input type="button" value="supprimer" />
+              </div>
+            </form>
           </form>
         </section>
-        <section>
+        <section class="address__add">
           <h4>Ajouter une nouvelle adresse</h4>
           <form action="#" class="form">
             <div class="form__item">
@@ -89,7 +111,8 @@
             <div>
               <input type="radio" name="paymentCard" id="card1" />
               <label for="card1">
-                <input type="radio" name="paymentCard" id="card1" />Visa / Master Card ***-1324
+                <input type="radio" name="paymentCard" id="card1" />Visa /
+                Master Card ***-1324
               </label>
             </div>
             <div>
