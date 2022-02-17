@@ -21,3 +21,18 @@ form button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #ffffff;
 }
+
+/* cart */
+.quantity button {
+  margin: 1rem;
+}
+.quantity button {
+  padding: 2px 10px;
+  width: 50%;
+}
+.montant__form input[type="button"] {
+  background-color: #5784ba4b;
+}
+.montant__form input[type="button"]:hover {
+  background-color: #5784ba;
+}
