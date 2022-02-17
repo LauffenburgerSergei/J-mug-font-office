@@ -3,7 +3,6 @@ body {
   background-color: #f4cfdf20;
 }
 
-
 /* /##################################################/ */
 /* /##################    HEADER    ##################/ */
 /* /##################################################/ */
@@ -28,7 +27,7 @@ input[type="submit"] {
 }
 
 .header__img {
-  height: 50px;
+  /* height: 50px; */
   width: 11%;
   /*width: 20%;*/
 }
@@ -134,7 +133,6 @@ h3 {
   font-family: "Rowdies", sans-serif;
 }
 
-
 h1 {
   font-size: 2rem;
 }
@@ -151,7 +149,6 @@ h3 {
 /* /##################################################/ */
 
 .section__about {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,7 +164,7 @@ h3 {
 }
 
 .jmug__logo {
-  height: 80px;
+  height: 250px;
   margin-right: 80px;
 }
 
@@ -195,7 +192,7 @@ h3 {
 
 .section__img {
   display: flex;
-  width: 950px;
+  width: 100%;
   display: flex;
   padding: 15px;
   justify-content: space-evenly;
@@ -205,6 +202,7 @@ h3 {
   margin-left: 0%;
   height: 250px;
   width: 250px;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
 }
 
 .ou_sommes_nous {
@@ -316,7 +314,6 @@ form div > textarea {
   height: 195px;
   padding: 15px 0px 0px 10px;
 }
-
 
 form div > .input::placeholder,
 form div > textarea::placeholder {
