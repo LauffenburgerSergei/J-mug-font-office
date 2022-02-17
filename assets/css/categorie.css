@@ -1,0 +1,275 @@
+button,
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid #5784ba;
+  background-color: #5784ba;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+header {
+  margin: 0;
+  height: auto;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.header__img {
+  width: 20%;
+}
+.search {
+  text-align: center;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.search__input,
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #5784ba;
+  border-radius: 10px 0 0 10px;
+  width: 40%;
+}
+
+.search__input:hover {
+  border: 1px solid #5784ba;
+  color: black;
+}
+
+input[type="submit"].search__btn,
+.newsletter__button {
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  text-transform: uppercase;
+}
+header > a {
+  color: black;
+}
+header > a:hover {
+  color: black;
+}
+input[type="submit"].search__btn:hover {
+  color: white;
+  border: 1px solid #5784ba;
+}
+header figure {
+  margin-right: 2rem;
+}
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 5%;
+}
+
+a {
+  float: center;
+  text-decoration: none;
+}
+
+.nav a {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 25%;
+}
+
+.nav a:hover {
+  background-color: #f4cfdf;
+  color: #5784ba;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+.checkbox {
+  border: 2px solid;
+  margin-top: 30px;
+}
+.my_h1 {
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 20%;
+}
+
+.ajoutez {
+  width: 300px;
+  max-width: 350px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  background: #5784ba;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+.checkbox {
+  text-align: left;
+  padding-left: 20px;
+}
+
+form div:last-child {
+  align-items: inherit;
+  margin-top: 20px;
+}
+.photo {
+  width: 300px;
+  height: 250px;
+}
+
+form div > {
+  opacity: 60%;
+  color: white;
+}
+form div > input,
+.form div > select {
+  height: auto;
+  padding-left: 10px;
+}
+form div > input,
+form div > select,
+form div > textarea {
+  color: black;
+  background: #d9e7e9;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+form div > select option {
+  background: #ffffff;
+  color: #000000;
+}
+
+.checkbox {
+  border: 2px solid;
+  margin-top: 30px;
+}
+
+.ajoutez {
+  width: 150px;
+  max-width: 200px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  background: #5784ba;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  margin-top: 10px;
+  
+}
+
+.checkbox {
+  text-align: left;
+  padding-left: 20px;
+}
+
+form div:last-child {
+  align-items: inherit;
+  margin-top: 20px;
+}
+.photo {
+  width: 300px;
+  height: 250px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form div > {
+  opacity: 60%;
+  color: white;
+}
+form div > input,
+.form div > select {
+  height: auto;
+  padding-left: 10px;
+}
+form div > input,
+form div > select,
+form div > textarea {
+  color: black;
+  background: #d9e7e9;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+form div > select option {
+  background: #ffffff;
+  color: #000000;
+}
+
+.container {
+  font-size: large;
+  font-style: bold;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-grow: 1;
+  gap: 10px 30px;
+}
+.product__card {
+  width: 30%;
+
+}
+.my_form {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 15px;
+  margin-top: 25px;
+ 
+}
+
+.my_h1 {
+  font-size: 30px;
+  text-align: center ;
+  margin-bottom: 30px;}
+  
+  body p
+  {
+    font-size:20px;
+  }
+  footer {
+    padding: 20px 15px;
+    background-color: #9ac8eb;
+  }
+  
+  .footer_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+  
+    width: auto;
+    height: auto;
+  }
+  
+  .footer_info_title {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 15px 0;
+  }
+  
+  footer li {
+    padding: 10px 0;
+  }

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -6,89 +5,378 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J-Mug</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/reassurance.css" />
+    <link rel="stylesheet" href="./assets/css/buttons.css" />
+    <link rel="stylesheet" href="./assets/css/commande.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
-    <header>
-      <h1><img src="" alt=""></h1>
-      <form action="search.php">
-        <input type="text" name="search" id="input__search" />
-        <input type="submit" value="Rechercher" />
-      </form>
-      <a href="panier.html">
-        <img src="#" alt="aller voir mon panier" />
-        Panier
-      </a>
-      <nav class="nav">
-        <a href="index.html" class="nav__link">Accueil</a>
-        <a href="categories.html" class="nav__link">Catégorie</a>
-        <a href="about.html" class="nav__link">A propos</a>
-        <a href="product.html" class="nav__link">Contact</a>
-      </nav>
-    </header>
-    <main>
-      <article>
-        <a href="index.html">Continuer mes achats</a>
-        <h2>Mon panier</h2>
-        <h6>Livraison offert à partir de 50€ d'achats</h6>
-        <div>
-          <section>
-            <img src="#" alt="image du produit" />
-            <h3>Nom du produit</h3>
-            <p>Référence produit : 123465789</p>
+    <div class="container">
+      <header>
+        <a href="index.html">
+          <img
+            src="./assets/images/j-mug.webP"
+            alt="J-Mug"
+            class="header__img"
+            width="300"
+            height="100"
+          />
+        </a>
+        <form action="search.php" class="search">
+          <input type="text" name="search" class="search__input" />
+          <input type="submit" value="Rechercher" class="search__btn" />
+        </form>
+        <a href="cart.html">
+          <figure class="">
+            <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+            <figcaption>Mon panier</figcaption>
+          </figure>
+        </a>
+        <nav class="nav">
+          <a href="index.html" class="nav__link">Accueil</a>
+          <a href="categories.html" class="nav__link">Catégorie</a>
+          <a href="about.html" class="nav__link">A propos</a>
+          <a href="about.html#contact" class="nav__link">Contact</a>
+        </nav>
+      </header>
+      <main class="main">
+        <article>
+          <a href="index.html">Continuer mes achats</a>
+          <h1>Mon panier</h1>
+          <h6>Livraison offert à partir de 50€ d'achats</h6>
+          <article class="cart">
+            <table class="cart__table">
+              <tr class="table__header">
+                <th>Produits</th>
+                <th>Disponibilité</th>
+                <th>Prix unitaire</th>
+                <th>Quantité</th>
+                <th>Total</th>
+              </tr>
+              <tr class="cart__line">
+                <td>
+                  <div class="cart__item">
+                    <a href="product.html">
+                      <img
+                        src="./assets/images/mug-test.png"
+                        alt="image du produit"
+                        class="item__img"
+                      />
+                    </a>
+                    <div>
+                      <h3 class="item__title">Blue Mogu</h3>
+                      <p class="item__ref">Réf. produit : 123465789</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="dispo">
+                  <p class="dispo__stock">En stock</p>
+                  <p class="dispo__number">Plus que 3 exemplaires</p>
+                </td>
+                <td>
+                  <p>14.99 €</p>
+                  <input
+                    type="hidden"
+                    name="priceItem123465789"
+                    id="priceItem123465789"
+                    value="14.99"
+                  />
+                </td>
+                <td class="quantity">
+                  <input type="number" id="quantityItem123465788" value="2" />
+                  <button>Supprimer</button>
+                </td>
+                <td>total a payer</td>
+              </tr>
+              <tr class="cart__line">
+                <td>
+                  <div class="cart__item">
+                    <a href="product.html">
+                      <img
+                        src="./assets/images/mug-test.png"
+                        alt="image du produit"
+                        class="item__img"
+                      />
+                    </a>
+                    <div>
+                      <h3 class="item__title">Blue Mogu</h3>
+                      <p class="item__ref">Réf. produit : 123465789</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="dispo">
+                  <p class="dispo__stock">En stock</p>
+                  <p class="dispo__number">Plus que 3 exemplaires</p>
+                </td>
+                <td>
+                  <p>14.99 €</p>
+                  <input
+                    type="hidden"
+                    name="priceItem123465789"
+                    id="priceItem123465789"
+                    value="14.99"
+                  />
+                </td>
+                <td class="quantity">
+                  <input type="number" id="quantityItem123465788" value="2" />
+                  <button>Supprimer</button>
+                </td>
+                <td>total a payer</td>
+              </tr>
+              <tr class="cart__line">
+                <td>
+                  <div class="cart__item">
+                    <a href="product.html">
+                      <img
+                        src="./assets/images/mug-test.png"
+                        alt="image du produit"
+                        class="item__img"
+                      />
+                    </a>
+                    <div>
+                      <h3 class="item__title">Blue Mogu</h3>
+                      <p class="item__ref">Réf. produit : 123465789</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="dispo">
+                  <p class="dispo__stock">En stock</p>
+                  <p class="dispo__number">Plus que 3 exemplaires</p>
+                </td>
+                <td>
+                  <p>14.99 €</p>
+                  <input
+                    type="hidden"
+                    name="priceItem123465789"
+                    id="priceItem123465789"
+                    value="14.99"
+                  />
+                </td>
+                <td class="quantity">
+                  <input type="number" id="quantityItem123465788" value="2" />
+                  <button>Supprimer</button>
+                </td>
+                <td>total a payer</td>
+              </tr>
+              <tr class="cart__line">
+                <td>
+                  <div class="cart__item">
+                    <a href="product.html">
+                      <img
+                        src="./assets/images/mug-test.png"
+                        alt="image du produit"
+                        class="item__img"
+                      />
+                    </a>
+                    <div>
+                      <h3 class="item__title">Blue Mogu</h3>
+                      <p class="item__ref">Réf. produit : 123465789</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="dispo">
+                  <p class="dispo__stock">En stock</p>
+                  <p class="dispo__number">Plus que 3 exemplaires</p>
+                </td>
+                <td>
+                  <p>14.99 €</p>
+                  <input
+                    type="hidden"
+                    name="priceItem123465789"
+                    id="priceItem123465789"
+                    value="14.99"
+                  />
+                </td>
+                <td class="quantity">
+                  <input type="number" id="quantityItem123465788" value="2" />
+                  <button>Supprimer</button>
+                </td>
+                <td>total a payer</td>
+              </tr>
+              <tr class="cart__line">
+                <td>
+                  <div class="cart__item">
+                    <a href="product.html">
+                      <img
+                        src="./assets/images/mug-test.png"
+                        alt="image du produit"
+                        class="item__img"
+                      />
+                    </a>
+                    <div>
+                      <h3 class="item__title">Blue Mogu</h3>
+                      <p class="item__ref">Réf. produit : 123465789</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="dispo">
+                  <p class="dispo__stock">En stock</p>
+                  <p class="dispo__number">Plus que 3 exemplaires</p>
+                </td>
+                <td>
+                  <p>14.99 €</p>
+                  <input
+                    type="hidden"
+                    name="priceItem123465789"
+                    id="priceItem123465789"
+                    value="14.99"
+                  />
+                </td>
+                <td class="quantity">
+                  <input type="number" id="quantityItem123465788" value="2" />
+                  <button>Supprimer</button>
+                </td>
+                <td>total a payer</td>
+              </tr>
+              <tr class="cart__line">
+                <td>
+                  <div class="cart__item">
+                    <a href="product.html">
+                      <img
+                        src="./assets/images/mug-test.png"
+                        alt="image du produit"
+                        class="item__img"
+                      />
+                    </a>
+                    <div>
+                      <h3 class="item__title">Blue Mogu</h3>
+                      <p class="item__ref">Réf. produit : 123465789</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="dispo">
+                  <p class="dispo__stock">En stock</p>
+                  <p class="dispo__number">Plus que 3 exemplaires</p>
+                </td>
+                <td>
+                  <p>14.99 €</p>
+                  <input
+                    type="hidden"
+                    name="priceItem123465789"
+                    id="priceItem123465789"
+                    value="14.99"
+                  />
+                </td>
+                <td class="quantity">
+                  <input type="number" id="quantityItem123465788" value="2" />
+                  <button>Supprimer</button>
+                </td>
+                <td>total a payer</td>
+              </tr>
+            </table>
+            <a href="#">Supprimer tous les articles</a>
+          </article>
+          <section class="promo">
+            <label for="codePromo">Entrer mon code promo</label>
+            <input type="text" id="codePromo" />
           </section>
-          <section>
-            <h3>Disponibilité</h3>
-            <p>En stock</p>
-            <p>Plus que X exemplaire</p>
+          <section class="montants">
+            <div class="montant__label">
+              <h4>Montant total des achats</h4>
+              <h4>Montant total des réductions</h4>
+              <h4>Montant total des frais de livraisons</h4>
+              <h3>Montant total de la commande</h3>
+            </div>
+            <div class="montant__price">
+              <p>14.99</p>
+              <p>0</p>
+              <p>6.89</p>
+              <p>21.88</p>
+            </div>
+            <form action="commande.html" class="montant__form">
+              <input type="button" value="Enregistrer ma commande" />
+              <input type="submit" value="Valider ma commande" />
+            </form>
           </section>
-          <section>
-            <h3>Prix unitaire</h3>
-            <p>14.99 €</p>
-            <input
-              type="hidden"
-              name="priceItem123465789"
-              id="priceItem123465789"
-              value="14.99"
-            />
-          </section>
-          <section>
-            <h3>Quantité</h3>
-            <input type="number" id="quantityItem123465789" value="6" />
-            <button>Supprimer</button>
-          </section>
-          <section>
-            <h3>Total</h3>
-            <output for="quantityItem123465789 priceItem123465789"></output>
-          </section>
-          <a href="#">Supprimer tous les articles</a>
-        </div>
-        <section>
-          <label for="codePromo">Entrer mon code promo</label>
-          <input type="text" name="codePromo">
-        </section>
-        <section>
-          <div>
-          <h4>Montant total des achats</h4>
-          <h4>Montant total des réductions</h4>
-          <h4>Montant total des frais de livraisons</h4>
-          <h3>Montant total de la commande</h3>
-          <form action="commande">
-            <input type="button" name="" id="" value="Enregistrer ma commande">
-            <input type="submit" value="Valider ma commande">
-          </form>
-          </div>
-          <div>
-            <p>14.99</p>
-            <p>0</p>
-            <p>6.89</p>
-            <p>21.88</p>
-          </div>
-        </section>
-        <section class="reassurance">
+          <!-- REASSURANCE -->
+          <section class="reassurance">
+            <figure class="reassurance__item">
+              <div class="reassurance__img">
+                <img
+                  src="./assets/images/004-padlock.png"
+                  alt="Paiement Securisé"
+                />
+              </div>
 
-        </section>
-      </article>
-      <article></article>
-    </main>
+              <figcaption class="reassurance__text">
+                Paiement Sécurisé
+              </figcaption>
+            </figure>
+            <figure class="reassurance__item">
+              <div class="reassurance__img">
+                <img
+                  src="./assets/images/001-parcel.png"
+                  alt="Livraison offerte à partir de 75€"
+                />
+              </div>
+
+              <figcaption class="reassurance__text">
+                Livraison offerte à partir de 75€
+              </figcaption>
+            </figure>
+            <figure class="reassurance__item">
+              <div class="reassurance__img">
+                <img
+                  src="./assets/images/002-badge.png"
+                  alt="Qualité Garantie"
+                />
+              </div>
+
+              <figcaption class="reassurance__text">
+                Qualité Garantie
+              </figcaption>
+            </figure>
+            <figure class="reassurance__item">
+              <div class="reassurance__img">
+                <img
+                  src="./assets/images/003-support.png"
+                  alt="Notre équipe à votre écoute"
+                />
+              </div>
+
+              <figcaption class="reassurance__text">
+                Notre équipe à votre écoute
+              </figcaption>
+            </figure>
+          </section>
+        </article>
+      </main>
+      <footer>
+        <div class="footer_info">
+          <div>
+            <h3 class="footer_info_title">A propos</h3>
+            <ul>
+              <li>Fonctionnement du site</li>
+              <li>Conditions générales de vente</li>
+              <li>Données et Confidentialité</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer_info_title">Nos Produit</h3>
+            <ul>
+              <li>Charte qualité</li>
+              <li>Soumettre vos designs</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer_info_title">Assistance</h3>
+            <ul>
+              <li>Centre D'aide</li>
+              <li>Nous Contacter</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

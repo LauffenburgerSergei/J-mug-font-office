@@ -1,0 +1,147 @@
+/* body{
+  background-color: white;
+} */
+/* cart */
+.main {
+  margin: 2rem;
+}
+.main > article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main > article > a:first-child {
+  margin: 2rem 0;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  align-self: start;
+}
+.main > article > a:first-child::before {
+  content: "<";
+  margin-right: 0.2rem;
+}
+h1 {
+  margin: 3rem 0;
+  font-size: 2rem;
+  text-decoration: underline #f4cfdf 5px;
+  align-self: start;
+  width: 100%;
+}
+.cart {
+  /* background-color: #9ac8eb; */
+  padding: 1rem 0;
+  width: 100%;
+}
+.cart__table {
+  width: 100%;
+
+  /* border-right: #fff solid 2px; */
+}
+.table__header {
+  display: flex;
+}
+.table__header th {
+  text-align: center;
+  background-color: #9ac8eb;
+  width: 20%;
+  padding: 0.5rem 0;
+  border: #fff solid 1px;
+}
+.cart__line {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2rem 0;
+  /* padding: 0.5rem; */
+}
+.cart__line:nth-child(odd) {
+  background-color: #f4cfdf;
+}
+.cart__line:nth-child(even) {
+  background-color: #f7f6cf;
+}
+.cart__line td {
+  border: #fff solid 1px;
+  width: 20%;
+}
+.cart__item {
+  padding: 1rem;
+  border: #fff solid 1px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.item__img {
+  width: 75px;
+  height: 75px;
+  /* object-fit ? */
+  margin-right: 0.5rem;
+}
+.item__title{
+  margin-bottom:1.5rem;
+}
+.dispo{
+  display:flex;
+  flex-direction: column;
+  
+}
+.dispo__stock,
+.dispo__number {
+  margin-top: 1rem;
+  margin-left:1rem;
+}
+.dispo__stock {
+  color: #9ac8eb;
+  font-weight: 700;
+}
+.dispo__number{
+  justify-self: flex-end;
+}
+.item__ref,
+.dispo__number {
+  font-size: 0.8rem;
+}
+.promo,
+.montants {
+  margin: 2rem 0;
+}
+.promo {
+  width: 25%;
+}
+.montants {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.montant__label {
+  width: 45%;
+}
+.montant__price {
+  width: 20%;
+}
+
+.montant__label h4,
+.montant__label h3,
+.montant__price p {
+  margin: 1rem 0;
+}
+.montant__price p::after {
+  content: "€";
+  margin-left: 0.2rem;
+}
+.montant__form {
+  width: 100%;
+}
+/* ########################################## */
+/* ################## MEDIA ################# */
+/* ########################################## */
+
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    max-width: 80%;
+  }
+
+}

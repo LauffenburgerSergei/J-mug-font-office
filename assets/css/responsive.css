@@ -1,1 +1,9 @@
-
+@media screen and (min-width: 1200px) {
+}
+/* entre 769px et 1199px notre style initiale */
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 375px) {
+}

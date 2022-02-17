@@ -1,0 +1,10 @@
+button,
+a[type="button"],
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid #5784ba;
+  background-color: #5784ba;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
