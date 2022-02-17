@@ -7,37 +7,41 @@
     
     <title>Catégorie</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css">  -->
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/categorie.css">
 </head>
 
 <body>
-    <header>
-        <img src="./assets/images/j-mug.webP" alt="" />
-        <form action="search.php">
-          <input type="text" name="search" id="input__search" />
-          <input type="submit" value="Rechercher" />
-        </form>
-        <a href="cart.html">
-          <img
-            src="./assets/images/chariot-de-chariot.png"
-            alt="aller voir mon panier"
-          />
-          Panier
-        </a>
-        <nav class="nav">
-          <a href="index.html" class="nav__link">Accueil</a>
-          <a href="categories.html" class="nav__link">Catégorie</a>
-          <a href="about.html" class="nav__link">A propos</a>
-          <a href="about.html#contact" class="nav__link">Contact</a>
-        </nav>
-      </header>
+  <header>
+    <img src="./assets/j-mug-logo.svg" alt="Logo JMug" class="logo">
+    <form action="search.php" class="search">
+      <input type="text" name="search" class="search__input" />
+      <input type="submit" value="Rechercher" class="search__btn" />
+    </form>
+    <a href="cart.html">
+      <figure class="">
+        <img
+          src="./assets/images/chariot-de-chariot.png"
+          alt="Aller voir mon panier"/>
+        <figcaption>Mon panier</figcaption>
+      </figure>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Accueil</a>
+      <a href="categories.html" class="nav__link">Catégorie</a>
+      <a href="about.html" class="nav__link">A propos</a>
+      <a href="about.html#contact" class="nav__link">Contact</a>
+    </nav>
+  </header>
+  <h1 class="my_h1">Bienvenue dans notre boutique</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi deleniti fugit nostrum, illo quae voluptates iste eveniet quidem distinctio voluptatem mollitia. Consectetur odio totam rem aliquid dicta recusandae quia architecto.</p> 
     <main>
+      
         
         
             <div class="checkbox">
-            <h1 class="my_h1">Catégorie</h1> 
+            <h2 class="my_h2">Catégorie</h2> 
             <form action="">
               <div class="barre_trier">
                 <span class="barre_trier ">Trier par&nbsp;</span>
@@ -49,105 +53,103 @@
                 </select>
               </div>
                 <div class="my_form">
-                    <label for="contenance">Contenance</label>
+                    <label class="my_form" for="contenance">Contenance</label>
                     <input type="radio" id="contenance" >
-                </div>
-                <div>
-                    <label for="st_valentin">St valentin</label>
+        </div>
+        <div class="my_form">
+                    <label class="my_form" for="st_valentin">St valentin</label>
                     <input type="radio" id="st_valentin" >
                 </div>
-                <div>
-                    <label for="couple">Couple</label>
+                <div class="my_form">
+                    <label class="my_form" for="couple">Couple</label>
                     <input type="radio" id="couple" >
                 </div>
-                <div>
-                    <label for="coffret">Coffret</label>
+                <div class="my_form">
+                    <label class="my_form" for="coffret">Coffret</label>
                     <input type="radio" id="coffret" >
                 </div>
-                <div> 
-                    <label for="promo">Promo</label>
+                <div class="my_form"> 
+                    <label class="my_form" for="promo">Promo</label>
                     <input type="radio" id="promo" >
                 </div>
-                <div> 
-                    <label for="new">Nouveauté</label>
+                <div class="my_form"> 
+                    <label class="my_form" for="new">Nouveauté</label>
                     <input type="radio" id="new" >
                 </div>
             </form>
         </div>
         <section class="container">
-          
-<div>
-    
+     
+          <a href="#" class="product__card">
     <figure class="range1">
         <img class="photo" src="./assets/images/mug-test.png" alt="Mug logo" >
-        <figcaption>Mug logo</figcaption>
+        <figcaption class="fig">Mug logo</figcaption>
         <button type="submit" name="ajoutez" class="ajoutez">Ajoutez au panier</button>
     </figure>  
-</div>
-
-<div>
+</a>
+<a href="#" class="product__card">
     <figure>
         <img class="photo" src="./assets/images/mug-je-t-aime-connasse.png" alt="Mug ">
         <figcaption>Mug je t'aime connasse</figcaption>
         <button type="submit" name="ajoutez" class="ajoutez">Ajoutez au panier</button>
-    </figure>  
-</div>
-<div>
+    </figure>
+</a>  
+<a href="#" class="product__card">
   <figure>
       <img class="photo" src="./assets/images/valentin.png" alt="Mug">
       <figcaption>Mug st valentin</figcaption>
       <button type="submit" name="ajoutez" class="ajoutez">Ajoutez au panier</button>
   </figure>  
-  <div>
+</a>
+<a href="#" class="product__card">
       <figure>
           <img class="photo" src="./assets/images/tasse-duo-couple-amoureux-350x350.png" alt="Mug">
           <figcaption>Set Mug pour amoureux</figcaption>
           <button type="submit" name="ajoutez" class="ajoutez">Ajoutez au panier</button>
       </figure>  
-
-  </div>
-<div>
+</a>
+<a href="#" class="product__card">
   <figure>
       <img class="photo" src="./assets/images/his-hers.png" alt="Mug">
       <figcaption>Set Mug pour amoureux</figcaption>
       <button type="submit" name="ajoutez" class="ajoutez">Ajoutez au panier</button>
   </figure>   
-</div>
-<div>
+</a>
+<a href="#" class="product__card">
 <figure>
     <img class="photo" src="./assets/images/coffret.png" alt="Mug">
     <figcaption>Set Mug pour amoureux</figcaption>
     <button type="submit" name="ajoutez" class="ajoutez">Ajoutez au panier</button>
 </figure>   
-</div>    
+</a>    
 </section>  
 
     </main>
     <footer>
-        <div class="footer_info">
-          <div>
-            <h3>A propos</h3>
-            <ul>
-              <li>Fonctionnement du site</li>
-              <li>Conditions générales de vente</li>
-              <li>Données et Confidentialité</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Nos Produit</h3>
-            <ul>
-              <li>Charte qualité</li>
-              <li>Soumettre vos designs</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Assistance</h3>
-            <ul>
-              <li>Centre D'aide</li>
-              <li>Nous Contacter</li>
-            </ul>
-          </div>
+      <div class="footer_info">
+        <div>
+          <h3 class="footer_info_title">A propos</h3>
+          <ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et Confidentialité</li>
+          </ul>
         </div>
+        <div>
+          <h3 class="footer_info_title">Nos Produit</h3>
+          <ul>
+            <li>Charte qualité</li>
+            <li>Soumettre vos designs</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer_info_title">Assistance</h3>
+          <ul>
+            <li>Centre D'aide</li>
+            <li>Nous Contacter</li>
+          </ul>
+        </div>
+      </div>
     </footer>
 </body>
 </html>
