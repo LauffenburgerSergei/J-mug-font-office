@@ -3,11 +3,9 @@ body {
   background-color: #f4cfdf20;
 }
 
-
 /* /##################################################/ */
 /* /##################    HEADER    ##################/ */
 /* /##################################################/ */
-
 
 header {
   margin: 0;
@@ -79,14 +77,16 @@ header figure {
 }
 
 .panier__button {
+  display: flex;
   text-align: center;
   color: #5784ba;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fa-basket-shopping {
   padding: 20px;
 }
-
 
 nav {
   text-align: center;
@@ -112,7 +112,6 @@ a {
   justify-content: space-around;
   padding: 1rem;
   width: 25%;
-
 }
 
 .nav a:hover {
@@ -179,10 +178,6 @@ h3 {
   padding: 20px 10px 20px 10px;
   border-radius: 15px;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
-}
-
-figure {
-  width: 25%;
 }
 
 .section__img {
@@ -257,7 +252,7 @@ form div > label {
   font-weight: 600;
 }
 
-form div > input,
+form div > input [type="email"].form__email,
 form div > select,
 form div > textarea {
   color: #000000;
@@ -269,10 +264,21 @@ form div > textarea {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
+.form__email,
+input[type="email"] {
+  width: auto;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 25%);
+}
+
 form div > input,
 form div > select {
   height: 50px;
   padding-left: 0.9em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 25%);
 }
 
 form div > select {
