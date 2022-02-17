@@ -168,7 +168,15 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0px 450px 0px 450px;
+  /*width: 75%;*/
 }
+
+/*.index .index_card {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}*/
 
 .paragraphe__description {
   margin: 30px;
