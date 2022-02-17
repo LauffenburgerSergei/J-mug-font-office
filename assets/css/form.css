@@ -66,3 +66,27 @@ form div:last-child {
   align-items: center;
   margin-top: 20px;
 }
+.search {
+  text-align: center;
+  margin-top: 10px;
+  width: 60%;
+}
+.search__input,
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #5784ba;
+  border-radius: 10px 0 0 10px;
+  width: 40%;
+}
+
+.search__input:hover {
+  border: 1px solid #5784ba;
+  color: black;
+}
+
+input[type="submit"].search__btn,
+.newsletter__button {
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  text-transform: uppercase;
+}
