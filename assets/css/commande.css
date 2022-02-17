@@ -74,24 +74,23 @@ h1 {
   /* object-fit ? */
   margin-right: 0.5rem;
 }
-.item__title{
-  margin-bottom:1.5rem;
+.item__title {
+  margin-bottom: 1.5rem;
 }
-.dispo{
-  display:flex;
+.dispo {
+  display: flex;
   flex-direction: column;
-  
 }
 .dispo__stock,
 .dispo__number {
   margin-top: 1rem;
-  margin-left:1rem;
+  margin-left: 1rem;
 }
 .dispo__stock {
   color: #9ac8eb;
   font-weight: 700;
 }
-.dispo__number{
+.dispo__number {
   justify-self: flex-end;
 }
 .item__ref,
@@ -131,12 +130,33 @@ h1 {
   width: 100%;
 }
 /* ########################################## */
+/* ################ COMMANDE ################ */
+/* ########################################## */
+.payment {
+padding:0 40px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+.address {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.address__selection,
+.address__add {
+  width: 40%;
+}
+
+/* ########################################## */
 /* ################## MEDIA ################# */
 /* ########################################## */
 
 @media screen and (min-width: 1200px) {
   body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .container {
