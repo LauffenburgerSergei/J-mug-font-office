@@ -37,31 +37,6 @@ input[type="submit"] {
   width: 11%;
   /*width: 20%;*/
 }
-.search {
-  text-align: center;
-  margin-top: 10px;
-  width: 60%;
-}
-
-.search__input,
-input[type="email"] {
-  padding: 10px;
-  border: 1px solid #5784ba;
-  border-radius: 10px 0 0 10px;
-  width: 40%;
-}
-
-.search__input:hover {
-  border: 1px solid #5784ba;
-  color: black;
-}
-
-input[type="submit"].search__btn,
-.newsletter__button {
-  margin-left: -5px;
-  border-radius: 0 10px 10px 0;
-  text-transform: uppercase;
-}
 
 header > a {
   color: black;
@@ -91,7 +66,6 @@ header figure {
   padding: 20px;
 }
 
-
 nav {
   text-align: center;
   display: flex;
@@ -116,7 +90,6 @@ a {
   justify-content: space-around;
   padding: 1rem;
   width: 25%;
-
 }
 
 .nav a:hover {
@@ -124,6 +97,7 @@ a {
   color: black;
   border-radius: 10px;
 }
+
 /*###################################################*/
 /*####################   MAIN  ######################*/
 /*###################################################*/
@@ -151,8 +125,10 @@ h2 {
   width: 1000px;
   height: 400px;
   overflow: hidden;
-  border: 2px solid #f4cfdf;
+  border: 2px solid rgb(185, 182, 182);
   border-radius: 5px;
+  box-shadow: rgba(131, 131, 131, 0.904) 0px 2px 4px 0px,
+    rgba(204, 206, 207, 0.568) 0px 2px 16px 0px;
 }
 
 .images {
@@ -187,41 +163,18 @@ h2 {
   text-align: center;
 }
 
-.product {
-  margin-top: 30px;
+.index_card {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
-
-}
-.product {
-  display: flex;
-  flex-wrap: wrap-reverse;
-
+  justify-content: space-around;
+  margin: 0px 450px 0px 450px;
 }
 
-.product__card {
-  background-color: #f4cfdf67;
-  flex-direction: column;
-  margin: 2rem 0;
-  padding: 5px;
-  text-align: center;
-
-  border-radius: 15px 15px;
-
-}
-
-.product_card__img {
-  border-radius: 15px 15px 0 0;
-}
-
-
-/*.product:hover {
-  background-color: #f4cfdf5e;
-}*/
-
-.paragraphe__description { 
+.paragraphe__description {
   margin: 30px;
+  padding: 30px;
+  background-color: #f6f7cf;
+  border-radius: 10px;
 }
 
 .news {
@@ -237,8 +190,10 @@ h2 {
   width: 1000px;
   height: 400px;
   overflow: hidden;
-  border: 2px solid #f4cfdf;
+  border: 2px solid rgb(185, 182, 182);
   border-radius: 5px;
+  box-shadow: rgba(131, 131, 131, 0.904) 0px 2px 4px 0px,
+    rgba(204, 206, 207, 0.568) 0px 2px 16px 0px;
 }
 
 .new__image {
@@ -284,33 +239,6 @@ h2 {
 .newsletter__title {
   font-size: 1.5rem;
   margin: 0;
-}
-
-
-/* Element de confiance */
-.reassurance {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 2rem 0;
-  align-items: flex-start;
-}
-.reassurance__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-}
-.reassurance__img {
-  border: black 2px solid;
-  padding: 1rem;
-  border-radius: 50%;
-  margin-bottom: 0.5rem;
-}
-.reassurance__text {
-  text-transform: uppercase;
-  text-align: center;
-  font: 0.5rem;
 }
 
 /*###################################################*/
