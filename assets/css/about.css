@@ -160,7 +160,7 @@ h3 {
 }
 
 .jmug__logo {
-  height: 250px;
+  height: 100px;
   margin-right: 80px;
 }
 
@@ -196,8 +196,8 @@ h3 {
 
 .figure__img {
   margin-left: 0%;
-  height: 250px;
-  width: 250px;
+  height: 1px;
+  width: 25px;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
 }
 
