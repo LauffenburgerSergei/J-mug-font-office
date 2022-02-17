@@ -323,8 +323,8 @@ form div > select:invalid {
 
 form div > select option {
   color: #000000;
-  background: #0b1013;
-  color: #ffffff;
+  background: #eeeeee;
+  color: #000000;
 }
 
 .about form div:last-child {
