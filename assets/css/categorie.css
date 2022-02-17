@@ -87,21 +87,19 @@ a {
   background-color: #f4cfdf;
   color: #5784ba;
 }
-main {
-  display: flex;
-  flex-direction: row;
-}
+
 .checkbox {
-  border: 2px solid;
+  border: 2px black solid;
   margin-top: 30px;
+  text-align: left;
+  padding-left: 20px;
+  padding: 20px ;
+width: 200px;
+margin-left: 30px;
+border-radius: 5%;
 }
 .my_h1 {
   font-size: 20px;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 20%;
 }
 
 .ajoutez {
@@ -117,12 +115,6 @@ main {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #ffffff;
 }
-
-.checkbox {
-  text-align: left;
-  padding-left: 20px;
-}
-
 form div:last-child {
   align-items: inherit;
   margin-top: 20px;
@@ -156,11 +148,6 @@ form div > select option {
   color: #000000;
 }
 
-.checkbox {
-  border: 2px solid;
-  margin-top: 30px;
-}
-
 .ajoutez {
   width: 150px;
   max-width: 200px;
@@ -174,12 +161,6 @@ form div > select option {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #ffffff;
   margin-top: 10px;
-  
-}
-
-.checkbox {
-  text-align: left;
-  padding-left: 20px;
 }
 
 form div:last-child {
@@ -193,6 +174,7 @@ form div:last-child {
 main {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 form div > {
@@ -220,56 +202,55 @@ form div > select option {
 }
 
 .container {
-  font-size: large;
-  font-style: bold;
-  text-align: center;
   padding: 50px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   flex-grow: 1;
   gap: 10px 30px;
+ width: 30%;
+ margin: 520px;
 }
-.product__card {
-  width: 30%;
 
-}
 .my_form {
-  width: 100%;
-  min-height: 50px;
-  margin-top: 15px;
-  margin-top: 25px;
  
+  min-height: min-content;
+ display: inline-block;
+ 
+
+
 }
 
 .my_h1 {
   font-size: 30px;
-  text-align: center ;
-  margin-bottom: 30px;}
-  
-  body p
-  {
-    font-size:20px;
-  }
-  footer {
-    padding: 20px 15px;
-    background-color: #9ac8eb;
-  }
-  
-  .footer_info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: start;
-  
-    width: auto;
-    height: auto;
-  }
-  
-  .footer_info_title {
-    font-size: 1.1em;
-    font-weight: 700;
-    padding: 15px 0;
-  }
-  
-  footer li {
-    padding: 10px 0;
-  }
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body p {
+  font-size: 20px;
+}
+footer {
+  padding: 20px 15px;
+  background-color: #9ac8eb;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: start;
+
+  width: auto;
+  height: auto;
+}
+
+.footer_info_title {
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+footer li {
+  padding: 10px 0;
+}
