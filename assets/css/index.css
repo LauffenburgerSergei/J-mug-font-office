@@ -1,4 +1,4 @@
-body {
+.accueil {
   font-family: "Montserrat", sans-serif;
   background-color: #f4cfdf20;
 }
@@ -13,90 +13,6 @@ h3 {
 /*####################   HEADER   ###################*/
 /*###################################################*/
 
-header {
-  margin: 0;
-  height: auto;
-  padding: 20px 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-button,
-input[type="button"],
-input[type="submit"] {
-  border: 1px solid #5784ba;
-  background-color: #5784ba;
-  color: white;
-  padding: 10px;
-}
-
-.header__img {
-  height: 50px;
-  width: 11%;
-  /*width: 20%;*/
-}
-
-header > a {
-  color: black;
-}
-header > a:hover {
-  color: black;
-}
-input[type="submit"].search__btn:hover {
-  color: black;
-  border: 1px solid #5784ba;
-}
-header figure {
-  margin-right: 2rem;
-}
-
-.panier_commande {
-  height: 50px;
-  color: #5784ba;
-}
-
-.panier__button {
-  text-align: center;
-  color: #5784ba;
-}
-
-.fa-basket-shopping {
-  padding: 20px;
-}
-
-nav {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  overflow: hidden;
-  width: 100%;
-  margin-top: 2rem;
-}
-
-a {
-  float: center;
-  text-decoration: none;
-}
-
-.nav a {
-  color: black;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-  width: 25%;
-}
-
-.nav a:hover {
-  background-color: #f4cfdf;
-  color: black;
-  border-radius: 10px;
-}
 
 /*###################################################*/
 /*####################   MAIN  ######################*/
@@ -154,7 +70,7 @@ h2 {
     transform: translateX(-2000px);
   }
   100% {
-    transform: translateX();
+    transform: translateX(0);
   }
 }
 
@@ -168,7 +84,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0px 450px 0px 450px;
-  /*width: 75%;*/
+  width: 75%;
 }
 
 /*.index .index_card {
@@ -222,7 +138,7 @@ h2 {
     transform: translateX(-2000px);
   }
   100% {
-    transform: translateX();
+    transform: translateX(0);
   }
 }
 
@@ -233,10 +149,6 @@ h2 {
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 10px;
-}
-
-.newsletter__button:hover {
-  color: black;
 }
 
 .newsletter__p {
