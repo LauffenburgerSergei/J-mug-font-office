@@ -44,9 +44,7 @@
   <h1 class="my_h1">Bienvenue dans notre boutique</h1>
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi deleniti fugit nostrum, illo quae voluptates iste eveniet quidem distinctio voluptatem mollitia. Consectetur odio totam rem aliquid dicta recusandae quia architecto.</p> 
     <main>
-      
-        
-        
+  
             <div class="checkbox">
             <h2 class="my_h2">Catégorie</h2> 
             <form action="">
@@ -59,61 +57,63 @@
                 <option value="{&quot;messageKey&quot;:&quot;category.sortOrder.price_ascending&quot;,&quot;redirectUrl&quot;:&quot;/new_category.htm?shop=campaign_133901&amp;gender=FEMALE&amp;v5=News%3ACampaign%3A20220214%3A1%3A1%3A1&amp;sort_by=price_ascending&quot;,&quot;gtmEvent&quot;:{&quot;asJson&quot;:null,&quot;event&quot;:&quot;gaEvent&quot;,&quot;eventCategory&quot;:&quot;Filter&quot;,&quot;eventAction&quot;:&quot;Sorting applied&quot;,&quot;eventLabel&quot;:&quot;Sorting applied: Price low to high&quot;,&quot;eventSegment&quot;:&quot;&quot;,&quot;eventValue&quot;:&quot;0&quot;,&quot;eventPartition&quot;:&quot;Campaign&quot;,&quot;eventCommand&quot;:&quot;SortingApplyClick&quot;},&quot;selected&quot;:false}">Prix : par ordre croissant</option>
                 </select>
               </div>
+              <form action="radio">
                 <div class="my_form">
                     <label class="my_form" for="contenance">Contenance</label>
-                    <input type="radio" id="contenance" >
+                    <input type="radio" id="contenance" name="Contenance" >
         </div>
         <div class="my_form">
+          
                     <label class="my_form" for="st_valentin">St valentin</label>
-                    <input type="radio" id="st_valentin" >
+                    <input type="radio" id="st_valentin" name="Contenance">
                 </div>
                 <div class="my_form">
                     <label class="my_form" for="couple">Couple</label>
-                    <input type="radio" id="couple" >
+                    <input type="radio" id="couple" name="Contenance"  >
                 </div>
                 <div class="my_form">
                     <label class="my_form" for="coffret">Coffret</label>
-                    <input type="radio" id="coffret" >
+                    <input type="radio" id="coffret" name="Contenance" >
                 </div>
                 <div class="my_form"> 
                     <label class="my_form" for="promo">Promo</label>
-                    <input type="radio" id="promo" >
+                    <input type="radio" id="promo" name="contenance" >
                 </div>
                 <div class="my_form"> 
                     <label class="my_form" for="new">Nouveauté</label>
-                    <input type="radio" id="new" >
+                    <input type="radio" id="new" name="Contenance" >
                 </div>
             </form>
         </div>
         <section class="container">
          
-          <a href="#" class="lien_product">
+          <a href="product.html" class="lien_product">
             <section class="product_card">
               <figure class="figure">
                 <div>
                   <img
                     class="produit"
-                    src="./assets/images/tasse bleu.png"
+                    src="./assets/images/mug-box-duo-saint-valentin.png"
                     alt="coffret tasse st valentin"
                     height="200"
                     width="200"
                   />
                 </div>
                 <figcaption class="figcaption_card">
-                  <h3 class="figcaption_card-h3">Tasse Bleu</h3>
+                  <h3 class="figcaption_card-h3">Coffret box duo st valentin</h3>
                   <p class="figcaption_card-p">tarif</p>
                 </figcaption>
               </figure>
             </section>
           </a>
  
-          <a href="#" class="lien_product">
+          <a href="product.html" class="lien_product">
             <section class="product_card">
               <figure class="figure">
                 <div>
                   <img
                     class="produit"
-                    src="./assets/images/tasse bleu.png"
+                    src="./assets/images/mug-box2-blue.png"
                     alt="coffret tasse st valentin"
                     height="200"
                     width="200"
@@ -127,13 +127,51 @@
               </figure>
             </section>
           </a>
-          <a href="#" class="lien_product">
+          <a href="product.html" class="lien_product">
             <section class="product_card">
               <figure class="figure">
                 <div>
                   <img
                     class="produit"
-                    src="./assets/images/tasse bleu.png"
+                    src="./assets/images/mug-box-rose.png"
+                    alt="coffret tasse st valentin"
+                    height="200"
+                    width="200"
+                  />
+                </div>
+                <figcaption class="figcaption_card">
+                  <h3 class="figcaption_card-h3">Tasse rose</h3>
+                  <p class="figcaption_card-p">tarif</p>
+                </figcaption>
+              </figure>
+            </section>
+          </a>
+          <a href="product.html" class="lien_product">
+            <section class="product_card">
+              <figure class="figure">
+                <div>
+                  <img
+                    class="produit"
+                    src="./assets/images/mug-box.png"
+                    alt="coffret tasse st valentin"
+                    height="200"
+                    width="200"
+                  />
+                </div>
+                <figcaption class="figcaption_card">
+                  <h3 class="figcaption_card-h3">Tasse jaune</h3>
+                  <p class="figcaption_card-p">tarif</p>
+                </figcaption>
+              </figure>
+            </section>
+          </a>
+          <a href="product.html" class="lien_product">
+            <section class="product_card">
+              <figure class="figure">
+                <div>
+                  <img
+                    class="produit"
+                    src="./assets/images/mug-box-blue.png"
                     alt="coffret tasse st valentin"
                     height="200"
                     width="200"
@@ -146,89 +184,51 @@
               </figure>
             </section>
           </a>
-          <a href="#" class="lien_product">
+          <a href="product.html" class="lien_product">
             <section class="product_card">
               <figure class="figure">
                 <div>
                   <img
                     class="produit"
-                    src="./assets/images/tasse bleu.png"
+                    src="./assets/images/mug-box2-rose.png"
                     alt="coffret tasse st valentin"
                     height="200"
                     width="200"
                   />
                 </div>
                 <figcaption class="figcaption_card">
-                  <h3 class="figcaption_card-h3">Tasse Bleu</h3>
+                  <h3 class="figcaption_card-h3">Tasse rose</h3>
                   <p class="figcaption_card-p">tarif</p>
                 </figcaption>
               </figure>
             </section>
           </a>
-          <a href="#" class="lien_product">
+          <a href="product.html" class="lien_product">
             <section class="product_card">
               <figure class="figure">
                 <div>
                   <img
                     class="produit"
-                    src="./assets/images/tasse bleu.png"
+                    src="./assets/images/mug-saint-valentin.png"
                     alt="coffret tasse st valentin"
                     height="200"
                     width="200"
                   />
                 </div>
                 <figcaption class="figcaption_card">
-                  <h3 class="figcaption_card-h3">Tasse Bleu</h3>
+                  <h3 class="figcaption_card-h3">Mug st valentin</h3>
                   <p class="figcaption_card-p">tarif</p>
                 </figcaption>
               </figure>
             </section>
           </a>
-          <a href="#" class="lien_product">
+          <a href="product.html" class="lien_product">
             <section class="product_card">
               <figure class="figure">
                 <div>
                   <img
                     class="produit"
-                    src="./assets/images/tasse bleu.png"
-                    alt="coffret tasse st valentin"
-                    height="200"
-                    width="200"
-                  />
-                </div>
-                <figcaption class="figcaption_card">
-                  <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                  <p class="figcaption_card-p">tarif</p>
-                </figcaption>
-              </figure>
-            </section>
-          </a>
-          <a href="#" class="lien_product">
-            <section class="product_card">
-              <figure class="figure">
-                <div>
-                  <img
-                    class="produit"
-                    src="./assets/images/tasse bleu.png"
-                    alt="coffret tasse st valentin"
-                    height="200"
-                    width="200"
-                  />
-                </div>
-                <figcaption class="figcaption_card">
-                  <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                  <p class="figcaption_card-p">tarif</p>
-                </figcaption>
-              </figure>
-            </section>
-          </a>
-          <a href="#" class="lien_product">
-            <section class="product_card">
-              <figure class="figure">
-                <div>
-                  <img
-                    class="produit"
-                    src="./assets/images/tasse bleu.png"
+                    src="./assets/images/mug-box2-jaune.png"
                     alt="coffret tasse st valentin"
                     height="200"
                     width="200"
