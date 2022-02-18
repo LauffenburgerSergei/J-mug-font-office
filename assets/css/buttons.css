@@ -34,3 +34,9 @@ input[type="submit"] {
 .montant__form input[type="button"]:hover {
   background-color: #5784ba;
 }
+
+/* commande */
+
+.address_selection input[type="button"] {
+  flex-grow: 2;
+}
