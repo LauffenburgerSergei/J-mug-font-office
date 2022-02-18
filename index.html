@@ -15,16 +15,27 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/product.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/product.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />-->
+
+
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!--<link rel="stylesheet" href="./assets/css/style.css" />-->
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/reassurance.css" />
+    <link rel="stylesheet" href="./assets/css/buttons.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <title>J MUG</title>
   </head>
-  <body class="cart">
-    <header>
+  <body class="accueil">
+    <header id="header__accueil">
       <a href="index.html" class="header__img">
-        <img src="./assets/images/j-mug.webP" alt="J-Mug" />
+        <img src="./assets/images/j-mug.svg" alt="J-Mug" />
       </a>
       <form action="search.php" class="search">
         <input type="text" name="search" class="search__input" />
@@ -33,12 +44,12 @@
       <a href="cart.html">
         <figure class="panier__button">
           <i class="fa-solid fa-basket-shopping fa-2xl"></i>
-          <figcaption>Mon panier</figcaption>
+          <figcaption class="figcaption__panier">Mon panier</figcaption>
         </figure>
       </a>
       <nav class="nav">
         <a href="index.html" class="nav__link">Accueil</a>
-        <a href="categories.html" class="nav__link">Catégorie</a>
+        <a href="categorie.html" class="nav__link">Catégorie</a>
         <a href="about.html" class="nav__link">A propos</a>
         <a href="about.html#contact" class="nav__link">Contact</a>
       </nav>
@@ -51,17 +62,17 @@
           <div class="images">
             <img
               class="diapo__img"
-              src="./assets/images/mokcupone (1).png"
+              src="./assets/images/mug-box-duo-saint-valentin.png"
               alt="#"
             />
             <img
               class="diapo__img"
-              src="./assets/images/mokcupone (1).png"
+              src="./assets/images/mug-box-saintvalentin.png"
               alt=""
             />
             <img
               class="diapo__img"
-              src="./assets/images/mokcupone (1).png"
+              src="./assets/images/mug-box-duo-saint-valentin.png"
               alt="#"
             />
           </div>
@@ -101,15 +112,15 @@
               <div>
                 <img
                   class="produit"
-                  src="./assets/images/tasse bleu.png"
+                  src="./assets/images/mug-coeur-bleu.png"
                   alt="coffret tasse st valentin"
                   height="200"
                   width="200"
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Bleu</h3>
+                <p class="figcaption_card-p">14<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -120,15 +131,15 @@
               <div>
                 <img
                   class="produit"
-                  src="./assets/images/tasse bleu.png"
+                  src="./assets/images/mug-coeur-jaune.png"
                   alt="coffret tasse st valentin"
                   height="200"
                   width="200"
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Jaune</h3>
+                <p class="figcaption_card-p">24<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -139,15 +150,15 @@
               <div>
                 <img
                   class="produit"
-                  src="./assets/images/tasse bleu.png"
+                  src="./assets/images/mug-coeur-rose.png"
                   alt="coffret tasse st valentin"
                   height="200"
                   width="200"
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Rose</h3>
+                <p class="figcaption_card-p">29<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -158,15 +169,15 @@
               <div>
                 <img
                   class="produit"
-                  src="./assets/images/tasse bleu.png"
+                  src="./assets/images/mug-coeur-bleu.png"
                   alt="coffret tasse st valentin"
                   height="200"
                   width="200"
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Bleu</h3>
+                <p class="figcaption_card-p">16<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -177,15 +188,15 @@
               <div>
                 <img
                   class="produit"
-                  src="./assets/images/tasse bleu.png"
+                  src="./assets/images/mug-coeur-jaune.png"
                   alt="coffret tasse st valentin"
                   height="200"
                   width="200"
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Jaune</h3>
+                <p class="figcaption_card-p">19<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -196,15 +207,15 @@
               <div>
                 <img
                   class="produit"
-                  src="./assets/images/tasse bleu.png"
+                  src="./assets/images/mug-coeur-rose.png"
                   alt="coffret tasse st valentin"
                   height="200"
                   width="200"
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Rose</h3>
+                <p class="figcaption_card-p">9<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -215,15 +226,15 @@
               <div>
                 <img
                   class="produit"
-                  src="./assets/images/tasse bleu.png"
+                  src="./assets/images/mug-coeur-bleu.png"
                   alt="coffret tasse st valentin"
                   height="200"
                   width="200"
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Bleu</h3>
+                <p class="figcaption_card-p">12<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -234,15 +245,15 @@
               <div>
                 <img
                   class="produit"
-                  src="./assets/images/tasse bleu.png"
+                  src="./assets/images/mug-coeur-jaune.png"
                   alt="coffret tasse st valentin"
                   height="200"
                   width="200"
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Jaune</h3>
+                <p class="figcaption_card-p">10<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -253,9 +264,10 @@
         <h2>Nouveautés</h2>
         <div id="news__new">
           <div class="new__image">
-            <img src="./assets/images/mokcupone (1).png" alt="#" />
-            <img src="./assets/images/mokcupone (1).png" alt="#" />
-            <img src="./assets/images/mokcupone (1).png" alt="#" />
+
+            <img src="./assets/images/mug-box2-blue.png" alt="#" />
+            <img src="./assets/images/mug-box2-jaune.png" alt="#" />
+            <img src="./assets/images/mug-box2-rose.png" alt="#" />
           </div>
         </div>
       </section>
