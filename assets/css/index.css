@@ -14,6 +14,94 @@ h3 {
 /*###################################################*/
 
 
+header {
+  margin: 0;
+  height: auto;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+
+button,
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid #5784ba;
+  background-color: #5784ba;
+  color: white;
+  padding: 10px;
+}
+
+.header__img {
+  height: 50px;
+  width: 11%;
+  /*width: 20%;*/
+}
+
+header > a {
+  color: black;
+  text-decoration: none;
+}
+header > a:hover {
+  color: black;
+}
+input[type="submit"].search__btn:hover {
+  color: black;
+  border: 1px solid #5784ba;
+}
+header figure {
+  margin-right: 2rem;
+}
+
+.panier_commande {
+  height: 30px;
+  color: #5784ba;
+}
+
+.panier__button {
+  text-align: center;
+  color: #5784ba;
+}
+
+.fa-basket-shopping {
+  padding: 20px;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+a {
+  float: center;
+  text-decoration: none;
+}
+
+.nav a {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 25%;
+}
+
+.nav a:hover {
+  background-color: #f4cfdf;
+  color: black;
+  border-radius: 10px;
+}
+
+
 /*###################################################*/
 /*####################   MAIN  ######################*/
 /*###################################################*/
@@ -26,7 +114,15 @@ main {
 h1,
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+sup {
+  vertical-align: super;
+}
+
+.figcaption_card-p sup {
+  font-size: 0.6rem;
 }
 
 .diapo {
@@ -83,9 +179,10 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0px 450px 0px 450px;
-  width: 75%;
+  margin: 0px 155px;
+  width: 75%
 }
+
 
 /*.index .index_card {
   margin-bottom: 30px;
@@ -99,6 +196,8 @@ h2 {
   padding: 30px;
   background-color: #f6f7cf;
   border-radius: 10px;
+  box-shadow: rgba(131, 131, 131, 0.904) 0px 2px 4px 0px,
+    rgba(204, 206, 207, 0.568) 0px 2px 16px 0px;
 }
 
 .news {
@@ -146,9 +245,22 @@ h2 {
   background-color: #f4cfdf;
   text-align: center;
   padding: 1.5rem;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
   border-radius: 10px;
+  box-shadow: rgba(131, 131, 131, 0.904) 0px 2px 4px 0px,
+    rgba(204, 206, 207, 0.568) 0px 2px 16px 0px;
+}
+
+
+input[type=submit], .newsletter__button{   
+  margin-left: -5px;   
+  border-radius: 0 10px 10px 0;   
+  text-transform: uppercase; 
+}
+
+.newsletter__button:hover {
+  color: black;
 }
 
 .newsletter__p {
