@@ -4,8 +4,8 @@ form div {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  min-height: 83px;
-  margin-top: 25px;
+  /* min-height: 83px; */
+  /* margin-top: 25px; */
 }
 
 .promo div {
@@ -43,7 +43,8 @@ input[type="email"] {
 
 form div > input,
 form div > select,
-form > select {
+form > select,
+select.barre_trier {
   height: 50px;
   padding-left: 0.9em;
   border-radius: 5px;
@@ -91,7 +92,7 @@ form div > select option {
   color: #ffffff;
 }
 
-form div:last-child {
+.about form div:last-child {
   align-items: center;
   margin-top: 20px;
 }
@@ -136,12 +137,11 @@ input[type="submit"].search__btn,
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
-  margin-top: 0;
+  margin-top: 1rem;
 }
-.address__selection form{
-  display:flex;
+.address__selection form {
+  display: flex;
   flex-direction: column;
-  
 }
 .address__add {
   margin-right: 2rem;
@@ -157,15 +157,15 @@ input[type="submit"].search__btn,
   width: 50px;
   height: 40px;
 }
-.address__add .form__group > * {
-  height: initial;
-  margin-top: 0;
-  flex: 1 2 auto;
-  height: 40px;
-}
 .address__add .form__item {
-  margin-top: 0;
+  margin: 0.3rem 0;
 }
+.address__add .form__group > .form__item {
+  height: initial;
+  flex: 1 2 auto;
+  min-height: 66px;
+}
+
 .address__add .form__item:last-child {
   align-items: initial;
 }

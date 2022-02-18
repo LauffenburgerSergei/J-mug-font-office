@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./assets/css/commande.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body>
+  <body class="paiement">
     <header>
       <a href="index.html" class="header__img">
         <img src="./assets/images/j-mug.svg" alt="J-Mug" />
@@ -107,48 +107,66 @@
         </section>
       </article>
       <article>
-        <h3>Selectionner un moyen de paiement</h3>
-        <form action="#">
-          <fieldset>
-            <legend>Vos cartes de paiement</legend>
+        <form action="#" class="paiement__form">
+          <section class="paiement__info">
+            <h2>Selectionner un moyen de paiement</h2>
+
+            <fieldset>
+              <legend>Vos cartes de paiement</legend>
+              <div>
+                <label for="card1">
+                  <input type="radio" name="paymentCard" id="card1" /> Visa /
+                  Master Card ***-1324
+                </label>
+              </div>
+              <div>
+                <label for="card2">
+                  <input type="radio" name="paymentCard" id="card2" /> Visa /
+                  Master Card ***-5678
+                </label>
+              </div>
+            </fieldset>
+
+            <h3>Plus d'options de paiement</h3>
+            <h4 class="paiement__subtitle">Ajouter votre compte bancaire</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium pariatur enim dolores eveniet neque obcaecati
+              recusandae! Ducimus iure incidunt distinctio, eligendi aliquid
+              natus culpa, sunt rem amet omnis architecto pariatur.
+            </p>
+            <button>Ajouter un compte courant</button>
+            <hr />
+            <h4 class="paiement__subtitle">Cartes de crédits ou de débit</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium pariatur enim dolores eveniet neque obcaecati
+              recusandae! Ducimus iure incidunt distinctio, eligendi aliquid
+              natus culpa, sunt rem amet omnis architecto pariatur.
+            </p>
+            <a href="#">Lien information</a><br />
+
+            <button>Ajouter une carte de crédit ou de débit</button>
+            <hr />
+            <h4>Chèques-cadeaux, Pass Cadeaux</h4>
+            <p><a href="#">Entrer un chèque-cadeaux ou un Pass Cadeaux</a></p>
+          </section>
+          <section class="paiement__payer">
             <div>
-              <label for="card1">
-                <input type="radio" name="paymentCard" id="card1" />Visa /
-                Master Card ***-1324
-              </label>
-            <!-- </div>
-            <div> -->
-              <label for="card2">
-                <input type="radio" name="paymentCard" id="card2" /> Visa /
-                Master Card ***-5678
-              </label>
+              <input type="submit" value="Continuer" />
+              <p>
+                En cliquant, vous pourrez accéder au terminal sécurisé de votre
+                banque.
+              </p>
             </div>
-          </fieldset>
-
-          <h5>Plus d'options de paiement</h5>
-          <p>ajouter votre compte bancaire</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            pariatur enim dolores eveniet neque obcaecati recusandae! Ducimus
-            iure incidunt distinctio, eligendi aliquid natus culpa, sunt rem
-            amet omnis architecto pariatur.
-          </p>
-          <button>Ajouter un compte courant</button>
-          <hr />
-          <h5>Plus d'options de paiement</h5>
-          <p>ajouter votre compte bancaire</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            pariatur enim dolores eveniet neque obcaecati recusandae! Ducimus
-            iure incidunt distinctio, eligendi aliquid natus culpa, sunt rem
-            amet omnis architecto pariatur.
-          </p>
-          <button>Ajouter une carte de crédit ou de débit</button>
-          <hr />
-          <h6>Chèques-cadeaux, Pass Cadeaux</h6>
-          <p><a href="#">Entrer un chèque-cadeaux ou un Pass Cadeaux</a></p>
-
-          <input type="submit" value="Payer" />
+            <div>
+              <input type="submit" value="Continuer" />
+              <p>
+                En cliquant, vous pourrez accéder au terminal sécurisé de votre
+                banque.
+              </p>
+            </div>
+          </section>
         </form>
       </article>
     </main>

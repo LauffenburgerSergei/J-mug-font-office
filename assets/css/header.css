@@ -9,17 +9,84 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 5px;
+}
+
+.header__img {
+  height: 50px;
+  width: 11%;
+}
+
+header > a {
+  color: black;
+  text-decoration: none;
+}
+header > a:hover {
+  color: black;
+}
+input[type="submit"].search__btn:hover {
+  color: black;
+  border: 1px solid #5784ba;
+}
+header figure {
+  margin-right: 2rem;
+}
+
+.panier_commande {
+  height: 30px;
+  color: #5784ba;
+}
+
+.panier__button {
+  text-align: center;
+  color: #5784ba;
+}
+
+.fa-basket-shopping {
+  padding: 20px;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+a {
+  float: center;
+  text-decoration: none;
+}
+
+.nav a {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 25%;
+}
+
+.nav a:hover {
+  background-color: #f4cfdf;
+  color: black;
+  border-radius: 10px;
+}
+header {
+  margin: 0;
+  height: auto;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
-button,
-input[type="button"],
-input[type="submit"] {
-  border: 1px solid #5784ba;
-  background-color: #5784ba;
-  color: white;
-  padding: 10px;
-}
 
 .header__img {
   height: 50px;
