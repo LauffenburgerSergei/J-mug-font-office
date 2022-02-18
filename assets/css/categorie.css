@@ -135,16 +135,7 @@ form div > input,
   height: auto;
   padding-left: 10px;
 }
-form div > input,
-form div > select,
-form div > textarea {
-  color: black;
-  background: #d9e7e9;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 300;
-}
+
 form div > select option {
   background: #ffffff;
   color: #000000;
@@ -190,9 +181,9 @@ form div > input,
 }
 form div > input,
 form div > select,
-form div > textarea {
+form div > textarea ,
+.option{
   color: black;
-  background: #d9e7e9;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -204,7 +195,6 @@ form div > select option {
 }
 
 .container {
-  
 display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -216,13 +206,9 @@ display: flex;
 }
 
 .my_form {
- 
   min-height: min-content;
  display: inline-block;
  font-weight: initial;
- 
-
-
 }
 
 .my_h1 {
@@ -230,7 +216,6 @@ display: flex;
   text-align: center;
   margin-bottom: 30px;
 }
-
 
 footer {
   padding: 20px 15px;
@@ -257,14 +242,12 @@ footer li {
   padding: 10px 0;
 }
 .description__p  {
-
 padding-bottom: 40px;
 margin: 20 20;
 font-size: 20px;
 }
 .my_h2{
   text-align: center;
- 
 }
 .barre_trier{
   margin-top: 10px;
