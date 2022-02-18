@@ -19,8 +19,9 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />-->
 
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!--<link rel="stylesheet" href="./assets/css/style.css" />-->
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/reassurance.css" />
     <link rel="stylesheet" href="./assets/css/buttons.css" />
@@ -31,8 +32,8 @@
 
     <title>J MUG</title>
   </head>
-  <body class="cart">
-    <header>
+  <body class="accueil">
+    <header id="header__accueil">
       <a href="index.html" class="header__img">
         <img src="./assets/images/j-mug.svg" alt="J-Mug" />
       </a>
@@ -43,7 +44,7 @@
       <a href="cart.html">
         <figure class="panier__button">
           <i class="fa-solid fa-basket-shopping fa-2xl"></i>
-          <figcaption>Mon panier</figcaption>
+          <figcaption class="figcaption__panier">Mon panier</figcaption>
         </figure>
       </a>
       <nav class="nav">
@@ -61,17 +62,17 @@
           <div class="images">
             <img
               class="diapo__img"
-              src="./assets/images/mug-box2-blue.png"
+              src="./assets/images/mug-box-duo-saint-valentin.png"
               alt="#"
             />
             <img
               class="diapo__img"
-              src="./assets/images/mug-box2-jaune.png"
+              src="./assets/images/mug-box-saintvalentin.png"
               alt=""
             />
             <img
               class="diapo__img"
-              src="./assets/images/mug-box2-rose.png"
+              src="./assets/images/mug-box-duo-saint-valentin.png"
               alt="#"
             />
           </div>
@@ -118,8 +119,8 @@
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Bleu</h3>
+                <p class="figcaption_card-p">14<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -137,8 +138,8 @@
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Jaune</h3>
+                <p class="figcaption_card-p">24<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -156,8 +157,8 @@
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Rose</h3>
+                <p class="figcaption_card-p">29<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -175,8 +176,8 @@
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Bleu</h3>
+                <p class="figcaption_card-p">16<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -194,8 +195,8 @@
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Jaune</h3>
+                <p class="figcaption_card-p">19<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -213,8 +214,8 @@
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Rose</h3>
+                <p class="figcaption_card-p">9<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -232,8 +233,8 @@
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Bleu</h3>
+                <p class="figcaption_card-p">12<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -251,8 +252,8 @@
                 />
               </div>
               <figcaption class="figcaption_card">
-                <h3 class="figcaption_card-h3">Tasse Bleu</h3>
-                <p class="figcaption_card-p">tarif</p>
+                <h3 class="figcaption_card-h3">Tasse Amour Jaune</h3>
+                <p class="figcaption_card-p">10<sup>€99</sup></p>
               </figcaption>
             </figure>
           </section>
@@ -263,9 +264,10 @@
         <h2>Nouveautés</h2>
         <div id="news__new">
           <div class="new__image">
-            <img src="./assets/images/mug-box-duo-saint-valentin.png" alt="#" />
-            <img src="./assets/images/mug-box-duo-saint-valentin.png" alt="#" />
-            <img src="./assets/images/mug-box-duo-saint-valentin.png" alt="#" />
+
+            <img src="./assets/images/mug-box2-blue.png" alt="#" />
+            <img src="./assets/images/mug-box2-jaune.png" alt="#" />
+            <img src="./assets/images/mug-box2-rose.png" alt="#" />
           </div>
         </div>
       </section>
