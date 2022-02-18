@@ -8,16 +8,35 @@ input[type="submit"] {
   padding: 10px;
   border-radius: 10px;
   text-transform: uppercase;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+
+input[type="submit"].search__btn:hover {
+  color: black;
+  border: 1px solid #5784ba;
+}
+
+form button {
+  width: 450px;
 
 .about form button {
   width: 150px;
+
   max-width: 500px;
   height: 60px;
   font-size: 1rem;
   background: #5784ba;
   color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.newsletter__button,
+input[type="submit"] {
+  border-radius: 0 10px 10px 0;
+}
+
+.newsletter__button:hover {
+  color: black;
 }
 
 /* cart */
