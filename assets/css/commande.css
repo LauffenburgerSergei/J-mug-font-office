@@ -194,9 +194,13 @@ h1 {
   margin-top: 50px;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
 }
+
 .address h4 {
   text-align: center;
   margin-bottom: 2rem;
+}
+.address__selection p {
+  text-align: start;
 }
 
 /* ########################################## */
