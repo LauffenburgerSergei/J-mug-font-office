@@ -51,3 +51,11 @@
 .figcaption_card-p {
   padding-top: 5px;
 }
+
+sup {
+  vertical-align: super;
+}
+
+.figcaption_card-p sup {
+  font-size: 0.6rem;
+}
