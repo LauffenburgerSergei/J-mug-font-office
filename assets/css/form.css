@@ -1,4 +1,5 @@
-form div, .address__add {
+form div,
+.address__add {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -67,8 +68,7 @@ form div > textarea {
 
 form div > input::placeholder,
 form div > textarea::placeholder {
-  opacity: 60%;
-  color: white;
+  color: grey;
 }
 
 form div > select:invalid {
@@ -108,6 +108,42 @@ input[type="submit"].search__btn,
   border-radius: 0 10px 10px 0;
   text-transform: uppercase;
 }
+.form__group {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* marie */
 .quantity input {
   margin: 0.5rem;
+}
+.address__add div {
+  /* display: fit-content; */
+  /* min-height: fit-content; */
+}
+.address__add label {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+.address__add input {
+  height: 40px;
+}
+.address__add input[type="number"] {
+  width: 25px;
+  height: 40px;
+}
+.address__add .form__item,
+.address__add .form__group {
+  height: initial;
+  margin-top: 0;
+}
+.address__add .form__item:last-child {
+  align-items: initial;
+}
+.address__add .form__item_number {
+  width: 10px;
+}
+.address__add .form__group .form__item {
+  width: fit-content;
 }
