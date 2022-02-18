@@ -9,17 +9,34 @@ input[type="submit"] {
   border-radius: 10px;
   text-transform: uppercase;
 }
+
+
+input[type="submit"].search__btn:hover {
+  color: black;
+  border: 1px solid #5784ba;
+}
+
 form button {
   width: 450px;
+
+.about form button {
+  width: 150px;
+
   max-width: 500px;
   height: 60px;
-  font-weight: 700;
-  font-size: 24px;
+  font-size: 1rem;
   background: #5784ba;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.newsletter__button,
+input[type="submit"] {
+  border-radius: 0 10px 10px 0;
+}
+
+.newsletter__button:hover {
+  color: black;
 }
 
 /* cart */
@@ -35,4 +52,35 @@ form button {
 }
 .montant__form input[type="button"]:hover {
   background-color: #5784ba;
+}
+
+/* commande */
+
+.address_selection input[type="button"] {
+  flex-grow: 2;
+}
+
+input[type="submit"],
+.newsletter__button {
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  text-transform: uppercase;
+}
+
+.newsletter__button:hover {
+  color: black;
+}
+
+input[type="submit"].search__btn:hover {
+  color: black;
+  border: 1px solid #5784ba;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid #5784ba;
+  background-color: #5784ba;
+  color: white;
+  padding: 10px;
 }
