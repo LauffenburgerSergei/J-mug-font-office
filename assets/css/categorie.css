@@ -135,16 +135,7 @@ form div > input,
   height: auto;
   padding-left: 10px;
 }
-form div > input,
-form div > select,
-form div > textarea {
-  color: black;
-  background: #d9e7e9;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 300;
-}
+
 form div > select option {
   background: #ffffff;
   color: #000000;
@@ -190,9 +181,9 @@ form div > input,
 }
 form div > input,
 form div > select,
-form div > textarea {
+form div > textarea ,
+.option{
   color: black;
-  background: #d9e7e9;
   border: none;
   border-radius: 5px;
   font-size: 16px;
