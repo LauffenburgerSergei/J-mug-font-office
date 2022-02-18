@@ -59,3 +59,28 @@ input[type="submit"] {
 .address_selection input[type="button"] {
   flex-grow: 2;
 }
+
+input[type="submit"],
+.newsletter__button {
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  text-transform: uppercase;
+}
+
+.newsletter__button:hover {
+  color: black;
+}
+
+input[type="submit"].search__btn:hover {
+  color: black;
+  border: 1px solid #5784ba;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid #5784ba;
+  background-color: #5784ba;
+  color: white;
+  padding: 10px;
+}
