@@ -219,6 +219,7 @@ display: flex;
  
   min-height: min-content;
  display: inline-block;
+ font-weight: initial;
  
 
 
@@ -264,4 +265,7 @@ font-size: 20px;
 .my_h2{
   text-align: center;
  
+}
+.barre_trier{
+  margin-top: 10px;
 }
