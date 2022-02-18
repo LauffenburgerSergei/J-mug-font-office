@@ -169,7 +169,7 @@ h3 {
   background-color: #9ac8eb;
   border-radius: 15px;
   border: none;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 .nos_produit {
@@ -183,7 +183,7 @@ h3 {
 
   padding: 20px 10px 20px 10px;
   border-radius: 15px;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 .section__img {
@@ -198,7 +198,7 @@ h3 {
   margin-left: 0%;
   height: 250px;
   width: 250px;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 .ou_sommes_nous {
@@ -213,7 +213,7 @@ h3 {
 .map {
   margin-right: 80px;
   border-radius: 15px;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.048));
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 section > p {
@@ -236,7 +236,7 @@ p {
   background: #9ac8eb;
   margin-bottom: 30px;
   margin-top: 50px;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 .contact > h1 {
@@ -253,7 +253,6 @@ p {
 footer {
   padding: 20px 15px;
   background-color: #9ac8eb;
-
 }
 
 .footer_info {
@@ -273,5 +272,4 @@ footer {
 
 footer li {
   padding: 10px 0;
-  font-family: Rowdies;
 }

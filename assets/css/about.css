@@ -45,18 +45,6 @@ input[type="email"] {
   width: 40%;
 }
 
-.search__input:hover {
-  border: 1px solid #5784ba;
-  color: black;
-}
-
-input[type="submit"].search__btn,
-.newsletter__button {
-  margin-left: -5px;
-  border-radius: 0 10px 10px 0;
-  text-transform: uppercase;
-}
-
 header > a {
   color: black;
 }
@@ -166,10 +154,10 @@ h3 {
 
 .title_text {
   padding: 30px 30px 30px 30px;
-  background-color: #9ac8eb;
+  background-color: #f6f7cf;
   border-radius: 15px;
   border: none;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 .nos_produit {
@@ -183,7 +171,7 @@ h3 {
 
   padding: 20px 10px 20px 10px;
   border-radius: 15px;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 .section__img {
@@ -198,7 +186,7 @@ h3 {
   margin-left: 0%;
   height: 250px;
   width: 250px;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 .ou_sommes_nous {
@@ -213,11 +201,7 @@ h3 {
 .map {
   margin-right: 80px;
   border-radius: 15px;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.048));
-}
-
-section > p {
-  text-align: center;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 p {
@@ -231,142 +215,16 @@ p {
   width: 700px;
   height: 800px;
   border: none;
-  border-radius: 8px;
-  padding: 20px 50px 10px 50px;
+  border-radius: 15px;
+  padding: 30px 50px 10px 50px;
   background: #9ac8eb;
   margin-bottom: 30px;
   margin-top: 50px;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 .contact > h1 {
   padding-top: 30px;
-}
-
-form div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-height: 83px;
-  margin-top: 25px;
-}
-
-form div > label {
-  margin-bottom: 7px;
-  font-weight: 600;
-}
-
-form div > input [type="email"].form__email,
-form div > select,
-form div > textarea {
-  color: #000000;
-  background: #ffffff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 500;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
-}
-
-.form__email,
-input[type="email"] {
-  width: auto;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 25%);
-}
-
-form div > input,
-form div > select {
-  height: 50px;
-  padding-left: 0.9em;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 25%);
-}
-
-form div > select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: inline-block;
-  padding: 0.5em 2em 0.5em 0.9em;
-  cursor: pointer;
-  color: rgb(70, 81, 88);
-  font-family: inherit;
-  font-size: 1em;
-  border: 1px solid rgb(207, 210, 219);
-  background-color: rgb(250, 250, 250);
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHg9IjBweCIgeT0iMHB4Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTIgMThsLTExLjAxOS0xMWgyMi4wMzh6Ii8+PC9zdmc+);
-  background-size: 0.8em;
-  background-repeat: no-repeat;
-  background-position: right 1.5rem center;
-}
-
-form div > textarea {
-  font-family: "Montserrat";
-  height: 195px;
-  padding: 15px 0px 0px 10px;
-}
-
-form div > .input::placeholder,
-form div > textarea::placeholder {
-  opacity: 60%;
-  color: rgb(0, 0, 0);
-}
-
-form div > select:invalid {
-  color: rgb(0, 0, 0);
-}
-
-form div > select option {
-  color: #000000;
-  background: #eeeeee;
-  color: #000000;
-}
-
-.about form div:last-child {
-  align-items: center;
-  margin-top: 20px;
-}
-
-button,
-a[type="button"],
-input[type="button"],
-input[type="submit"] {
-  border: 1px solid #5784ba;
-  background-color: #5784ba;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-/* Element de confiance */
-.reassurance {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 2rem 0;
-  align-items: flex-start;
-}
-.reassurance__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-}
-.reassurance__img {
-  border: black 2px solid;
-  padding: 1rem;
-  border-radius: 50%;
-  margin-bottom: 0.5rem;
-}
-.reassurance__text {
-  text-transform: uppercase;
-  text-align: center;
-  font: 0.5rem;
 }
 
 /* /##################################################/ */
@@ -395,5 +253,4 @@ footer {
 
 footer li {
   padding: 10px 0;
-  font-family: Rowdies;
 }

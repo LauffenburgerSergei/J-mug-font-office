@@ -38,7 +38,7 @@
       </a>
       <nav class="nav">
         <a href="index.html" class="nav__link">Accueil</a>
-        <a href="categories.html" class="nav__link">Catégorie</a>
+        <a href="categorie.html" class="nav__link">Catégorie</a>
         <a href="about.html" class="nav__link">A propos</a>
         <a href="about.html#contact" class="nav__link">Contact</a>
       </nav>
@@ -47,6 +47,7 @@
       <article class="address">
         <section class="address__selection">
           <h4>Sélectionner une adresse de livraison</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <form action="">
             <select name="adress" id="adressChoice">
               <option value="adress1">Domicile</option>
@@ -74,13 +75,21 @@
               <label for="adressName">Nommer cette adresse</label>
               <input type="text" id="adressName" />
             </div>
-            <div class="form__item">
-              <label for="adressNumber">N°</label>
-              <input type="text" id="adressNumber" />
-            </div>
-            <div class="form__item">
-              <label for="adressStreet">Nom de la rue</label>
-              <input type="text" id="adressStreet" />
+            <div class="form__group">
+              <div class="form__item form__item_number">
+                <label for="adressNumber">N°</label>
+                <input
+                  type="number"
+                  id="adressNumber"
+                  value="1"
+                  start="1"
+                  step="1"
+                />
+              </div>
+              <div class="form__item">
+                <label for="adressStreet">Nom de la rue</label>
+                <input type="text" id="adressStreet" />
+              </div>
             </div>
             <div class="form__item">
               <label for="adressCP">Code Postal</label>

@@ -132,9 +132,8 @@ h1 {
   margin-top: 50px;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
 }
-.promo div{
-
-}
+/* .promo div {
+} */
 .montants {
   width: 40%;
   display: flex;
@@ -165,8 +164,8 @@ h1 {
 .montant__form {
   width: 100%;
 }
-.montant__form input[type="button"] {
-}
+/* .montant__form input[type="button"] {
+} */
 /* ########################################## */
 /* ################ COMMANDE ################ */
 /* ########################################## */
@@ -185,6 +184,23 @@ h1 {
 .address__selection,
 .address__add {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 50px 10px 50px;
+  background: #9ac8eb;
+  margin-top: 50px;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
+}
+
+.address h4 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.address__selection p {
+  text-align: start;
 }
 
 /* ########################################## */
