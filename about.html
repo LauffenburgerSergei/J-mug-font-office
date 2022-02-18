@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,79 +8,132 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/reassurance.css" />
+    <link rel="stylesheet" href="./assets/css/buttons.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body>
+  <body class="about">
     <header>
-      logo
-      <form action="search.php">
-        <input type="text" name="search" id="input__search" />
-        <input type="submit" value="Rechercher" />
+      <a href="index.html" class="header__img">
+        <img src="./assets/images/j-mug.svg" alt="J-Mug" />
+      </a>
+      <form action="search.php" class="search">
+        <input type="text" name="search" class="search__input" />
+        <input type="submit" value="Rechercher" class="search__btn" />
       </form>
-      <a href="panier.html">
-        <img src="#" alt="aller voir mon panier" />
-        Panier
+      <a href="cart.html">
+        <figure class="panier__button">
+          <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+          <figcaption>Mon panier</figcaption>
+        </figure>
       </a>
       <nav class="nav">
         <a href="index.html" class="nav__link">Accueil</a>
-        <a href="categories.html" class="nav__link">Catégorie</a>
+        <a href="categorie.html" class="nav__link">Catégorie</a>
         <a href="about.html" class="nav__link">A propos</a>
-        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="about.html#contact" class="nav__link">Contact</a>
       </nav>
     </header>
     <main>
-      <section class="a_propos">
-        <img src="./assets/images/j-mug.webP" alt="mug-test" />
-        <h1>À propos</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
-          delectus vitae unde nam veritatis dolorum, tempora earum corrupti.
-          Esse aut, sed officiis neque sunt quo eligendi veritatis dolores
-          pariatur optio cumque ducimus rem ad mollitia soluta nemo voluptas
-          assumenda id repellendus dolore molestias. Eum numquam quidem, ex
-          voluptas dicta alias!
-        </p>
-      </section>
+      <div class="section__about">
+        <section class="a_propos">
+          <img class="jmug__logo" src="./assets/images/j-mug.svg" alt="ici" />
+          <div class="title_text">
+            <h1>À propos</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Asperiores delectus vitae unde nam veritatis dolorum, tempora
+              earum corrupti. Esse aut, sed officiis neque sunt quo eligendi
+              veritatis dolores pariatur optio cumque ducimus rem ad mollitia
+              soluta nemo voluptas assumenda id repellendus dolore molestias.
+              Eum numquam quidem, ex voluptas dicta alias!
+            </p>
+          </div>
+        </section>
 
-      <section class="nos_produit">
-        <h2>Nos produits</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-          corrupti unde, quos vero pariatur officiis dicta, dolorum doloribus
-          atque aspernatur ratione error. Quidem assumenda obcaecati, quod
-          eligendi tenetur sapiente dolor recusandae delectus ex totam maiores
-          adipisci facilis labore commodi quia fugit iusto voluptatum dolores
-          non suscipit eos et vitae porro.
-        </p>
-        <figure>
-          <img src="./assets/images/mug-test.png" alt="mug1" />
-          <img src="./assets/images/mug2.png" alt="" />
-          <img src="./assets/images/mug3.png" alt="" />
-        </figure>
-      </section>
+        <article class="nos_produit">
+          <h2>Nos produits</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            corrupti unde, quos vero pariatur officiis dicta, dolorum doloribus
+            atque aspernatur ratione error. Quidem assumenda obcaecati, quod
+            eligendi tenetur sapiente dolor recusandae delectus ex totam maiores
+            adipisci facilis labore commodi quia fugit iusto voluptatum dolores
+            non suscipit eos et vitae porro.
+          </p>
+          <section class="section__img">
+            <figure>
+              <img
+                class="figure__img"
+                src="./assets/images/mug-coeur-bleu.png"
+                alt="mug1"
+              />
+            </figure>
+            <figure>
+              <img
+                class="figure__img"
+                src="./assets/images/mug-coeur-jaune.png"
+                alt="mug2"
+              />
+            </figure>
+            <figure>
+              <img
+                class="figure__img"
+                src="./assets/images/mug-coeur-rose.png"
+                alt="mug3"
+              />
+            </figure>
+          </section>
+        </article>
 
-      <section class="ou_sommes_nous">
-        <img src="#" alt="unjourpeutetre" />
-        <h2>Ou somme-nous</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor
-          voluptatum aut ducimus nesciunt, odit dolores modi itaque blanditiis
-          vitae!
-        </p>
-      </section>
-      <section class="contact">
-        <div class="Contactez-nous">
-          <h1>Nous contactez</h1>
+        <section class="ou_sommes_nous">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5606727.729930153!2d1.480241393106114!3d46.67297291867589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae11de4b25c581%3A0x406f69c2f3bed20!2s81100%20Castres!5e0!3m2!1sfr!2sfr!4v1645003616415!5m2!1sfr!2sfr"
+            width="1500"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <div class="title_text">
+            <h2>Ou somme-nous</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              est deserunt temporibus beatae molestias quo debitis
+              exercitationem vitae dignissimos ratione sunt perferendis
+              blanditiis, non nostrum voluptas excepturi maxime similique
+              obcaecati nobis, nisi earum tempora dolorem eaque! Commodi quae
+              excepturi, similique sunt soluta autem? Sunt corrupti itaque
+              fugiat velit iure nobis!
+            </p>
+          </div>
+        </section>
+
+        <section class="contact">
+          <h2>Nous contacter</h2>
+
           <p>
             Si vous avez une question à propos des produits ou d'un autre type
             hésiter pas à prendre contact !
           </p>
-          <form action="/page-traitement-donnees" method="post">
+          <form class="form" action="#" method="post">
             <div>
               <label for="nom">Votre prénom</label>
               <input
@@ -99,6 +152,7 @@
                 name="email"
                 placeholder="monadresse@mail.com"
                 required
+                class="form__email"
               />
             </div>
             <div>
@@ -110,7 +164,10 @@
                 <option value="question-produit">
                   Question à propos d’un produit
                 </option>
-                <option value="devis">devis</option>
+
+                <option value="Probleme de livraison">
+                  Problème de livraison
+                </option>
                 <option value="autre">Autre...</option>
               </select>
             </div>
@@ -127,14 +184,57 @@
               <button type="submit">Envoyer</button>
             </div>
           </form>
-        </div>
+        </section>
+      </div>
+      <section class="reassurance">
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img
+              src="./assets/images/004-padlock.png"
+              alt="Paiement Securisé"
+            />
+          </div>
+
+          <figcaption class="reassurance__text">Paiement Sécurisé</figcaption>
+        </figure>
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img
+              src="./assets/images/001-parcel.png"
+              alt="Livraison offerte à partir de 75€"
+            />
+          </div>
+
+          <figcaption class="reassurance__text">
+            Livraison offerte à partir de 75€
+          </figcaption>
+        </figure>
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img src="./assets/images/002-badge.png" alt="Qualité Garantie" />
+          </div>
+
+          <figcaption class="reassurance__text">Qualité Garantie</figcaption>
+        </figure>
+        <figure class="reassurance__item">
+          <div class="reassurance__img">
+            <img
+              src="./assets/images/003-support.png"
+              alt="Notre équipe à votre écoute"
+            />
+          </div>
+
+          <figcaption class="reassurance__text">
+            Notre équipe à votre écoute
+          </figcaption>
+        </figure>
       </section>
     </main>
 
     <footer>
       <div class="footer_info">
         <div>
-          <h3>A propos</h3>
+          <h3 class="footer_info_title">A propos</h3>
           <ul>
             <li>Fonctionnement du site</li>
             <li>Conditions générales de vente</li>
@@ -142,14 +242,14 @@
           </ul>
         </div>
         <div>
-          <h3>Nos Produit</h3>
+          <h3 class="footer_info_title">Nos Produit</h3>
           <ul>
             <li>Charte qualité</li>
             <li>Soumettre vos designs</li>
           </ul>
         </div>
         <div>
-          <h3>Assistance</h3>
+          <h3 class="footer_info_title">Assistance</h3>
           <ul>
             <li>Centre D'aide</li>
             <li>Nous Contacter</li>
