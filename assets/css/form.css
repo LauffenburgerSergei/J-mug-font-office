@@ -1,4 +1,5 @@
-form div {
+form div,
+.address__add {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -73,10 +74,22 @@ form > select {
 
 form div > select,
 form > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
-  background-size: 15px;
-  background-position: right 10px top 50%;
+  display: inline-block;
+  padding: 0.5em 2em 0.5em 0.9em;
+  cursor: pointer;
+  color: rgb(70, 81, 88);
+  font-family: inherit;
+  font-size: 1em;
+  border: 1px solid rgb(207, 210, 219);
+  background-color: rgb(250, 250, 250);
+  /* background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHg9IjBweCIgeT0iMHB4Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTIgMThsLTExLjAxOS0xMWgyMi4wMzh6Ii8+PC9zdmc+); */
+  background-image: url(../images/down-chevron.svg);
+  background-size: 0.8em;
   background-repeat: no-repeat;
+  background-position: right 1.5rem center;
 }
 
 form div > textarea {
@@ -144,6 +157,51 @@ input[type="submit"].search__btn,
   border-radius: 0 10px 10px 0;
   text-transform: uppercase;
 }
+.form__group {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* marie */
 .quantity input {
   margin: 0.5rem;
+}
+.address__add div {
+  /* display: fit-content; */
+  /* min-height: fit-content; */
+}
+.address__add label {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+.address__add input {
+  height: 40px;
+}
+.address__add input[type="number"] {
+  width: 50px;
+  height: 40px;
+}
+.address__add .form__group > * {
+  height: initial;
+  margin-top: 0;
+  flex: 1 2 auto;
+  height: 40px;
+}
+.address__add .form__item:last-child {
+  align-items: initial;
+}
+
+.address__add .form__group .form__item {
+  width: fit-content;
+  height: 40px;
+}
+.address__add .form__group .form__item input {
+  height: 40px;
+}
+.address__add .form__group :first-child {
+  flex: 0 0 fit-content;
+}
+.address__add .form__group :last-child {
+  flex: max-content;
 }
