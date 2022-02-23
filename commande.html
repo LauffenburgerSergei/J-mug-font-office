@@ -21,30 +21,24 @@
     <link rel="stylesheet" href="./assets/css/commande.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body>
+  <body class="paiement">
     <header>
-      <a href="index.html">
-        <img
-          src="./assets/images/j-mug.webP"
-          alt="J-Mug"
-          class="header__img"
-          width="300"
-          height="100"
-        />
+      <a href="index.html" class="header__img">
+        <img src="./assets/images/j-mug.svg" alt="J-Mug" />
       </a>
       <form action="search.php" class="search">
         <input type="text" name="search" class="search__input" />
         <input type="submit" value="Rechercher" class="search__btn" />
       </form>
       <a href="cart.html">
-        <figure class="">
+        <figure class="panier__button">
           <i class="fa-solid fa-basket-shopping fa-2xl"></i>
           <figcaption>Mon panier</figcaption>
         </figure>
       </a>
       <nav class="nav">
         <a href="index.html" class="nav__link">Accueil</a>
-        <a href="categories.html" class="nav__link">Catégorie</a>
+        <a href="categorie.html" class="nav__link">Catégorie</a>
         <a href="about.html" class="nav__link">A propos</a>
         <a href="about.html#contact" class="nav__link">Contact</a>
       </nav>
@@ -53,6 +47,7 @@
       <article class="address">
         <section class="address__selection">
           <h4>Sélectionner une adresse de livraison</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <form action="">
             <select name="adress" id="adressChoice">
               <option value="adress1">Domicile</option>
@@ -80,13 +75,21 @@
               <label for="adressName">Nommer cette adresse</label>
               <input type="text" id="adressName" />
             </div>
-            <div class="form__item">
-              <label for="adressNumber">N°</label>
-              <input type="text" id="adressNumber" />
-            </div>
-            <div class="form__item">
-              <label for="adressStreet">Nom de la rue</label>
-              <input type="text" id="adressStreet" />
+            <div class="form__group">
+              <div class="form__item form__item_number">
+                <label for="adressNumber">N°</label>
+                <input
+                  type="number"
+                  id="adressNumber"
+                  value="1"
+                  start="1"
+                  step="1"
+                />
+              </div>
+              <div class="form__item">
+                <label for="adressStreet">Nom de la rue</label>
+                <input type="text" id="adressStreet" />
+              </div>
             </div>
             <div class="form__item">
               <label for="adressCP">Code Postal</label>
@@ -104,47 +107,66 @@
         </section>
       </article>
       <article>
-        <h3>Selectionner un moyen de paiement</h3>
-        <form action="#">
-          <fieldset>
-            <legend>Vos cartes de paiement</legend>
+        <form action="#" class="paiement__form">
+          <section class="paiement__info">
+            <h2>Selectionner un moyen de paiement</h2>
+
+            <fieldset>
+              <legend>Vos cartes de paiement</legend>
+              <div>
+                <label for="card1">
+                  <input type="radio" name="paymentCard" id="card1" /> Visa /
+                  Master Card ***-1324
+                </label>
+              </div>
+              <div>
+                <label for="card2">
+                  <input type="radio" name="paymentCard" id="card2" /> Visa /
+                  Master Card ***-5678
+                </label>
+              </div>
+            </fieldset>
+
+            <h3>Plus d'options de paiement</h3>
+            <h4 class="paiement__subtitle">Ajouter votre compte bancaire</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium pariatur enim dolores eveniet neque obcaecati
+              recusandae! Ducimus iure incidunt distinctio, eligendi aliquid
+              natus culpa, sunt rem amet omnis architecto pariatur.
+            </p>
+            <button>Ajouter un compte courant</button>
+            <hr />
+            <h4 class="paiement__subtitle">Cartes de crédits ou de débit</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium pariatur enim dolores eveniet neque obcaecati
+              recusandae! Ducimus iure incidunt distinctio, eligendi aliquid
+              natus culpa, sunt rem amet omnis architecto pariatur.
+            </p>
+            <a href="#">Lien information</a><br />
+
+            <button>Ajouter une carte de crédit ou de débit</button>
+            <hr />
+            <h4>Chèques-cadeaux, Pass Cadeaux</h4>
+            <p><a href="#">Entrer un chèque-cadeaux ou un Pass Cadeaux</a></p>
+          </section>
+          <section class="paiement__payer">
             <div>
-              <input type="radio" name="paymentCard" id="card1" />
-              <label for="card1">
-                <input type="radio" name="paymentCard" id="card1" />Visa /
-                Master Card ***-1324
-              </label>
+              <input type="submit" value="Continuer" />
+              <p>
+                En cliquant, vous pourrez accéder au terminal sécurisé de votre
+                banque.
+              </p>
             </div>
             <div>
-              <input type="radio" name="paymentCard" id="card2" />
-              <label for="card2"> Visa / Master Card ***-5678 </label>
+              <input type="submit" value="Continuer" />
+              <p>
+                En cliquant, vous pourrez accéder au terminal sécurisé de votre
+                banque.
+              </p>
             </div>
-          </fieldset>
-
-          <h5>Plus d'options de paiement</h5>
-          <p>ajouter votre compte bancaire</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            pariatur enim dolores eveniet neque obcaecati recusandae! Ducimus
-            iure incidunt distinctio, eligendi aliquid natus culpa, sunt rem
-            amet omnis architecto pariatur.
-          </p>
-          <button>Ajouter un compte courant</button>
-          <hr />
-          <h5>Plus d'options de paiement</h5>
-          <p>ajouter votre compte bancaire</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            pariatur enim dolores eveniet neque obcaecati recusandae! Ducimus
-            iure incidunt distinctio, eligendi aliquid natus culpa, sunt rem
-            amet omnis architecto pariatur.
-          </p>
-          <button>Ajouter une carte de crédit ou de débit</button>
-          <hr />
-          <h6>Chèques-cadeaux, Pass Cadeaux</h6>
-          <p><a href="#">Entrer un chèque-cadeaux ou un Pass Cadeaux</a></p>
-
-          <input type="submit" value="Payer" />
+          </section>
         </form>
       </article>
     </main>

@@ -4,6 +4,7 @@
 /* cart */
 .main {
   margin: 2rem;
+  margin-top: 0;
 }
 .main > article {
   display: flex;
@@ -11,7 +12,7 @@
   justify-content: space-between;
 }
 .main > article > a:first-child {
-  margin: 2rem 0;
+  margin: 1.5rem 0 1.5rem;
   padding: 0.5rem 0 0.5rem 0.5rem;
   align-self: start;
 }
@@ -33,11 +34,13 @@ h1 {
 }
 .cart__table {
   width: 100%;
-
-  /* border-right: #fff solid 2px; */
+  vertical-align: middle;
+  border: #00000037 solid 1px;
+  margin-bottom: 2rem;
 }
 .table__header {
   display: flex;
+  border-collapse: collapse;
 }
 .table__header th {
   text-align: center;
@@ -49,29 +52,28 @@ h1 {
 .cart__line {
   display: flex;
   justify-content: space-between;
-  margin: 0.2rem 0;
-  /* padding: 0.5rem; */
+  border-collapse: collapse;
 }
 .cart__line:nth-child(odd) {
-  background-color: #f4cfdf;
+  background-color: #f4cfdf4b;
 }
 .cart__line:nth-child(even) {
-  background-color: #f7f6cf;
+  background-color: #f7f6cf4b;
 }
-.cart__line td {
-  border: #fff solid 1px;
+.cart__table td,
+.cart__table th {
+  border: #00000037 solid 1px;
   width: 20%;
 }
 .cart__item {
   padding: 1rem;
-  border: #fff solid 1px;
+  /* border: #fff solid 1px; */
   display: flex;
   flex-wrap: nowrap;
 }
 .item__img {
   width: 75px;
   height: 75px;
-  /* object-fit ? */
   margin-right: 0.5rem;
 }
 .item__title {
@@ -80,11 +82,15 @@ h1 {
 .dispo {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .dispo__stock,
 .dispo__number {
   margin-top: 1rem;
   margin-left: 1rem;
+}
+.dispo__number {
+  margin-bottom: 1rem;
 }
 .dispo__stock {
   color: #9ac8eb;
@@ -97,18 +103,46 @@ h1 {
 .dispo__number {
   font-size: 0.8rem;
 }
+.price,
+.price_tot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .promo,
 .montants {
   margin: 2rem 0;
 }
 .promo {
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 50px 10px 50px;
+  background: #9ac8eb;
+  /* margin-bottom: 30px; */
+  margin-top: 50px;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
 }
+/* .promo div {
+} */
 .montants {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: #f6f7cf3f;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+  border-radius: 15px;
+  padding: 2rem;
 }
 
 .montant__label {
@@ -130,11 +164,13 @@ h1 {
 .montant__form {
   width: 100%;
 }
+/* .montant__form input[type="button"] {
+} */
 /* ########################################## */
 /* ################ COMMANDE ################ */
 /* ########################################## */
 .payment {
-padding:0 40px;
+  padding: 0 40px;
   /* display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,16 +181,83 @@ padding:0 40px;
   justify-content: space-between;
   width: 100%;
 }
+
 .address__selection,
 .address__add {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 50px 20px 50px;
+  background: #9ac8eb;
+  margin-top: 50px;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.205));
 }
 
+.address__selection {
+  align-self: center;
+  height: fit-content;
+  width: 30%;
+}
+.address__selection p {
+  padding-left: 0;
+}
+
+.address h4 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.address__selection p {
+  text-align: start;
+}
+.paiement article {
+  margin-bottom: 3rem;
+}
+.paiement fieldset {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+.paiement fieldset > div {
+  margin-top: 0;
+  min-height: auto;
+}
+.paiement__form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.paiement__info > a {
+  padding-left: 20px;
+  margin-bottom: 5rem;
+}
+.paiement__subtitle {
+  margin-top: 2rem;
+}
+.paiement__payer {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #789456; */
+}
+.paiement__payer div {
+  background-color: #f6f7cf3f;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.paiement__payer input[type="submit"] {
+}
 /* ########################################## */
 /* ################## MEDIA ################# */
 /* ########################################## */
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   body {
     display: flex;
     flex-direction: column;
@@ -164,4 +267,4 @@ padding:0 40px;
     max-width: 80%;
   }
 
-}
+} */

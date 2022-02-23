@@ -1,0 +1,256 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4cfdf20;
+}
+
+/* /##################################################/ */
+/* /##################    HEADER    ##################/ */
+/* /##################################################/ */
+
+header {
+  margin: 0;
+  height: auto;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid #5784ba;
+  background-color: #5784ba;
+  color: white;
+  padding: 10px;
+}
+
+.header__img {
+  /* height: 50px; */
+  width: 11%;
+  /*width: 20%;*/
+}
+.search {
+  text-align: center;
+  margin-top: 10px;
+  width: 60%;
+}
+
+.search__input,
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #5784ba;
+  border-radius: 10px 0 0 10px;
+  width: 40%;
+}
+
+header > a {
+  color: black;
+}
+header > a:hover {
+  color: black;
+}
+input[type="submit"].search__btn:hover {
+  color: black;
+  border: 1px solid #5784ba;
+}
+header figure {
+  margin-right: 2rem;
+}
+
+.panier_commande {
+  height: 50px;
+  color: #5784ba;
+}
+
+.panier__button {
+  display: flex;
+  text-align: center;
+  color: #5784ba;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-basket-shopping {
+  padding: 20px;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+a {
+  float: center;
+  text-decoration: none;
+}
+
+.nav a {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 25%;
+}
+
+.nav a:hover {
+  background-color: #f4cfdf;
+  color: black;
+  border-radius: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rowdies", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+/* /##################################################/ */
+/* /###################     MAIN    ##################/ */
+/* /##################################################/ */
+
+.section__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.a_propos {
+  display: flex;
+
+  align-items: center;
+  align-content: center;
+  padding: 10px 10px 10px 10px;
+  width: 800px;
+}
+
+.jmug__logo {
+  height: 80px;
+  margin-right: 80px;
+}
+
+.title_text {
+  padding: 30px 30px 30px 30px;
+  background-color: #f6f7cf;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.nos_produit {
+  width: 950px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #9ac8eb;
+
+  padding: 20px 10px 20px 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.section__img {
+  display: flex;
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  justify-content: space-evenly;
+}
+
+.figure__img {
+  margin-left: 0%;
+  height: 250px;
+  width: 250px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.ou_sommes_nous {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 10px 10px 10px 10px;
+  width: 800px;
+  margin-top: 50px;
+}
+
+.map {
+  margin-right: 80px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+p {
+  padding: 20px 20px 20px 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  height: 800px;
+  border: none;
+  border-radius: 15px;
+  padding: 30px 50px 10px 50px;
+  background: #9ac8eb;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.contact > h1 {
+  padding-top: 30px;
+}
+
+/* /##################################################/ */
+/* /###################    FOOTER    ##################/ */
+/* /##################################################/ */
+
+footer {
+  padding: 20px 15px;
+  background-color: #9ac8eb;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: start;
+  width: auto;
+  height: auto;
+}
+
+.footer_info_title {
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+footer li {
+  padding: 10px 0;
+}
