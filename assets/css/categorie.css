@@ -168,6 +168,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-items: flex-start;
 }
 
 form div > {
